@@ -1,9 +1,10 @@
-import Head from 'next/head';
-import NavBar from '../components/NavBar';
+import Head from 'next/head'
+import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className='h-screen flex overflow-hidden'>
+    <div>
       <Head>
         <title>Jessica Gallagher</title>
         <meta name="description" content="Jessica Gallagher's Personal Portfolio" />
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <NavBar />
       </main>
+        <Footer />
     </div>
   )
 }
