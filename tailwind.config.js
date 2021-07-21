@@ -11,7 +11,8 @@ module.exports = {
       },
       fontFamily: {
         'raleway': ['Raleway', 'sans-serif'],
-        'lato': ['Lato', 'sans-serif']
+        'lato': ['Lato', 'sans-serif'],
+        'nanum': ['Nanum Pen Script', 'cursive']
       }
     },
   },
