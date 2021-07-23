@@ -3,8 +3,8 @@ import Game from './Game.js'
 import About from './About.js'
 
 export default function HomePage() {
-	return (
-		<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4'>
+  return (
+    <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4'>
 			<div className='bg-pink-light overflow-hidden shadow sm:rounded-lg mt-28 z-20'>
 				<div className='px-4 py-5 sm:p-6'>
 					<h1 className='font-lato font-bold text-black text-4xl'>
@@ -31,12 +31,7 @@ export default function HomePage() {
 						Minaj in its entirety.
 					</p>
 					<p className='font-lato text-black text-lg mt-6'>
-						Currently working at{' '}
-						<a
-							className='font-nanum text-3xl text-white'
-							href='https://trendyminds.com/'>
-							TrendyMinds
-						</a>{' '}
+						Currently working at{' '}<a className='font-nanum text-3xl text-white' href='https://trendyminds.com/'>TrendyMinds </a>{' '}
 						as a Front-End Developer <span className='text-3xl'>👩🏼‍💻</span>
 					</p>
 				</div>
@@ -56,5 +51,5 @@ export default function HomePage() {
 			<Game />
 			<About />
 		</div>
-	)
+  )
 }
