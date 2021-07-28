@@ -100,7 +100,12 @@ export default function Game() {
   )
 }
 
-function MemoryGame({ options, setOptions, highScore, setHighScore }) {
+function MemoryGame({
+  options,
+  setOptions,
+  highScore,
+  setHighScore
+}) {
   const [game, setGame] = useState([])
   const [flippedCount, setFlippedCount] = useState(0)
   const [flippedIndexes, setFlippedIndexes] = useState([])
@@ -177,7 +182,7 @@ function MemoryGame({ options, setOptions, highScore, setHighScore }) {
         
         const newGame = MySwal.fire({
           title: <h1>You win! 🎉</h1>,
-          text: `Your score is ${score}. Keep playing to try to beat your High Score!`,
+          text: `Your score is ${score}. Keep playing to try to beat your High Score... or do what you came here for, and check out the rest of my portfolio! 😘`,
           width: 600,
           padding: '3em',
           allowOutsideClick: true,
@@ -191,13 +196,13 @@ function MemoryGame({ options, setOptions, highScore, setHighScore }) {
             left top
             no-repeat
           `,
-        }).then(function () {
+        }).then(function() {
           const gameLength = game.length
           setOptions(null)
           setTimeout(() => {
             setOptions(gameLength)
           }, 5)
-        }, function (dismiss) {
+        }, function(dismiss) {
           setOptions(null)
         })
       }, 500)
@@ -206,7 +211,8 @@ function MemoryGame({ options, setOptions, highScore, setHighScore }) {
   
   if(flippedIndexes.length === 2) {
     const match =
-      game[flippedIndexes[0]].imageId === game[flippedIndexes[1]].imageId
+      game[flippedIndexes[0]].imageId === game[flippedIndexes[1]]
+      .imageId
     
     if(match) {
       const newGame = [...game]
@@ -258,14 +264,22 @@ function Card({
   setFlippedIndexes,
 }) {
   const [flipped, set] = useState(false)
-  const { transform, opacity } = useSpring({
+  const {
+    transform,
+    opacity
+  } = useSpring({
     opacity: flipped ? 1 : 0,
     transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
-    config: { mass: 5, tension: 500, friction: 80 },
+    config: {
+      mass: 5,
+      tension: 500,
+      friction: 80
+    },
   })
   
   useEffect(() => {
-    if(flippedIndexes[2] === true && flippedIndexes.indexOf(id) > -1) {
+    if(flippedIndexes[2] === true && flippedIndexes.indexOf(
+        id) > -1) {
       setTimeout(() => {
         set(state => !state)
         setFlippedCount(flippedCount + 1)
