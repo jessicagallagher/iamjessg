@@ -1,6 +1,5 @@
 import Typewriter from 'typewriter-effect'
 import Game from './Game.js'
-import About from './About.js'
 
 export default function HomePage() {
   return (
@@ -49,7 +48,6 @@ export default function HomePage() {
 			</div>
 
 			<Game />
-			<About />
 		</div>
   )
 }

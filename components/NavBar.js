@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import router, { useRouter } from 'next/router'
 import { Fragment, useRef, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
@@ -18,6 +19,7 @@ const trans = (x, y, s) =>
 `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 export default function NavBar() {
+  const router = useRouter();
   const ref = useRef(null);
   const [xys, set] = useState([0, 0,1]);
 
@@ -46,7 +48,7 @@ export default function NavBar() {
                     const rect = ref.current.getBoundingClientRect();
                     set(calc(e.clientX, e.clientY, rect));
                   }}>
-                  <Link href='#'>
+                  <Link href='/'>
                   <a><h1 className='font-raleway text-5xl text-green-default font-bold'>
                     &lt;Jessica /&gt;
                   </h1></a>
@@ -55,19 +57,19 @@ export default function NavBar() {
                 </div>
               </div>
               <div className='hidden sm:ml-6 sm:flex sm:space-x-8'>
-                <Link href='#'>
-                  <a className='border-pink-default text-black-900 inline-flex items-center pt-1 border-b-2 text-md font-medium'>
+                <Link href='/'>
+                  <a className={router.pathname == '/' ? 'border-pink-default text-black-900 hover:border-pink-light inline-flex items-center pt-1 border-b-2 text-md font-medium' : 'border-transparent text-black-900 hover:border-pink-light inline-flex items-center pt-1 border-b-2 text-md font-medium'}>
                     Home
+                  </a>
+                </Link>
+                <Link href='/about'>
+                  <a className={router.pathname == '/about' ? 'border-pink-default text-black-900 hover:border-pink-light inline-flex items-center pt-1 border-b-2 text-md font-medium' : 'border-transparent text-black-900 hover:border-pink-light inline-flex items-center pt-1 border-b-2 text-md font-medium'}>
+                    About
                   </a>
                 </Link>
                 <Link href='#'>
                   <a className='border-transparent text-black-900 hover:border-pink-light inline-flex items-center pt-1 border-b-2 text-md font-medium'>
                     Portfolio
-                  </a>
-                </Link>
-                <Link href='#'>
-                  <a className='border-transparent text-black-900 hover:border-pink-light inline-flex items-center pt-1 border-b-2 text-md font-medium'>
-                    Resume
                   </a>
                 </Link>
                 <Link href='#'>
