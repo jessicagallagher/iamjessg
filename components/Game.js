@@ -1,3 +1,4 @@
+import SmallScreenModal from './SmallScreenModal.js'
 import { useState, useEffect } from 'react'
 import { useSpring, animated as a } from 'react-spring'
 import styles from '../styles/game.module.css'
@@ -23,18 +24,18 @@ export default function Game() {
 			</h1>
 			<h2 className='font-raleway mt-3 font-bold text-lg'>
 				High Score: {highScore}
-			</h2>
+      </h2>
 
 			<div>
 				{options === null ? (
 					<>
 						<span className='relative z-0 flex justify-center rounded-md mt-8'>
 							<button
-								onClick={() => setOptions(12)}
+                onClick={() => setOptions(12)}
 								type='button'
 								className='relative inline-flex items-center px-4 py-2 rounded-l-md border border-black bg-white text-sm font-medium text-black hover:bg-green-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-green-default focus:border-green-default'>
-								Easy
-							</button>
+                Easy
+              </button>
 							<button
 								onClick={() => setOptions(18)}
 								type='button'
@@ -75,13 +76,16 @@ export default function Game() {
 				)}
 			</div>
 
-			{options ? (
-				<MemoryGame
-					options={options}
-					setOptions={setOptions}
-					highScore={highScore}
-					setHighScore={setHighScore}
-				/>
+      {options ? (
+        <>
+          <MemoryGame
+            options={options}
+            setOptions={setOptions}
+            highScore={highScore}
+            setHighScore={setHighScore}
+          />
+          <SmallScreenModal />
+         </>
 			) : (
 				<h2 className='font-lato font-bold text-black text-xl text-center mt-4'>
 					Pick your poison{' '}
@@ -95,7 +99,7 @@ export default function Game() {
 					</svg>{' '}
 					to begin.
 				</h2>
-			)}
+        )}
 		</div>
   )
 }

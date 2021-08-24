@@ -4,25 +4,21 @@
   justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 1060px;
+  max-width: 1060px;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   margin: 30px auto 0;
-  width: 1060px;
+  max-width: 1060px;
 }
 
 .card {
   height: 160px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   width: 160px;
   z-index: 50;
-}
-
-.card:not(:nth-child(6n)) {
-  margin-right: 20px;
 }
 
 .back {

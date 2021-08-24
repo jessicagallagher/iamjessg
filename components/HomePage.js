@@ -1,10 +1,9 @@
 import Typewriter from 'typewriter-effect'
 import Game from './Game.js'
-import About from './About.js'
 
 export default function HomePage() {
   return (
-    <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4'>
+    <div className='max-w-full mx-auto px-4 sm:px-6 lg:px-8 mt-4'>
 			<div className='bg-pink-light overflow-hidden shadow sm:rounded-lg mt-28 z-20'>
 				<div className='px-4 py-5 sm:p-6'>
 					<h1 className='font-lato font-bold text-black text-4xl'>
@@ -49,7 +48,6 @@ export default function HomePage() {
 			</div>
 
 			<Game />
-			<About />
 		</div>
   )
 }

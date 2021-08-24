@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'marathon-blue': '#21326c',
+        'margaret-cream': '#f5f5f5',
         'green-default': '#1cd3a2',
         'green-light': '#03ffc8',
         'pink-default': '#f05c85',
