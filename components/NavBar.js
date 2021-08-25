@@ -67,8 +67,8 @@ export default function NavBar() {
                     About
                   </a>
                 </Link>
-                <Link href='#'>
-                  <a className='border-transparent text-black-900 hover:border-pink-light inline-flex items-center pt-1 border-b-2 text-md font-medium'>
+                <Link href='/portfolio'>
+                  <a className={router.pathname == '/portfolio' ? 'border-pink-default text-black-900 hover:border-pink-light inline-flex items-center pt-1 border-b-2 text-md font-medium' : 'border-transparent text-black-900 hover:border-pink-light inline-flex items-center pt-1 border-b-2 text-md font-medium'}>
                     Portfolio
                   </a>
                 </Link>
@@ -114,19 +114,19 @@ export default function NavBar() {
           {/* begin mobile menu */}
           <Disclosure.Panel className='sm:hidden'>
             <div className='pt-2 pb-3 space-y-1 ml-3'>
-              <Link href='#'>
-                <a className='border-pink-default text-black-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium'>
+              <Link href='/'>
+                <a className={router.pathname == '/' ? 'border-pink-default text-black-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium' : 'border-transparent text-black-900 hover:border-pink-light block pl-3 pr-4 py-2 border-l-4 text-md font-medium'}>
                   Home
                 </a>
               </Link>
-              <Link href='#'>
-                <a className='border-transparent text-black-900 hover:border-pink-light block pl-3 pr-4 py-2 border-l-4 text-md font-medium'>
-                  Portfolio
+              <Link href='/about'>
+                <a className={router.pathname == '/about' ? 'border-pink-default text-black-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium' : 'border-transparent text-black-900 hover:border-pink-light block pl-3 pr-4 py-2 border-l-4 text-md font-medium'}>
+                  About
                 </a>
               </Link>
-              <Link href='#'>
-                <a className='border-transparent text-black-900 hover:border-pink-light block pl-3 pr-4 py-2 border-l-4 text-md font-medium'>
-                  Resume
+              <Link href='/portfolio'>
+                <a className={router.pathname == '/portfolio' ? 'border-pink-default text-black-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium' : 'border-transparent text-black-900 hover:border-pink-light block pl-3 pr-4 py-2 border-l-4 text-md font-medium'}>
+                  Portfolio
                 </a>
               </Link>
               <Link href='#'>
