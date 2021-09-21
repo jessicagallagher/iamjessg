@@ -20,7 +20,7 @@ export default function Game() {
   return (
     <div className='text-center'>
 			<h1 className='font-lato font-bold text-pink-default text-xl mt-6'>
-				The Single Quote, Semi-Colon, Nicki Minaj Memory Game
+				The Single Quote & Semi-Colon Memory Game
 			</h1>
 			<h2 className='font-raleway mt-3 font-bold text-lg'>
 				High Score: {highScore}
@@ -117,16 +117,16 @@ function MemoryGame({
   const images = [
 		'./images/game-images/single-quote-1.jpg',
 		'./images/game-images/semi-colon-1.png',
-		'./images/game-images/nicki-minaj-1.jpg',
 		'./images/game-images/single-quote-2.jpg',
 		'./images/game-images/semi-colon-2.png',
-		'./images/game-images/nicki-minaj-2.jpg',
 		'./images/game-images/single-quote-3.png',
 		'./images/game-images/semi-colon-3.png',
-		'./images/game-images/nicki-minaj-3.jpg',
 		'./images/game-images/single-quote-4.png',
-		'./images/game-images/semi-colon-4.jpg',
-		'./images/game-images/nicki-minaj-4.jpg',
+    './images/game-images/semi-colon-4.jpg',
+    './images/game-images/single-quote-5.png',
+    './images/game-images/semi-colon-5.png',
+    './images/game-images/single-quote-6.png',
+    './images/game-images/semi-colon-6.png',
 	]
   
   useEffect(() => {

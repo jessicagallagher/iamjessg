@@ -26,12 +26,11 @@ export default function HomePage() {
 						<span className='font-nanum text-3xl text-white'>(sometimes)</span>{' '}
 						with a passion for creating user-friendly, engaging, and intuitive
 						experiences. I like single quotes and semi-colons—even when they
-						play hide-and-seek. If necessary, I can rap “Starships” by Nicki
-						Minaj in its entirety.
+						play hide-and-seek.
 					</p>
 					<p className='font-lato text-black text-lg mt-6'>
 						Currently working at{' '}<a className='font-nanum text-3xl text-white' href='https://trendyminds.com/'>TrendyMinds </a>{' '}
-						as a Front-End Developer <span className='text-3xl'>👩🏼‍💻</span>
+						as a Developer. <span className='text-3xl'>👩🏼‍💻</span>
 					</p>
 				</div>
 			</div>

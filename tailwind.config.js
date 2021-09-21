@@ -3,6 +3,9 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      lineHeight: {
+        'special': '5rem',
+      },
       colors: {
         'marathon-blue': '#21326c',
         'margaret-cream': '#f5f5f5',
@@ -21,5 +24,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
