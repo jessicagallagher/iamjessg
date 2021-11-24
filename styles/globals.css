@@ -24,14 +24,14 @@ a {
 
 hr {
   height: 3px;
-  -webkit-filter: blur(3px);
-  width: 33%;
+  -webkit-filter: blur(2px);
+  width: 75%;
   border-radius: 100px 50px;
   background: rgb(3, 255, 200);
   background: linear-gradient(
     90deg,
     rgba(3, 255, 200, 1) 15%,
-    rgba(240, 92, 133, 1) 49%,
+    rgba(28, 211, 162, 1) 49%,
     rgba(3, 255, 200, 1) 85%
   );
 }
