@@ -1,11 +1,9 @@
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
+  mode: 'jit',
   theme: {
     extend: {
-      lineHeight: {
-        'special': '5rem',
-      },
       colors: {
         'marathon-blue': '#21326c',
         'margaret-cream': '#f5f5f5',
@@ -17,13 +15,12 @@ module.exports = {
       fontFamily: {
         'raleway': ['Raleway', 'sans-serif'],
         'lato': ['Lato', 'sans-serif'],
-      }
+      },
+      letterSpacing: {
+        'extra-wide': '0.75rem',
+      },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-  ],
-}
+  variants: {},
+  plugins: [require('@tailwindcss/aspect-ratio')],
+};
