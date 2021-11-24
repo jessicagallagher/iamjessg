@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react'
 export default function Footer() {
   const navigation = {
     main: [
-      { name: 'Home', href: '#' },
-      { name: 'Portfolio', href: '#' },
-      { name: 'Resume', href: '#' },
+      { name: 'Home', href: '/' },
+      { name: 'About', href: '/about' },
+      { name: 'Portfolio', href: 'portfolio' },
       { name: 'Thoughts', href: '#' },
       { name: 'Contact', href: '#' },
     ],

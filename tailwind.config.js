@@ -3,6 +3,9 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      lineHeight: {
+        'special': '5rem',
+      },
       colors: {
         'marathon-blue': '#21326c',
         'margaret-cream': '#f5f5f5',
@@ -14,12 +17,13 @@ module.exports = {
       fontFamily: {
         'raleway': ['Raleway', 'sans-serif'],
         'lato': ['Lato', 'sans-serif'],
-        'nanum': ['Nanum Pen Script', 'cursive']
       }
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

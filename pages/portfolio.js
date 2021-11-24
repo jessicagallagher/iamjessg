@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import NavBar from '../components/NavBar'
-import About from '../components/About'
+import Portfolio from '../components/Portfolio'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <main>
         <NavBar />
-        <About />
+        <Portfolio />
       </main>
       <Footer />
     </div>
