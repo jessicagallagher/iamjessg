@@ -22,7 +22,7 @@ a {
 }
 
 hr {
-  height: 3px;
+  height: 2px;
   -webkit-filter: blur(2px);
   width: 75%;
   border-radius: 100px 50px;
@@ -33,4 +33,11 @@ hr {
     rgba(28, 211, 162, 1) 49%,
     rgba(3, 255, 200, 1) 85%
   );
+}
+
+/* media queries */
+@media (min-width: 640px) {
+  hr {
+    height: 3px;
+  }
 }

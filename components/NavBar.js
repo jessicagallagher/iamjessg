@@ -34,22 +34,20 @@ export default function NavBar() {
   };
 
   const props = useSpring({ xys, config });
-
-
   return (
     <Disclosure as='nav' className='bg-white'>
       {({ open }) => (
         <>
-          <div className='max-w-full mx-auto px-4 sm:px-6 lg:px-8 mt-4'>
+          <div className='max-w-full mx-auto px-4 px-6 lg:px-8 mt-4'>
             <div className='flex justify-between h-16'>
               <div className='flex'>
-                <div className='flex-shrink-0 flex items-center' ref={ref}>
+                <div className='flex-shrink-0 flex items-center px-4 sm:px-1 lg:px-5 xl:px-0' ref={ref}>
                   <animated.div style={{ transform: props.xys.to(trans) }} onMouseLeave={() => set([0, 0, 1])} onMouseMove={(e) => {
                     const rect = ref.current.getBoundingClientRect();
                     set(calc(e.clientX, e.clientY, rect));
                   }}>
                   <Link href='/'>
-                  <a><h1 className='font-raleway text-5xl sm:text-xl md:text-2xl lg:text-5xl text-green-default font-bold'>
+                  <a><h1 className='font-raleway text-3xl sm:text-2xl lg:text-5xl text-green-default font-bold'>
                     &lt;Jessica /&gt;
                   </h1></a>
                   </Link>
