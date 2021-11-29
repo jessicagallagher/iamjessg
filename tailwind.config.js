@@ -1,11 +1,15 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
+  mode: 'jit',
   theme: {
+    screens: {
+      'xs': '375px',
+      ...defaultTheme.screens,
+    },
     extend: {
-      lineHeight: {
-        'special': '5rem',
-      },
       colors: {
         'marathon-blue': '#21326c',
         'margaret-cream': '#f5f5f5',
@@ -17,13 +21,15 @@ module.exports = {
       fontFamily: {
         'raleway': ['Raleway', 'sans-serif'],
         'lato': ['Lato', 'sans-serif'],
-      }
+      },
+      letterSpacing: {
+        'extra-wide': '0.75rem',
+      },
     },
   },
-  variants: {
-    extend: {},
-  },
+  variants: {},
   plugins: [
     require('@tailwindcss/aspect-ratio'),
+    require('tailwindcss-debug-screens'),
   ],
-}
+};

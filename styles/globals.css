@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html,
 body {
@@ -23,7 +22,7 @@ a {
 }
 
 hr {
-  height: 3px;
+  height: 2px;
   -webkit-filter: blur(2px);
   width: 75%;
   border-radius: 100px 50px;
@@ -34,4 +33,11 @@ hr {
     rgba(28, 211, 162, 1) 49%,
     rgba(3, 255, 200, 1) 85%
   );
+}
+
+/* media queries */
+@media (min-width: 640px) {
+  hr {
+    height: 3px;
+  }
 }
