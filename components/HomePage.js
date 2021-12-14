@@ -18,6 +18,9 @@ export default function HomePage() {
             <h1>I'm Jessica.</h1>
             <h1 className='mt-3 sm:mt-6'>I build things.</h1>
           </div>
+          <div className='font-raleway font-bold text-black text-2xl sm:text-2xl mt-3 sm:mt-6'>
+            <h2>... including this portfolio—which is under construction and will be up and running in another week or so.</h2>
+          </div>
           <div className='text-black text-md sm:text-lg lg:text-xl mt-3 sm:mt-6'>
             <p>
               I’m a Brooklyn-based full-stack software engineer and designer{' '}
@@ -48,15 +51,15 @@ export default function HomePage() {
               </span>
             </p>
             <div className='text-center text-md mb-2 sm:mb-4 lg:mb-6 mt-4 sm:mt-6'>
-              <button
-                type='button'
-                className='inline-flex items-center px-4 py-2 text-black bg-transparent border-t-2 border-b-2 border-pink-default hover:border-green-default hover:tracking-extra-wide'
+              <a
+                href='mailto:jess@iamjessg.com'
+                className='inline-flex items-center px-4 py-2 text-black bg-transparent border-t-2 border-b-2 border-pink-default hover:border-green-default hover:tracking-extra-wide cursor-pointer'
               >
                 <div className='-ml-1 mr-3 -mt-1 sm:-mt-2 h-5 w-5 text-xl sm:text-2xl z-50 filter contrast-125 drop-shadow-xl'>
                   ✉️
                 </div>
                 Say hi!
-              </button>
+              </a>
             </div>
           </div>
         </div>
