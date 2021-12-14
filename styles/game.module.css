@@ -1,0 +1,48 @@
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 1060px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px auto 0;
+  max-width: 1060px;
+}
+
+.card {
+  height: 160px;
+  margin: 0 auto 20px;
+  width: 160px;
+  z-index: 50;
+}
+
+.back {
+  background-color: #5BCFD1;
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  height: 50ch;
+  max-height: 160px;
+  max-width: 160px;
+  position: absolute;
+  width: 50ch;
+  will-change: transform, opacity;
+}
+
+.front {
+  background-image: url("https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&w=1181&q=80&auto=format&fit=crop");
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  height: 50ch;
+  max-height: 160px;
+  max-width: 160px;
+  position: absolute;
+  width: 50ch;
+  will-change: transform, opacity;
+}
