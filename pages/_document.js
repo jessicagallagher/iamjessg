@@ -9,7 +9,8 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <body className={`${dev ? 'debug-screens' : ''}`}>
+        {/* <body className={`${dev ? 'debug-screens' : ''}`}> */}
+        <body>
           <Main />
           <NextScript />
         </body>
