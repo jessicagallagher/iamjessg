@@ -41,7 +41,7 @@ export default function NavBar() {
           <div className='max-w-full mx-auto px-4 px-6 lg:px-8 mt-4'>
             <div className='flex justify-between h-16'>
               <div className='flex'>
-                <div className='flex-shrink-0 flex items-center px-4 sm:px-1 lg:px-5 xl:px-0' ref={ref}>
+                <div className='shrink-0 flex items-center px-4 sm:px-1 lg:px-5 xl:px-0' ref={ref}>
                   <animated.div style={{ transform: props.xys.to(trans) }} onMouseLeave={() => set([0, 0, 1])} onMouseMove={(e) => {
                     const rect = ref.current.getBoundingClientRect();
                     set(calc(e.clientX, e.clientY, rect));

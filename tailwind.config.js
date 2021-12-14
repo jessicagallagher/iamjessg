@@ -1,9 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class', // or 'media' or 'class'
-  mode: 'jit',
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     screens: {
       'xs': '375px',
@@ -27,9 +25,7 @@ module.exports = {
       },
     },
   },
-  variants: {},
   plugins: [
     require('@tailwindcss/aspect-ratio'),
-    require('tailwindcss-debug-screens'),
   ],
 };

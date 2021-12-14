@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,6 +35,12 @@ hr {
     rgba(28, 211, 162, 1) 49%,
     rgba(3, 255, 200, 1) 85%
   );
+}
+
+.about-nav {
+  background: #ffb6ce;
+  border-radius: 6px;
+  font-weight: 600;
 }
 
 /* media queries */
