@@ -1,16 +1,5 @@
-import { useState } from 'react';
-
 export default function About() {
-  const [isActive, setIsActive] = useState(false);
-  const [overview, setOverview] = useState(true);
-
-  const handleNavToggle = (e) => {
-    e.preventDefault();
-
- 
-
-  }
-
+  
   return (
     <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 lg:px-10 xl:px-48'>
       <img
@@ -40,32 +29,8 @@ export default function About() {
           <div className='border rounded-xl shadow rounded w-full p-3 mt-3'>
             <h1 className='text-2xl font-bold'>About</h1>
             <div className='font-raleway text-lg py-4'>
-              <ul className='grid grid-cols-1 gap-4'>
-                <li
-                  className={`${overview ? 'about-nav' : null}`}
-                  onClick={handleNavToggle}
-                >
-                  Overview
-                </li>
-                <li
-                  className={`${isActive ? 'about-nav' : null}`}
-                  onClick={({ target }) => setIsActive(!isActive)}
-                >
-                  Places Lived
-                </li>
-                <li
-                  className={`${isActive ? 'about-nav' : null}`}
-                  onClick={({ target }) => setIsActive(!isActive)}
-                >
-                  Hobbies
-                </li>
-                <li
-                  className={`${isActive ? 'about-nav' : null}`}
-                  onClick={handleNavToggle}
-                >
-                  Details
-                </li>
-              </ul>
+              <p>Have you ever heard of Houma, Louisiana? Well--that's where I was born and raised. It's a small town about an hour southeast of New Orleans... so way down at the bottom of the boot! After attending LSU (Geaux Tigers) and freshly armed with a marketing degree, I slowly made my way up the East Coast. I lived in Washington, D.C. for 5 years and lived the consulting life at Gartner, working with Chief Communications Officers at Fortune 500 companies. After realizing that corporate life wasn't for me, I fulfilled a childhood dream and moved to NYC. Can you imagine that? From the bayou all the way to Brooklyn--Carroll Gardens, to be exact. I continued my career in consulting, working at various startups--mainly in the Ed Tech space. I worked very closely with the Software Engineers on my team which inspired me to learn how to code. I loved solving problems with technology, and that motivated me to continue learning on my own and take advantage of several volunteer opportunities that helped strengthen my skills. Like most people, my life changed when the pandemic hit. I decided to take a huge leap of faith and completely changed careers. I saw an opportunity to do what I loved while getting paid for it. I signed up for a 3-week coding course with SheCodes to test the waters--and that made me hungry for more. I got serious about learning and completed the Software Engineering Immersive program at General Assembly. It was the hardest--yet most rewarding thing that I've ever done. I also realized that since technology is always changing and evolving, I had a lifetime of learning ahead of me--and that excited me because I figured that I'd never be bored again!</p>
+              
             </div>
           </div>
         </div>
