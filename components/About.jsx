@@ -1,21 +1,9 @@
+import Running from "./Running";
+import Reading from "./Reading";
+import Coding from './CurrentProjects'
+import Cats from './Cats'
+
 export default function About() {
-
-  const hobbies = [
-    {
-      name: 'Running',
-      subheading: `What I'm Running:`,
-      description: `This year I'm running the NYC Half Marathon, the Shape Women's Half Marathon, the Big Sur Marathon, the Brooklyn Half Marathon, and the Berlin Marathon.`,
-    },
-    {
-      name: 'Reading',
-      subheading: `What I'm Reading:`,
-      description: `Currently I'm reading Princess Margaret by Christopher Warwick and Eloquent Javascript by Marijn Haverbeke.`,
-    },
-    { name: 'Coding', subheading: `What I'm Coding:` },
-
-    { name: 'My Two Cats', subheading: `Meet Wiz Khatlifa and Max Just Max` },
-  ];
-  
   return (
     <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 lg:px-10 xl:px-48'>
       <img
@@ -65,20 +53,17 @@ export default function About() {
             </div>
             <h1 className='text-2xl font-bold'>Interests + Hobbies</h1>
             <div className='font-raleway text-lg py-4'>
-              <dl className='grid grid-cols-1 gap-y-4 sm:grid-cols-2'>
-                {hobbies.map((hobby) => (
-                  <div key={hobby.id}>
-                    <dt className='font-semibold font-lato'>{hobby.name}</dt>
-                    <dd>{hobby.subheading}</dd>
-                    <dd className='mt-4'>{hobby.description}</dd>
-                  </div>
-                ))}
-              </dl>
+              <ul className='grid grid-cols-1 sm:grid-cols-2 gap-y-6 font-semibold font-lato'>
+                <Running />
+                <Reading />
+                <Coding />
+                <Cats />
+              </ul>
             </div>
-            <div className='font-raleway text-lg py-4'>
-              <p>
-                Did I mention that I was a runner?
-              </p>
+            <div className='font-raleway text-base font-semibold text-pink-default py-4'>
+              <p>*Did I mention that I'm a runner?</p>
+              <p>*Did I mention that I'm probably Next.js' and Tailwind's biggest fan?</p>
+              <p>*Did I mention that I love cats?</p>
             </div>
           </div>
         </div>
