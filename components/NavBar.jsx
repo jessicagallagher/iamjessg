@@ -91,7 +91,7 @@ export default function NavBar() {
                     About
                   </a>
                 </Link>
-                <Link href='/portfolio'>
+                {/* <Link href='/portfolio'>
                   <a
                     className={
                       router.pathname == '/portfolio'
@@ -101,17 +101,17 @@ export default function NavBar() {
                   >
                     Portfolio
                   </a>
-                </Link>
-                <Link href='#'>
+                </Link> */}
+                {/* <Link href='#'>
                   <a className='border-transparent hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-base font-medium'>
                     Thoughts
                   </a>
-                </Link>
-                <Link href='#'>
+                </Link> */}
+                {/* <Link href='#'>
                   <a className='border-transparent hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-base font-medium'>
                     Contact
                   </a>
-                </Link>
+                </Link> */}
                 <Link href='https://github.com/jessicagallagher'>
                   <a
                     target='_blank'

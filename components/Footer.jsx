@@ -6,9 +6,9 @@ export default function Footer() {
     main: [
       { name: 'Home', href: '/' },
       { name: 'About', href: '/about' },
-      { name: 'Portfolio', href: '#' },
-      { name: 'Thoughts', href: '#' },
-      { name: 'Contact', href: '#' },
+      // { name: 'Portfolio', href: '#' },
+      // { name: 'Thoughts', href: '#' },
+      // { name: 'Contact', href: '#' },
     ],
     social: [
       {
