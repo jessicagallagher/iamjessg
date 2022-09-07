@@ -1,35 +1,31 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class', // or 'media' or 'class'
-  mode: 'jit',
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
-    screens: {
-      'xs': '375px',
-      ...defaultTheme.screens,
-    },
     extend: {
       colors: {
-        'marathon-blue': '#21326c',
-        'margaret-cream': '#f5f5f5',
-        'green-default': '#1cd3a2',
-        'green-light': '#03ffc8',
-        'pink-default': '#f05c85',
-        'pink-light': '#ffb6ce',
+        greenDefault: '#1cd3a2',
+        greenLight: '#03ffc8',
+        pinkDefault: '#f05c85',
+        pinkLight: '#ffb6ce',
+        softBlack: '#212121',
+        lightGrey: '#eeeeee',
       },
       fontFamily: {
-        'raleway': ['Raleway', 'sans-serif'],
-        'lato': ['Lato', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
       },
       letterSpacing: {
-        'extra-wide': '0.75rem',
+        extraWide: '0.75rem',
+      },
+      screens: {
+        xs: '375px',
       },
     },
   },
-  variants: {},
   plugins: [
     require('@tailwindcss/aspect-ratio'),
-    require('tailwindcss-debug-screens'),
+    require('@tailwindcss/forms'),
   ],
 };
