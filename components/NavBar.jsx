@@ -1,4 +1,4 @@
-import img from '../public/favicon.png'
+import img from '../public/favicon.png';
 import Link from 'next/link';
 import router, { useRouter } from 'next/router';
 import Image from 'next/image';
@@ -37,7 +37,7 @@ export default function NavBar() {
 
   const props = useSpring({ xys, config });
   return (
-    <Disclosure as='nav' className='bg-white'>
+    <Disclosure as='nav' className='bg-lightGrey'>
       {({ open }) => (
         <>
           <div className='max-w-full mx-auto px-4 px-6 lg:px-8 mt-4'>
@@ -58,9 +58,9 @@ export default function NavBar() {
                     <Link href='/'>
                       <a className='flex flex-row items-center justify-center mt-2'>
                         <span className='mr-2'>
-                          <Image src={img} />
+                          <Image src={img} height={48} width={48}/>
                         </span>
-                        <h1 className='font-raleway text-3xl sm:text-2xl lg:text-5xl text-greenDefault font-bold'>
+                        <h1 className=' font-thin text-3xl sm:text-2xl lg:text-5xl font-bold'>
                           &lt;Tech Meowt /&gt;
                         </h1>
                       </a>
@@ -73,8 +73,8 @@ export default function NavBar() {
                   <a
                     className={
                       router.pathname == '/'
-                        ? 'border-pinkDefault text-black-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
-                        : 'border-transparent text-black-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
+                        ? 'border-pinkDefault text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
+                        : 'border-transparent text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
                     }
                   >
                     Home
@@ -84,8 +84,8 @@ export default function NavBar() {
                   <a
                     className={
                       router.pathname == '/about'
-                        ? 'border-pinkDefault text-black-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
-                        : 'border-transparent text-black-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
+                        ? 'border-pinkDefault text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
+                        : 'border-transparent text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
                     }
                   >
                     About
@@ -95,20 +95,20 @@ export default function NavBar() {
                   <a
                     className={
                       router.pathname == '/portfolio'
-                        ? 'border-pinkDefault text-black-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
-                        : 'border-transparent text-black-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
+                        ? 'border-pinkDefault text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
+                        : 'border-transparent text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
                     }
                   >
                     Portfolio
                   </a>
                 </Link>
                 <Link href='#'>
-                  <a className='border-transparent text-black-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'>
+                  <a className='border-transparent text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'>
                     Thoughts
                   </a>
                 </Link>
                 <Link href='#'>
-                  <a className='border-transparent text-black-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'>
+                  <a className='border-transparent text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'>
                     Contact
                   </a>
                 </Link>
@@ -172,7 +172,7 @@ export default function NavBar() {
               </div>
               <div className='-mr-2 flex items-center sm:hidden'>
                 {/* Mobile menu button */}
-                <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-black-400 hover:text-black-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-greenDefault'>
+                <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-softBlack-400 hover:text-softBlack-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-greenDefault'>
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
                     <XMarkIcon className='block h-6 w-6' aria-hidden='true' />
@@ -190,8 +190,8 @@ export default function NavBar() {
                 <a
                   className={
                     router.pathname == '/'
-                      ? 'border-pinkDefault text-black-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
-                      : 'border-transparent text-black-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
+                      ? 'border-pinkDefault text-softBlack-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
+                      : 'border-transparent text-softBlack-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
                   }
                 >
                   Home
@@ -201,8 +201,8 @@ export default function NavBar() {
                 <a
                   className={
                     router.pathname == '/about'
-                      ? 'border-pinkDefault text-black-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
-                      : 'border-transparent text-black-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
+                      ? 'border-pinkDefault text-softBlack-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
+                      : 'border-transparent text-softBlack-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
                   }
                 >
                   About
@@ -212,20 +212,20 @@ export default function NavBar() {
                 <a
                   className={
                     router.pathname == '/portfolio'
-                      ? 'border-pinkDefault text-black-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
-                      : 'border-transparent text-black-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
+                      ? 'border-pinkDefault text-softBlack-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
+                      : 'border-transparent text-softBlack-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
                   }
                 >
                   Portfolio
                 </a>
               </Link>
               <Link href='#'>
-                <a className='border-transparent text-black-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'>
+                <a className='border-transparent text-softBlack-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'>
                   Thoughts
                 </a>
               </Link>
               <Link href='#'>
-                <a className='border-transparent text-black-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'>
+                <a className='border-transparent text-softBlack-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'>
                   Contact
                 </a>
               </Link>

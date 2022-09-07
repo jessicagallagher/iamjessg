@@ -10,10 +10,11 @@ module.exports = {
         greenLight: '#03ffc8',
         pinkDefault: '#f05c85',
         pinkLight: '#ffb6ce',
+        softBlack: '#212121',
+        lightGrey: '#eeeeee',
       },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif'],
-        lato: ['Lato', 'sans-serif'],
       },
       letterSpacing: {
         extraWide: '0.75rem',

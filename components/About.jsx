@@ -32,7 +32,7 @@ export default function About() {
         <div className='flex w-full justify-start items-center py-3'>
           <div className='border rounded-xl shadow rounded w-full p-3 mt-3'>
             <h1 className='text-2xl font-bold'>About</h1>
-            <div className='font-raleway text-lg py-4'>
+            <div className=' text-lg py-4'>
               <p>
                 Originally from South Louisiana, I have a B.S. in marketing from
                 LSU (Geaux Tigers!). Prior to software engineering, I worked as
@@ -52,15 +52,15 @@ export default function About() {
               </p>
             </div>
             <h1 className='text-2xl font-bold'>Interests + Hobbies</h1>
-            <div className='font-raleway text-lg py-4'>
-              <ul className='grid grid-cols-1 sm:grid-cols-2 gap-y-6 font-semibold font-lato'>
+            <div className=' text-lg py-4'>
+              <ul className='grid grid-cols-1 sm:grid-cols-2 gap-y-6 font-semibold '>
                 <Running />
                 <Reading />
                 <Coding />
                 <Cats />
               </ul>
             </div>
-            <div className='font-raleway text-base font-semibold text-pinkDefault py-4'>
+            <div className=' text-base font-semibold text-pinkDefault py-4'>
               <p>*Did I mention that I'm a runner?</p>
               <p>
                 *Did I mention that I'm probably Next.js' and Tailwind's biggest

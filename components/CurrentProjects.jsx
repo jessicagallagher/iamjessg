@@ -42,13 +42,13 @@ export default function CurrentProjects() {
   getDb();
 
   return (
-    <dt className='font-semibold font-lato'>
+    <dt className='font-semibold '>
       Current Projects
-      <div className='font-raleway font-normal py-2'>What I'm Working On:</div>
+      <div className=' font-normal py-2'>What I'm Working On:</div>
       {projects.map((project) => (
         <li
           key={project.id}
-          className='font-raleway list-none list-outside even:text-greenDefault odd:text-pinkDefault font-semibold'
+          className=' list-none list-outside even:text-greenDefault odd:text-pinkDefault font-semibold'
         >
           <a href={project.projectRepoUrl} target='blank'>
             {project.projectName}

@@ -23,15 +23,13 @@ export default function Running() {
   ];
 
   return (
-    <dt className='font-semibold font-lato'>
+    <dt className='font-semibold '>
       Running
-      <div className='font-raleway font-normal py-2'>
-        What I'm Training For:
-      </div>
+      <div className=' font-normal py-2'>What I'm Training For:</div>
       {running.map((run) => (
         <li
           key={run.id}
-          className='font-raleway list-none list-outside even:text-greenDefault odd:text-pinkDefault font-semibold'
+          className=' list-none list-outside even:text-greenDefault odd:text-pinkDefault font-semibold'
         >
           <a href={run.raceHref}>{run.raceName}</a>
         </li>

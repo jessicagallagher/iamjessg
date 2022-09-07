@@ -32,15 +32,15 @@ export default function Cats() {
   ];
 
   return (
-    <dt className='font-semibold font-lato'>
+    <dt className='font-semibold '>
       My Two Cats
-      <div className='font-raleway font-normal py-2'>
+      <div className=' font-normal py-2'>
         Meet Wiz Khatlifa and Max Just Max
       </div>
       {books.map((book) => (
         <li
           key={book.id}
-          className='font-raleway hover:text-pinkDefault list-none list-outside even:text-greenDefault odd:text-pinkDefault font-semibold'
+          className=' hover:text-pinkDefault list-none list-outside even:text-greenDefault odd:text-pinkDefault font-semibold'
         >
           <a href={book.bookHref} target='blank' className='italic'>
             {book.bookName}{' '}

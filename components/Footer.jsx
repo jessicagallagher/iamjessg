@@ -49,7 +49,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className='bg-white'>
+    <footer className='bg-lightGrey'>
       <div className='max-w-full mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8'>
         <nav
           className='-mx-5 -my-2 flex flex-wrap justify-center'
@@ -58,7 +58,7 @@ export default function Footer() {
           {navigation.main.map((item) => (
             <div key={item.name} className='px-5 py-2'>
               <Link href={item.href}>
-                <a className='font-lato text-black-900 hover:text-greenDefault'>
+                <a className=' text-softBlack-900 hover:text-greenDefault'>
                   {item.name}
                 </a>
               </Link>
@@ -71,7 +71,7 @@ export default function Footer() {
               <a
                 target='_blank'
                 rel='noopener'
-                className='font-lato text-black-900 hover:text-greenDefault'
+                className=' text-softBlack-900 hover:text-greenDefault'
               >
                 <span className='sr-only'>{item.name}</span>
                 <item.icon className='h-6 w-6' aria-hidden='true' />
@@ -79,8 +79,8 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-        <p className='mt-8 text-center font-lato text-black-900'>
-          &copy; {date} Tech Meowt. All rights reserved.
+        <p className='mt-8 text-center  text-softBlack-900'>
+          &copy; {date} Tech Meowt, LLC. All rights reserved.
         </p>
       </div>
     </footer>
