@@ -1,7 +1,7 @@
-import Running from "./Running";
-import Reading from "./Reading";
-import Coding from './CurrentProjects'
-import Cats from './Cats'
+import Running from './Running';
+import Reading from './Reading';
+import Coding from './CurrentProjects';
+import Cats from './Cats';
 
 export default function About() {
   return (
@@ -16,7 +16,7 @@ export default function About() {
         <div className='-mt-16 sm:-mt-20 lg:-mt-10 flex flex-col lg:flex-row items-end lg:items-center'>
           <div className='mx-auto lg:mx-10'>
             <img
-              className='h-40 w-40 rounded-full ring-4 ring-green-default'
+              className='h-40 w-40 rounded-full ring-4 ring-greenDefault'
               src='./images/profile-photo.jpg'
               alt='girl holding cat'
               loading='lazy'
@@ -60,9 +60,12 @@ export default function About() {
                 <Cats />
               </ul>
             </div>
-            <div className='font-raleway text-base font-semibold text-pink-default py-4'>
+            <div className='font-raleway text-base font-semibold text-pinkDefault py-4'>
               <p>*Did I mention that I'm a runner?</p>
-              <p>*Did I mention that I'm probably Next.js' and Tailwind's biggest fan?</p>
+              <p>
+                *Did I mention that I'm probably Next.js' and Tailwind's biggest
+                fan?
+              </p>
               <p>*Did I mention that I love cats?</p>
             </div>
           </div>

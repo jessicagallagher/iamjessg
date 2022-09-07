@@ -34,11 +34,13 @@ export default function Reading() {
   return (
     <dt className='font-semibold font-lato'>
       Books
-      <div className='font-raleway font-normal py-2'>What I'm Reading This Year:</div>
+      <div className='font-raleway font-normal py-2'>
+        What I'm Reading This Year:
+      </div>
       {books.map((book) => (
         <li
           key={book.id}
-          className='font-raleway hover:text-pink-default list-none list-outside even:text-green-default odd:text-pink-default font-semibold'
+          className='font-raleway hover:text-pinkDefault list-none list-outside even:text-greenDefault odd:text-pinkDefault font-semibold'
         >
           <a href={book.bookHref} target='blank' className='italic'>
             {book.bookName}{' '}

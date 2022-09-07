@@ -16,7 +16,8 @@ export default function CurrentProjects() {
       projectFramework: 'Next.js',
       projectCss: 'Tailwind CSS',
       hasDb: true,
-      projectDb: 'It also uses Firebase for authentication along with MongoDB as its database.',
+      projectDb:
+        'It also uses Firebase for authentication along with MongoDB as its database.',
     },
     {
       projectName: 'Marathon Training App',
@@ -32,12 +33,12 @@ export default function CurrentProjects() {
 
   const getDb = (hasDb, projectDb) => {
     if (hasDb) {
-      let db = project.projectDb
-      return db
-    }  else {
-      null
+      let db = project.projectDb;
+      return db;
+    } else {
+      null;
     }
-  }
+  };
   getDb();
 
   return (
@@ -47,7 +48,7 @@ export default function CurrentProjects() {
       {projects.map((project) => (
         <li
           key={project.id}
-          className='font-raleway list-none list-outside even:text-green-default odd:text-pink-default font-semibold'
+          className='font-raleway list-none list-outside even:text-greenDefault odd:text-pinkDefault font-semibold'
         >
           <a href={project.projectRepoUrl} target='blank'>
             {project.projectName}

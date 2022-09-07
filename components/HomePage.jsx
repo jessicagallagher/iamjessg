@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 export default function HomePage() {
   return (
     <div className='max-w-full mx-auto px-4 sm:px-6 lg:px-8 mt-4'>
-      <div className='bg-pink-light overflow-hidden shadow rounded-lg mt-10 lg:mt-20 z-20'>
+      <div className='bg-pinkLight overflow-hidden shadow rounded-lg mt-10 lg:mt-20 z-20'>
         <div className='px-6 py-5'>
           <h1 className='font-bold text-black text-2xl sm:text-3xl lg:text-4xl'>
             <Typewriter
@@ -21,7 +21,7 @@ export default function HomePage() {
           <div className='text-black text-md sm:text-lg lg:text-xl mt-3 sm:mt-6'>
             <p>
               I’m a Brooklyn-based full-stack software engineer and designer{' '}
-              <span className='font-raleway text-xl lg:text-2xl font-bold lg:font-normal text-white'>
+              <span className='font-raleway text-xl lg:text-2xl font-extrabold'>
                 (sometimes)
               </span>{' '}
               with a passion for creating user-friendly, engaging, and intuitive
@@ -50,7 +50,7 @@ export default function HomePage() {
             <div className='text-center text-md mb-2 sm:mb-4 lg:mb-6 mt-4 sm:mt-6'>
               <button
                 type='button'
-                className='inline-flex items-center px-4 py-2 text-black bg-transparent border-t-2 border-b-2 border-pink-default hover:border-green-default hover:tracking-extra-wide'
+                className='inline-flex items-center px-4 py-2 text-black bg-transparent border-t-2 border-b-2 border-pinkDefault hover:border-greenDefault hover:tracking-extraWide'
               >
                 <div className='-ml-1 mr-3 -mt-1 sm:-mt-2 h-5 w-5 text-xl sm:text-2xl z-50 filter contrast-125 drop-shadow-xl'>
                   ✉️
