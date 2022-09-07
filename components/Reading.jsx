@@ -1,44 +1,27 @@
 export default function Reading() {
   const books = [
     {
-      bookName: 'Do You Mind If I Cancel?',
-      bookHref: 'https://www.amazon.com/Do-You-Mind-If-Cancel/dp/1250225825',
-      bookAuthor: 'Gary Janetti',
+      bookName: 'The Effective Engineer',
+      bookHref:
+        'https://www.amazon.com/Effective-Engineer-Engineering-Disproportionate-Meaningful/dp/0996128107/ref=sr_1_1?crid=2VDVNP5V07SMX&keywords=the+effective+engineer&qid=1662578648&sprefix=the+effecti%2Caps%2C77&sr=8-1',
+      bookAuthor: 'Edmond Lau',
     },
     {
-      bookName: 'To Kill a Mockingbird',
+      bookName: 'Vanderbilt: The Rise and Fall of an American Dynasty',
       bookHref:
-        'https://www.amazon.com/Kill-Mockingbird-50th-Anniversary/dp/0062420704/ref=sr_1_1?crid=SDDMU3JP5C5I&keywords=to+kill+a+mockingbird+hardcover&qid=1643986588&s=books&sprefix=to+kill+a+mock%2Cstripbooks%2C74&sr=1-1',
-      bookAuthor: 'Haper Lee',
-    },
-    {
-      bookName: 'The Cat Whisperer',
-      bookHref:
-        'https://www.amazon.com/Cat-Whisperer-Cats-What-Do/dp/0553807854/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1643986950&sr=1-1',
-      bookAuthor: 'Mieshelle Nagelschneider',
-    },
-    {
-      bookName: 'Everyday Zen',
-      bookHref:
-        'https://www.amazon.com/Everyday-Zen-Love-Work-Plus/dp/0061285897/ref=sr_1_2?crid=26P0EMT4A9AVZ&keywords=everyday+zen+by+charlotte+joko+beck&qid=1643986991&s=books&sprefix=everyday+z%2Cstripbooks%2C72&sr=1-2',
-      bookAuthor: 'Charlotte J. Beck',
-    },
-    {
-      bookName: 'Princess Margaret',
-      bookHref:
-        'https://www.amazon.com/Princess-Margaret-Contrasts-Christopher-Warwick/dp/0233005315/ref=sr_1_6?crid=1F9K96HV14NVO&keywords=princess+margaret&qid=1643987052&s=books&sprefix=princess+margaret%2Cstripbooks%2C65&sr=1-6',
-      bookAuthor: 'Christopher Warwick',
+        'https://www.amazon.com/Vanderbilt-Rise-Fall-American-Dynasty-ebook/dp/B08R3WD7WD/ref=sr_1_1?crid=M6YM4K0QBJ5K&keywords=vanderbilt+the+rise+and+fall+of+an+american+dynasty&qid=1662578731&sprefix=vanderbilt%2Caps%2C71&sr=8-1',
+      bookAuthor: 'Anderson Cooper + Katherine Howe',
     },
   ];
 
   return (
     <dt className='font-semibold '>
       Books
-      <div className=' font-normal py-2'>What I'm Reading This Year:</div>
+      <div className=' font-normal py-2'>What I'm currently reading</div>
       {books.map((book) => (
         <li
           key={book.id}
-          className=' hover:text-pinkDefault list-none list-outside even:text-greenDefault odd:text-pinkDefault font-semibold'
+          className='list-none list-outside even:text-greenDefault odd:text-pinkDefault font-semibold hover:text-xl'
         >
           <a href={book.bookHref} target='blank' className='italic'>
             {book.bookName}{' '}

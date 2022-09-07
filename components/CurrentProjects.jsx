@@ -1,33 +1,22 @@
 export default function CurrentProjects() {
   const projects = [
     {
-      projectName: 'This Website',
+      projectName: 'This website',
       projectRepoUrl: 'https://github.com/jessicagallagher/iamjessg',
-      projectUrl: 'https://www.iamjessg.com',
+      projectUrl: 'https://www.techmeowt.com',
       projectFramework: 'Next.js',
       projectCss: 'Tailwind CSS',
       hasDb: false,
       projectDb: '',
     },
     {
-      projectName: "Red2Blue's Database",
-      projectRepoUrl: 'https://github.com/jessicagallagher/red2blue-db',
+      projectName: 'Racecation app',
+      projectRepoUrl: 'https://github.com/jessicagallagher/racecation',
       projectUrl: '',
       projectFramework: 'Next.js',
       projectCss: 'Tailwind CSS',
       hasDb: true,
-      projectDb:
-        'It also uses Firebase for authentication along with MongoDB as its database.',
-    },
-    {
-      projectName: 'Marathon Training App',
-      projectRepoUrl:
-        'https://github.com/jessicagallagher/marathon-training-plan',
-      projectUrl: '',
-      projectFramework: 'Next.js',
-      projectCss: 'Tailwind CSS',
-      hasDb: true,
-      projectDb: 'It also uses Prisma ORM as its database.',
+      projectDb: 'It also uses Firebase for authentication and for its database',
     },
   ];
 
@@ -44,17 +33,16 @@ export default function CurrentProjects() {
   return (
     <dt className='font-semibold '>
       Current Projects
-      <div className=' font-normal py-2'>What I'm Working On:</div>
+      <div className='font-normal py-2'>What I'm working on for fun</div>
       {projects.map((project) => (
         <li
           key={project.id}
-          className=' list-none list-outside even:text-greenDefault odd:text-pinkDefault font-semibold'
+          className=' list-none list-outside even:text-greenDefault odd:text-pinkDefault hover:text-xl font-semibold'
         >
           <a href={project.projectRepoUrl} target='blank'>
-            {project.projectName}
-          </a>{' '}
-          which uses {project.projectFramework} and {project.projectCss}.{' '}
-          <p className='italic'>{project.projectDb}</p>
+            {project.projectName} which uses {project.projectFramework} and{' '}
+            {project.projectCss}. <p className='italic'>{project.projectDb}</p>
+          </a>
         </li>
       ))}
     </dt>

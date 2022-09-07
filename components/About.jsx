@@ -24,7 +24,9 @@ export default function About() {
           </div>
           <div className='font-bold mt-4 flex flex-col mx-auto lg:m-0'>
             <div className='text-center lg:text-left '>
-              <h1 className='text-3xl lg:mt-6'>Jessica Gallagher</h1>
+              <h1 className='text-3xl lg:mt-6'>
+                Jessica Gallagher, Founder + CTO
+              </h1>
               <h2 className='text-2xl'>Brooklyn, NY</h2>
             </div>
           </div>
@@ -34,26 +36,23 @@ export default function About() {
             <h1 className='text-2xl font-bold'>About</h1>
             <div className=' text-lg py-4'>
               <p>
-                Originally from South Louisiana, I have a B.S. in marketing from
-                LSU (Geaux Tigers!). Prior to software engineering, I worked as
-                a corporate communications consultant at Gartner in Washington,
-                D.C. and also at several early-stage startups in the Ed Tech
-                space in New York. Working in tech allowed me to work very
-                closely with the Software Engineers on my team—which inspired me
-                to learn how to code. I loved solving problems with technology,
-                and that motivated me to continue learning on my own and take
-                advantage of several volunteer opportunities that helped
-                strengthen my skills in not only website design and development,
-                but also in fundraising, nonprofit management, and gained board
-                experience. Like most people, my life changed during the
-                pandemic. I decided to take a huge leap of faith and completely
-                changed careers. I saw an opportunity to finally do what I
-                loved... and now we're here!
+                I'm a Brooklyn-based full-stack software engineer and designer{' '}
+                <span className=' text-xl lg:text-2xl font-semibold text-pinkDefault'>
+                  (sometimes)
+                </span>{' '}
+                with a passion for creating user-friendly, engaging, and
+                intuitive experiences. I enjoy creating applications that solve
+                real-world problems and day-to-day challenges. I like single
+                quotes and semi-colons—even when they play hide-and-seek. I have
+                an extensive background working with non-profits in different
+                capacities—including serving as a Board President. I understand
+                the technological challenges that non-profits face, including
+                the biggest one... tight budgets!
               </p>
             </div>
             <h1 className='text-2xl font-bold'>Interests + Hobbies</h1>
             <div className=' text-lg py-4'>
-              <ul className='grid grid-cols-1 sm:grid-cols-2 gap-y-6 font-semibold '>
+              <ul className='grid grid-cols-1 md:grid-cols-2 gap-y-6 font-semibold '>
                 <Running />
                 <Reading />
                 <Coding />

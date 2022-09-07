@@ -9,6 +9,7 @@ body {
   margin: 0;
   @apply bg-lightGrey;
   @apply font-raleway;
+  @apply text-softBlack;
 }
 
 a {

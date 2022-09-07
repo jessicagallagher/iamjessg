@@ -58,9 +58,9 @@ export default function NavBar() {
                     <Link href='/'>
                       <a className='flex flex-row items-center justify-center mt-2'>
                         <span className='mr-2'>
-                          <Image src={img} height={48} width={48}/>
+                          <Image src={img} height={48} width={48} />
                         </span>
-                        <h1 className=' font-thin text-3xl sm:text-2xl lg:text-5xl font-bold'>
+                        <h1 className='font-thin text-xl sm:text-2xl xl:text-4xl font-bold'>
                           &lt;Tech Meowt /&gt;
                         </h1>
                       </a>
@@ -68,13 +68,13 @@ export default function NavBar() {
                   </animated.div>
                 </div>
               </div>
-              <div className='hidden sm:ml-6 sm:flex sm:space-x-4 md:space-x-8'>
+              <div className='hidden md:ml-6 md:flex md:space-x-3 lg:space-x-6 xl:space-x-8'>
                 <Link href='/'>
                   <a
                     className={
                       router.pathname == '/'
-                        ? 'border-pinkDefault text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
-                        : 'border-transparent text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
+                        ? 'border-pinkDefault hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-base font-medium'
+                        : 'border-transparent hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-base font-medium'
                     }
                   >
                     Home
@@ -84,8 +84,8 @@ export default function NavBar() {
                   <a
                     className={
                       router.pathname == '/about'
-                        ? 'border-pinkDefault text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
-                        : 'border-transparent text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
+                        ? 'border-pinkDefault hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-base font-medium'
+                        : 'border-transparent hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-base font-medium'
                     }
                   >
                     About
@@ -95,20 +95,20 @@ export default function NavBar() {
                   <a
                     className={
                       router.pathname == '/portfolio'
-                        ? 'border-pinkDefault text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
-                        : 'border-transparent text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'
+                        ? 'border-pinkDefault hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-base font-medium'
+                        : 'border-transparent hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-base font-medium'
                     }
                   >
                     Portfolio
                   </a>
                 </Link>
                 <Link href='#'>
-                  <a className='border-transparent text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'>
+                  <a className='border-transparent hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-base font-medium'>
                     Thoughts
                   </a>
                 </Link>
                 <Link href='#'>
-                  <a className='border-transparent text-softBlack-900 hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-md font-medium'>
+                  <a className='border-transparent hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-base font-medium'>
                     Contact
                   </a>
                 </Link>
@@ -116,7 +116,7 @@ export default function NavBar() {
                   <a
                     target='_blank'
                     rel='noopener'
-                    className='inline-flex items-center pt-1 text-md'
+                    className='inline-flex items-center pt-1 text-base'
                   >
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
@@ -135,7 +135,7 @@ export default function NavBar() {
                   <a
                     target='_blank'
                     rel='noopener'
-                    className='inline-flex items-center pt-1 text-md'
+                    className='inline-flex items-center pt-1 text-base'
                   >
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
@@ -154,7 +154,7 @@ export default function NavBar() {
                   <a
                     target='_blank'
                     rel='noopener'
-                    className='inline-flex items-center pt-1 text-md'
+                    className='inline-flex items-center pt-1 text-base'
                   >
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
@@ -170,9 +170,9 @@ export default function NavBar() {
                   </a>
                 </Link>
               </div>
-              <div className='-mr-2 flex items-center sm:hidden'>
+              <div className='-mr-2 flex items-center md:hidden'>
                 {/* Mobile menu button */}
-                <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-softBlack-400 hover:text-softBlack-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-greenDefault'>
+                <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-greenDefault'>
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
                     <XMarkIcon className='block h-6 w-6' aria-hidden='true' />
@@ -184,14 +184,14 @@ export default function NavBar() {
             </div>
           </div>
           {/* begin mobile menu */}
-          <Disclosure.Panel className='sm:hidden'>
+          <Disclosure.Panel className='md:hidden'>
             <div className='pt-2 pb-3 space-y-1 ml-3'>
               <Link href='/'>
                 <a
                   className={
                     router.pathname == '/'
-                      ? 'border-pinkDefault text-softBlack-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
-                      : 'border-transparent text-softBlack-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
+                      ? 'border-pinkDefault block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
+                      : 'border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
                   }
                 >
                   Home
@@ -201,8 +201,8 @@ export default function NavBar() {
                 <a
                   className={
                     router.pathname == '/about'
-                      ? 'border-pinkDefault text-softBlack-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
-                      : 'border-transparent text-softBlack-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
+                      ? 'border-pinkDefault block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
+                      : 'border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
                   }
                 >
                   About
@@ -212,20 +212,20 @@ export default function NavBar() {
                 <a
                   className={
                     router.pathname == '/portfolio'
-                      ? 'border-pinkDefault text-softBlack-900 block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
-                      : 'border-transparent text-softBlack-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'
+                      ? 'border-pinkDefault block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
+                      : 'border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
                   }
                 >
                   Portfolio
                 </a>
               </Link>
               <Link href='#'>
-                <a className='border-transparent text-softBlack-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'>
+                <a className='border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
                   Thoughts
                 </a>
               </Link>
               <Link href='#'>
-                <a className='border-transparent text-softBlack-900 hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-md font-medium'>
+                <a className='border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
                   Contact
                 </a>
               </Link>

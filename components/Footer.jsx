@@ -58,9 +58,7 @@ export default function Footer() {
           {navigation.main.map((item) => (
             <div key={item.name} className='px-5 py-2'>
               <Link href={item.href}>
-                <a className=' text-softBlack-900 hover:text-greenDefault'>
-                  {item.name}
-                </a>
+                <a className=' -900 hover:text-greenDefault'>{item.name}</a>
               </Link>
             </div>
           ))}
@@ -71,7 +69,7 @@ export default function Footer() {
               <a
                 target='_blank'
                 rel='noopener'
-                className=' text-softBlack-900 hover:text-greenDefault'
+                className=' -900 hover:text-greenDefault'
               >
                 <span className='sr-only'>{item.name}</span>
                 <item.icon className='h-6 w-6' aria-hidden='true' />
@@ -79,7 +77,7 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-        <p className='mt-8 text-center  text-softBlack-900'>
+        <p className='mt-8 text-center  -900'>
           &copy; {date} Tech Meowt, LLC. All rights reserved.
         </p>
       </div>
