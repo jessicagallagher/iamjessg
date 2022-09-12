@@ -1,7 +1,5 @@
-import Running from './Running';
-import Reading from './Reading';
-import Coding from './CurrentProjects';
-import Cats from './Cats';
+import { Cats, Running, Reading, CurrentProjects } from '../components'
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -28,6 +26,11 @@ export default function About() {
                 Jessica Gallagher, Founder + CTO
               </h1>
               <h2 className='text-2xl'>Brooklyn, NY</h2>
+              <Link href='/portfolio'>
+                <a>
+                  <h3 className='text-pinkDefault mt-1'>View Portfolio</h3>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -55,7 +58,7 @@ export default function About() {
               <ul className='grid grid-cols-1 md:grid-cols-2 gap-y-6 font-semibold '>
                 <Running />
                 <Reading />
-                <Coding />
+                <CurrentProjects />
                 <Cats />
               </ul>
             </div>

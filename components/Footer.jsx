@@ -1,14 +1,17 @@
+import img from '../public/favicon.png';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Footer() {
   const navigation = {
     main: [
       { name: 'Home', href: '/' },
       { name: 'About', href: '/about' },
-      // { name: 'Portfolio', href: '#' },
-      // { name: 'Thoughts', href: '#' },
-      // { name: 'Contact', href: '#' },
+      { name: 'Our Work', href: '#' },
+      { name: 'Portfolio', href: '/portfolio' },
+      { name: 'Thoughts', href: '#' },
+      { name: 'Contact', href: 'mailto:hello@techmeowt.com' },
     ],
     social: [
       {
@@ -58,7 +61,7 @@ export default function Footer() {
           {navigation.main.map((item) => (
             <div key={item.name} className='px-5 py-2'>
               <Link href={item.href}>
-                <a className=' -900 hover:text-greenDefault'>{item.name}</a>
+                <a className=' hover:text-greenDefault'>{item.name}</a>
               </Link>
             </div>
           ))}
@@ -69,7 +72,7 @@ export default function Footer() {
               <a
                 target='_blank'
                 rel='noopener'
-                className=' -900 hover:text-greenDefault'
+                className=' hover:text-greenDefault'
               >
                 <span className='sr-only'>{item.name}</span>
                 <item.icon className='h-6 w-6' aria-hidden='true' />
@@ -77,7 +80,16 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-        <p className='mt-8 text-center  -900'>
+        <div className='flex flex-row items-center justify-center mt-2 text-center'>
+          <span className='mr-2 hidden'>
+            <Image src={img} height={48} width={48} />
+          </span>
+          <h3 className='text-sm sm:text-lg font-bold text-greenDefault'>
+            &lt;Tech Meowt /&gt; | Brooklyn, NY |{' '}
+            <a href='mailto:hello@techmeowt.com'>hello@techmeowt.com</a>
+          </h3>
+        </div>
+        <p className='text-center mt-2'>
           &copy; {date} Tech Meowt, LLC. All rights reserved.
         </p>
       </div>
