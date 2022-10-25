@@ -118,7 +118,7 @@ export default function NavBar() {
               <div className='hidden md:ml-6 md:flex md:space-x-3 lg:space-x-6 xl:space-x-8'>
                 {navigation.main.map((item) => (
                   <div
-                    key={item.name}
+                    key={item.href}
                     className='hidden md:ml-6 md:flex md:space-x-3 lg:space-x-6 xl:space-x-8'
                   >
                     <Link href={item.href}>

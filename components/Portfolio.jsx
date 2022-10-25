@@ -11,23 +11,23 @@ export default function Portfolio() {
       imageUrl: '/images/portfolio-images/tech-meowt.png',
       techUsed: 'Next.js + Tailwind CSS',
       projectUrl: 'https://www.techmeowt.com',
-      pageUrl: '/portfolio/tech-meowt',
+      pageUrl: 'www.techmeowt.com',
       projectGitHubUrl: 'https://github.com/jessicagallagher/iamjessg',
     },
     {
-      projectName: 'Database Management System',
-      imageUrl: '/images/portfolio-images/racecation.png',
+      projectName: 'Database Management System *Demo Coming Soon!',
+      imageUrl: '/images/portfolio-images/database-management-system.gif',
       techUsed:
-        'React, MongoDB, Express, Node, Prisma ORM, Bootstrap, Reactstrap',
+        'React, MongoDB, Express, Node, Prisma ORM, Bootstrap, + Reactstrap',
       projectUrl: '#',
       pageUrl: '/portfolio',
-      projectGitHubUrl: 'https://github.com/jessicagallagher/racecation',
+      projectGitHubUrl: '#',
     },
     {
       projectName: 'Racecation (Work in progress)',
       imageUrl: '/images/portfolio-images/racecation.png',
       techUsed:
-        'Next.js, Tailwind CSS, Firebase Authentication + Firebase Firestore',
+        'Next.js, Tailwind CSS, Firebase Authentication, + Firebase Firestore',
       projectUrl: '#',
       pageUrl: '/portfolio',
       projectGitHubUrl: 'https://github.com/jessicagallagher/racecation',
@@ -42,27 +42,11 @@ export default function Portfolio() {
     },
     {
       projectName: 'Where To?',
-      imageUrl: '/images/wiz-max.jpg',
-      techUsed: 'Role',
-      projectUrl: '#',
+      imageUrl: '/images/portfolio-images/where-to.gif',
+      techUsed: 'Next.js, Tailwind CSS, Firebase Authentication, + Firebase Firestore',
+      projectUrl: 'https://where-to.vercel.app/',
       pageUrl: '/portfolio',
-      projectGitHubUrl: '#',
-    },
-    {
-      projectName: 'Born Dancing',
-      imageUrl: '/images/wiz-max.jpg',
-      techUsed: 'Role',
-      projectUrl: '#',
-      pageUrl: '/portfolio',
-      projectGitHubUrl: '#',
-    },
-    {
-      projectName: 'Project NIA',
-      imageUrl: '/images/wiz-max.jpg',
-      techUsed: 'Role',
-      projectUrl: '#',
-      pageUrl: '/portfolio',
-      projectGitHubUrl: '#',
+      projectGitHubUrl: 'https://github.com/jessicagallagher/where_to_v2',
     },
   ];
 
@@ -108,6 +92,7 @@ export default function Portfolio() {
                   </div>
                   <ul role='list' className='flex space-x-3 items-center'>
                     <li>
+                      {project.projectGitHubUrl !== '#' ? (
                       <Link href={project.projectGitHubUrl}>
                         <a>
                           <span className='sr-only'>
@@ -121,6 +106,8 @@ export default function Portfolio() {
                           />
                         </a>
                       </Link>
+                      ) : ''}
+                      
                     </li>
                     <li>
                       {project.projectUrl !== '#' ? (

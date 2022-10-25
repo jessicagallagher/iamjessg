@@ -1,8 +1,13 @@
 export default function Running() {
   const running = [
     {
-      raceName: 'The Berlin Marathon',
-      raceHref: 'https://www.bmw-berlin-marathon.com/en/',
+      raceName: 'The Brooklyn Marathon',
+      raceHref:
+        'https://nycruns.com/race/nycruns-brooklyn-marathon-half-marathon',
+    },
+    {
+      raceName: 'The Chicago Marathon',
+      raceHref: 'https://www.chicagomarathon.com/',
     },
   ];
 
