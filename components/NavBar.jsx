@@ -188,7 +188,7 @@ export default function NavBar() {
                   About
                 </a>
               </Link>
-              <Link href='#'>
+              {/* <Link href='#'>
                 <a
                   className={
                     router.pathname == '#'
@@ -198,7 +198,7 @@ export default function NavBar() {
                 >
                   Our Work
                 </a>
-              </Link>
+              </Link> */}
               <Link href='/portfolio'>
                 <a
                   className={
@@ -210,7 +210,7 @@ export default function NavBar() {
                   Portfolio
                 </a>
               </Link>
-              <Link href='#'>
+              {/* <Link href='#'>
                 <a className='border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
                   Thoughts
                 </a>
@@ -219,7 +219,7 @@ export default function NavBar() {
                 <a className='border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
                   Contact
                 </a>
-              </Link>
+              </Link> */}
             </div>
           </Disclosure.Panel>
         </>
