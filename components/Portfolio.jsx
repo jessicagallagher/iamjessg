@@ -10,8 +10,8 @@ export default function Portfolio() {
       projectName: 'Tech Meowt',
       imageUrl: '/images/portfolio-images/tech-meowt.png',
       techUsed: 'Next.js + Tailwind CSS',
-      projectUrl: 'https://www.techmeowt.com',
-      pageUrl: 'www.techmeowt.com',
+      projectUrl: 'https://techmeowt.com',
+      pageUrl: '/portfolio',
       projectGitHubUrl: 'https://github.com/jessicagallagher/iamjessg',
     },
     {

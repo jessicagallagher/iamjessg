@@ -29,10 +29,10 @@ export default function NavBar() {
     main: [
       { name: 'Home', href: '/' },
       { name: 'About', href: '/about' },
-      { name: 'Our Work', href: '#' },
+      // { name: 'Our Work', href: '#' },
       { name: 'Portfolio', href: '/portfolio' },
-      { name: 'Thoughts', href: '#' },
-      { name: 'Contact', href: '#' },
+      // { name: 'Thoughts', href: '#' },
+      // { name: 'Contact', href: '#' },
     ],
     social: [
       {
