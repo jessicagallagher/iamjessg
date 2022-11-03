@@ -1,4 +1,4 @@
-import { Cats, Running, Reading, CurrentProjects } from '../components'
+import { Cats, Running, Reading, CurrentProjects } from '../components';
 import Link from 'next/link';
 
 export default function About() {
@@ -26,7 +26,7 @@ export default function About() {
                 Jessica Gallagher, Founder + CTO
               </h1>
               <h2 className='text-2xl'>Brooklyn, NY</h2>
-              <Link href='/portfolio'>
+              <Link legacyBehavior href='/portfolio'>
                 <a>
                   <h3 className='text-pinkDefault mt-1'>View Portfolio</h3>
                 </a>

@@ -1,6 +1,6 @@
-import img from '../public/images/github-logo.png'
-import webImg from '../public/images/website.png'
-import constructionImg from '../public/images/under-construction.png'
+import img from '../public/images/github-logo.png';
+import webImg from '../public/images/website.png';
+import constructionImg from '../public/images/under-construction.png';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -43,7 +43,8 @@ export default function Portfolio() {
     {
       projectName: 'Where To?',
       imageUrl: '/images/portfolio-images/where-to.gif',
-      techUsed: 'Next.js, Tailwind CSS, Firebase Authentication, + Firebase Firestore',
+      techUsed:
+        'Next.js, Tailwind CSS, Firebase Authentication, + Firebase Firestore',
       projectUrl: 'https://where-to.vercel.app/',
       pageUrl: '/portfolio',
       projectGitHubUrl: 'https://github.com/jessicagallagher/where_to_v2',
@@ -65,7 +66,7 @@ export default function Portfolio() {
           {projects.map((project) => (
             <li key={project.projectName}>
               <div className='space-y-4'>
-                <Link href={project.pageUrl}>
+                <Link legacyBehavior href={project.pageUrl}>
                   <a target='_blank' rel='noopener'>
                     <div className='aspect-w-3 aspect-h-2'>
                       <img
@@ -79,7 +80,7 @@ export default function Portfolio() {
 
                 <div className='space-y-2'>
                   <div className='space-y-1 font-medium leading-6'>
-                    <Link href={project.projectUrl}>
+                    <Link legacyBehavior href={project.projectUrl}>
                       <a
                         className='hover:text-greenDefault'
                         target='_blank'
@@ -93,25 +94,26 @@ export default function Portfolio() {
                   <ul role='list' className='flex space-x-3 items-center'>
                     <li>
                       {project.projectGitHubUrl !== '#' ? (
-                      <Link href={project.projectGitHubUrl}>
-                        <a>
-                          <span className='sr-only'>
-                            Project GitHub Repository
-                          </span>
-                          <Image
-                            src={img}
-                            width={25}
-                            height={25}
-                            aria-hidden='true'
-                          />
-                        </a>
-                      </Link>
-                      ) : ''}
-                      
+                        <Link legacyBehavior href={project.projectGitHubUrl}>
+                          <a>
+                            <span className='sr-only'>
+                              Project GitHub Repository
+                            </span>
+                            <Image
+                              src={img}
+                              width={25}
+                              height={25}
+                              aria-hidden='true'
+                            />
+                          </a>
+                        </Link>
+                      ) : (
+                        ''
+                      )}
                     </li>
                     <li>
                       {project.projectUrl !== '#' ? (
-                        <Link href={project.projectUrl}>
+                        <Link legacyBehavior href={project.projectUrl}>
                           <a target='_blank' rel='noopener'>
                             <span className='sr-only'>
                               Link to live project

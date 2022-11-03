@@ -24,7 +24,7 @@ export default function NavBar() {
   const router = useRouter();
   const ref = useRef(null);
   const [xys, set] = useState([0, 0, 1]);
-  
+
   const navigation = {
     main: [
       { name: 'Home', href: '/' },
@@ -67,7 +67,7 @@ export default function NavBar() {
 
   const inactiveClass =
     'border-transparent hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-base font-medium';
-  
+
   const activeClass =
     'border-pinkDefault hover:border-pinkLight inline-flex items-center pt-1 border-b-2 text-base font-medium';
 
@@ -101,7 +101,7 @@ export default function NavBar() {
                       set(calc(e.clientX, e.clientY, rect));
                     }}
                   >
-                    <Link href='/'>
+                    <Link legacyBehavior href='/'>
                       <a className='flex flex-row items-center justify-center mt-2'>
                         <span className='mr-2'>
                           <Image src={img} height={48} width={48} />
@@ -121,7 +121,7 @@ export default function NavBar() {
                     key={item.href}
                     className='hidden md:ml-6 md:flex md:space-x-3 lg:space-x-6 xl:space-x-8'
                   >
-                    <Link href={item.href}>
+                    <Link legacyBehavior href={item.href}>
                       <a
                         className={
                           router.pathname == item.href
@@ -137,7 +137,7 @@ export default function NavBar() {
 
                 {navigation.social.map((item) => (
                   <div className='mt-4'>
-                    <Link href={item.href} key={item.name}>
+                    <Link legacyBehavior href={item.href} key={item.name}>
                       <a
                         target='_blank'
                         rel='noopener'
@@ -166,7 +166,7 @@ export default function NavBar() {
           {/* begin mobile menu */}
           <Disclosure.Panel className='md:hidden'>
             <div className='pt-2 pb-3 space-y-1 ml-3'>
-              <Link href='/'>
+              <Link legacyBehavior href='/'>
                 <a
                   className={
                     router.pathname == '/'
@@ -177,7 +177,7 @@ export default function NavBar() {
                   Home
                 </a>
               </Link>
-              <Link href='/about'>
+              <Link legacyBehavior href='/about'>
                 <a
                   className={
                     router.pathname == '/about'
@@ -188,7 +188,7 @@ export default function NavBar() {
                   About
                 </a>
               </Link>
-              {/* <Link href='#'>
+              {/* <Link legacyBehavior href='#'>
                 <a
                   className={
                     router.pathname == '#'
@@ -199,7 +199,7 @@ export default function NavBar() {
                   Our Work
                 </a>
               </Link> */}
-              <Link href='/portfolio'>
+              <Link legacyBehavior href='/portfolio'>
                 <a
                   className={
                     router.pathname == '/portfolio'
@@ -210,12 +210,12 @@ export default function NavBar() {
                   Portfolio
                 </a>
               </Link>
-              {/* <Link href='#'>
+              {/* <Link legacyBehavior href='#'>
                 <a className='border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
                   Thoughts
                 </a>
               </Link>
-              <Link href='mailto:hello@techmeowt.com'>
+              <Link legacyBehavior href='mailto:hello@techmeowt.com'>
                 <a className='border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
                   Contact
                 </a>

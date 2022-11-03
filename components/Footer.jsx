@@ -60,7 +60,7 @@ export default function Footer() {
         >
           {navigation.main.map((item) => (
             <div key={item.name} className='px-5 py-2'>
-              <Link href={item.href}>
+              <Link legacyBehavior href={item.href}>
                 <a className=' hover:text-greenDefault'>{item.name}</a>
               </Link>
             </div>
@@ -68,7 +68,7 @@ export default function Footer() {
         </nav>
         <div className='mt-8 flex justify-center space-x-6'>
           {navigation.social.map((item) => (
-            <Link key={item.name} href={item.href}>
+            <Link legacyBehavior key={item.name} href={item.href}>
               <a
                 target='_blank'
                 rel='noopener'
