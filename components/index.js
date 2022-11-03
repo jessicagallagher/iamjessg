@@ -8,6 +8,8 @@ import HeadTag from './HeadTag'
 import HomePage from './HomePage'
 import NavBar from './NavBar'
 import Portfolio from './Portfolio'
+import BlogHome from './BlogHome'
+import AddPost from './AddPost'
 
 export {
   Cats,
@@ -20,4 +22,6 @@ export {
   HomePage,
   NavBar,
   Portfolio,
+  BlogHome,
+  AddPost
 }

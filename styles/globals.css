@@ -37,6 +37,18 @@ hr {
   );
 }
 
+.hr {
+  height: 2px;
+  width: 75%;
+  border-radius: 100px 50px;
+  background: rgb(3, 255, 200);
+  background: linear-gradient(
+    90deg,
+    rgba(3, 255, 200, 1) 15%,
+    rgba(28, 211, 162, 1) 49%,
+    rgba(3, 255, 200, 1) 85%
+  );
+}
 .about-nav {
   background: #ffb6ce;
   border-radius: 6px;

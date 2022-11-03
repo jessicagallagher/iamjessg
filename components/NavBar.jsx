@@ -31,7 +31,7 @@ export default function NavBar() {
       { name: 'About', href: '/about' },
       // { name: 'Our Work', href: '#' },
       { name: 'Portfolio', href: '/portfolio' },
-      // { name: 'Thoughts', href: '#' },
+      { name: 'Blog', href: '/blog' },
       // { name: 'Contact', href: '#' },
     ],
     social: [
@@ -210,12 +210,12 @@ export default function NavBar() {
                   Portfolio
                 </a>
               </Link>
-              {/* <Link legacyBehavior href='#'>
+              <Link legacyBehavior href='/blog'>
                 <a className='border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
-                  Thoughts
+                  Blog
                 </a>
               </Link>
-              <Link legacyBehavior href='mailto:hello@techmeowt.com'>
+              {/* <Link legacyBehavior href='mailto:hello@techmeowt.com'>
                 <a className='border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
                   Contact
                 </a>

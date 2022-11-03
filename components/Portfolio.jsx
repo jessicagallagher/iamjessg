@@ -55,7 +55,7 @@ export default function Portfolio() {
     <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 lg:px-10 xl:px-48'>
       <div className='space-y-12 p-2 lg:p-0'>
         <div className='space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none'>
-          <h2 className='text-3xl font-thin tracking-tight sm:text-4xl'>
+          <h2 className='text-2xl font-thin tracking-tight sm:text-4xl'>
             Current + Past Projects
           </h2>
         </div>
@@ -72,7 +72,7 @@ export default function Portfolio() {
                       <img
                         className='rounded-lg object-cover shadow-lg border border-pinkDefault hover:shadow-2xl hover:border-greenDefault'
                         src={project.imageUrl}
-                        alt='screenshot of project'
+                        alt={`Screenshot of project: ${project.projectName}`}
                       />
                     </div>
                   </a>

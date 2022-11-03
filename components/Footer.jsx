@@ -10,7 +10,7 @@ export default function Footer() {
       { name: 'About', href: '/about' },
       // { name: 'Our Work', href: '#' },
       { name: 'Portfolio', href: '/portfolio' },
-      // { name: 'Thoughts', href: '#' },
+      { name: 'Blog', href: '#' },
       // { name: 'Contact', href: 'mailto:hello@techmeowt.com' },
     ],
     social: [
