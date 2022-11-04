@@ -14,19 +14,49 @@ export default function AddPost() {
   const [postTitle, setPostTitle] = useState('');
   const [postCategory, setPostCategory] = useState('');
   const [postDate, setPostDate] = useState();
-  const [postReadingTime, setPostReadingTime] = useState('');
+  const [postReadingTime, setPostReadingTime] = useState('')
   const [postTeaser, setPostTeaser] = useState('');
+  const [postContent, setPostContent] = useState('');
 
+  const modules = {
+    toolbar: [
+      [{ font: [] }],
+      [{ header: [1, 2, 3, 4, 5, 6, false] }],
+      [{ color: [] }, { background: [] }],
+      ['bold', 'italic', 'underline', 'strike'],
+      ['blockquote', 'code-block'],
+      [{ list: 'ordered' }, { list: 'bullet' }],
+      [{ script: 'sub' }, { script: 'super' }],
+      [{ indent: '-1' }, { indent: '+1' }, { align: [] }],
+      [{ direction: 'rtl' }],
+      ['link', 'image', 'video'],
+      ['clean'],
+    ],
+  };
+
+  const saveContent = (value) => {
+    setPostContent(value);
+  };
+  
   const savePost = (e) => {
     e.preventDefault()
 
     addDoc(dbInstance, {
       postTitle: postTitle,
       postCategory: postCategory,
-      postDate: postDate,
-      postReadingTime: postReadingTime,
-      postTeaser: postTeaser
-    });
+      postDate: new Date(date.toDateString()),
+      postReadingTime: `${postReadingTime} minutes`,
+      postTeaser: postTeaser,
+      postContent: postContent
+    })
+      .then(() => {
+        setPostTitle('');
+        setPostCategory('')
+        setPostDate(new Date())
+        setPostReadingTime('')
+        setPostTeaser('')
+        setPostContent('')
+    })
   }
 
   return (
@@ -36,8 +66,8 @@ export default function AddPost() {
           Add new post
         </h2>
       </div>
-      <form className='space-y-8 divide-y divide-gray-200' onSubmit={savePost}>
-        <div className='space-y-8 divide-y divide-gray-200'>
+      <form className='space-y-8' onSubmit={savePost}>
+        <div className='space-y-8'>
           <div className='my-10 flex justify-center gap-x-8'>
             <div className='w-64'>
               <label
@@ -80,20 +110,26 @@ export default function AddPost() {
               </div>
             </div>
 
-            <div className='w-28'>
+            <div className='w-64'>
               <label
-                htmlFor='country'
+                htmlFor='region'
                 className='block text-base font-bold text-gray-700'
               >
                 Date
               </label>
               <div className='mt-1'>
-                <DatePicker
-                  selected={date}
-                  onChange={(date) => setPostDate(date)}
-                  allowSameDay={true}
-                  value={postDate}
-                  className='block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm'
+                <input
+                  type='text'
+                  name='postDate'
+                  id='postDate'
+                  className='block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-gray-400'
+                  value={new Date()
+                    .toDateString()
+                    .split(' ')
+                    .slice(1)
+                    .join(' ')
+                    .replace(/(?<=\d) /, ', ')}
+                  disabled
                 />
               </div>
             </div>
@@ -164,7 +200,13 @@ export default function AddPost() {
         </div>
       </form>
       <div className='flex justify-center m-10'>
-        <ReactQuill className='w-full h-96' />
+        <ReactQuill
+          className='w-full h-96'
+          modules={modules}
+          theme='snow'
+          onChange={saveContent}
+          value={postContent}
+        />
       </div>
     </div>
   );
