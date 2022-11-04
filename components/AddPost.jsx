@@ -44,15 +44,20 @@ export default function AddPost() {
     addDoc(dbInstance, {
       postTitle: postTitle,
       postCategory: postCategory,
-      postDate: new Date(date.toDateString()),
-      postReadingTime: `${postReadingTime} minutes`,
+      postDate: new Date()
+      .toDateString()
+      .split(' ')
+      .slice(1)
+      .join(' ')
+      .replace(/(?<=\d) /, ', '),
+      postReadingTime: `${postReadingTime} min`,
       postTeaser: postTeaser,
       postContent: postContent
     })
       .then(() => {
         setPostTitle('');
         setPostCategory('')
-        setPostDate(new Date())
+        setPostDate('')
         setPostReadingTime('')
         setPostTeaser('')
         setPostContent('')
@@ -107,30 +112,6 @@ export default function AddPost() {
                   <option>Cat2</option>
                   <option>Cat3</option>
                 </select>
-              </div>
-            </div>
-
-            <div className='w-64'>
-              <label
-                htmlFor='region'
-                className='block text-base font-bold text-gray-700'
-              >
-                Date
-              </label>
-              <div className='mt-1'>
-                <input
-                  type='text'
-                  name='postDate'
-                  id='postDate'
-                  className='block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-gray-400'
-                  value={new Date()
-                    .toDateString()
-                    .split(' ')
-                    .slice(1)
-                    .join(' ')
-                    .replace(/(?<=\d) /, ', ')}
-                  disabled
-                />
               </div>
             </div>
 

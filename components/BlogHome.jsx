@@ -6,6 +6,7 @@ const dbInstance = collection(database, 'posts');
 
 export default function BlogHome() {
   const [posts, setPosts] = useState([])
+  const [categoryColor, setCategoryColor] = useState('')
 
   useEffect(() => {
     getPosts();
@@ -21,58 +22,52 @@ export default function BlogHome() {
   };
 
   return (
-    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 lg:px-10 xl:px-48'>
-        <div className='space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none mx-auto text-center'>
-          <h2 className='text-2xl font-thin tracking-tight sm:text-4xl'>
-            Blog
-          </h2>
-          <p className='mt-3 text-base md:text-lg lg:text-xl sm:mt-4'>
-            Keep up with our latest news, products, + thoughts on technology.
-          </p>
+    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 px-2 sm:px-10 xl:px-48'>
+      <div className='space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none mx-auto text-center'>
+        <h2 className='text-2xl font-thin tracking-tight sm:text-4xl'>Blog</h2>
+        <p className='mt-3 text-base sm:text-lg lg:text-xl sm:mt-4'>
+          Keep up with our latest news, products, + thoughts on technology.
+        </p>
       </div>
       <div className='hr mx-auto my-8'></div>
-        <div className='mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12'>
-          {posts.map((post) => (
-            <div key={post.postTitle}>
-              {/* <div>
-                <a href={post.category.href} className='inline-block'>
-                  <span
-                  >
-                    {post.category.name}
-                  </span>
-                </a>
-              </div> */}
-              <div className='mt-4 block'>
-                <p className='text-xl font-semibold text-gray-900'>
-                  {post.postTitle}
-                </p>
-              </div>
-              {/* <div className='mt-6 flex items-center'>
-                <div className='flex-shrink-0'>
-                  <a href={post.author.href}>
-                    <span className='sr-only'>{post.author.name}</span>
-                    <img
-                      className='h-10 w-10 rounded-full'
-                      src={post.author.imageUrl}
-                      alt=''
-                    />
-                  </a>
-                </div>
-                <div className='ml-3'>
-                  <p className='text-sm font-medium text-gray-900'>
-                    <a href={post.author.href}>{post.author.name}</a>
-                  </p>
-                  <div className='flex space-x-1 text-sm text-gray-500'>
-                    <time dateTime={post.datetime}>{post.date}</time>
-                    <span aria-hidden='true'>&middot;</span>
-                    <span>{post.readingTime} read</span>
+      <div className='grid gap-16 pt-4 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12 sm:text-center lg:text-left'>
+        {posts.map((post) => (
+          <div key={post.postTitle}>
+            <div>
+              <span
+                className={`inline-flex items-center px-3 py-0.5 rounded-full font-bold ${
+                  post.postCategory === 'Cat1'
+                    ? 'green-category'
+                    : post.postCategory === 'Cat2'
+                    ? 'pink-category'
+                    : post.postCategory === 'Cat3'
+                    ? 'blue-category'
+                    : ''
+                } `}
+              >
+                {post.postCategory}
+              </span>
+            </div>
+            <div className='mt-4 block'>
+              <p className='text-lg font-semibold'>
+                {post.postTitle}
+              </p>
+            </div>
+            <div className='mt-4 block'>
+              <p className='text-base'>
+                {post.postTeaser}
+              </p>
+            </div>
+            <div className='mt-6 flex items-center'>
+                <div className='sm:mx-auto lg:mx-0'>
+                  <div className='flex space-x-1 text-xs text-gray-500'>
+                    {post.postDate} &middot; {post.postReadingTime} read
                   </div>
                 </div>
-              </div> */}
-            </div>
-          ))}
-        </div>
-      
+              </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
