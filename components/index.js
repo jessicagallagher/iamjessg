@@ -13,6 +13,9 @@ import AddPost from './AddPost'
 import OurWork from './OurWork'
 import MockWebsiteHome from './MockWebsiteHome'
 import Button from './Button'
+import MockWebsiteNav from './MockWebsiteNav'
+import MockWebsiteFooter from './MockWebsiteFooter'
+import MockWebsiteAbout from './MockWebsiteAbout'
 
 export {
   Cats,
@@ -29,5 +32,8 @@ export {
   AddPost,
   OurWork,
   MockWebsiteHome,
-  Button
+  Button,
+  MockWebsiteNav,
+  MockWebsiteFooter,
+  MockWebsiteAbout
 }
