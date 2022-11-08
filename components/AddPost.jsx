@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import DatePicker from 'react-datepicker'
-import 'react-datepicker/dist/react-datepicker.css';
 import dynamic from 'next/dynamic';
 import { app, database } from '../firebase/firebaseConfig';
 import { collection, addDoc } from 'firebase/firestore'
@@ -16,6 +14,7 @@ export default function AddPost() {
   const [postDate, setPostDate] = useState();
   const [postReadingTime, setPostReadingTime] = useState('')
   const [postTeaser, setPostTeaser] = useState('');
+  const [postTeaserImg, setPostTeaserImg] = useState('');
   const [postContent, setPostContent] = useState('');
 
   const modules = {
@@ -52,6 +51,7 @@ export default function AddPost() {
       .replace(/(?<=\d) /, ', '),
       postReadingTime: `${postReadingTime} min`,
       postTeaser: postTeaser,
+      postTeaserImg: postTeaserImg,
       postContent: postContent
     })
       .then(() => {
@@ -60,6 +60,7 @@ export default function AddPost() {
         setPostDate('')
         setPostReadingTime('')
         setPostTeaser('')
+        setPostTeaserImg('')
         setPostContent('')
     })
   }
@@ -159,6 +160,24 @@ export default function AddPost() {
                   value={postTeaser}
                 />
               </div>
+            </div>
+          </div>
+          <div className='my-10 flex justify-center gap-x-8'>
+            <div>
+              <label
+                htmlFor='region'
+                className='block text-base font-bold text-gray-700'
+              >
+                Teaser Image
+              </label>
+              <div className='mt-1'>
+                <button className='rounded-md border border-gray-300 bg-white py-2 px-4 text-base font-bold text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'>
+                  Upload Image
+                </button>
+              </div>
+            </div>
+            <div>
+              Image Here
             </div>
           </div>
         </div>

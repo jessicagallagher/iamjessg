@@ -8,9 +8,9 @@ export default function Footer() {
     main: [
       { name: 'Home', href: '/' },
       { name: 'About', href: '/about' },
-      // { name: 'Our Work', href: '#' },
+      { name: 'Our Work', href: '/our-work' },
       { name: 'Portfolio', href: '/portfolio' },
-      { name: 'Blog', href: '#' },
+      { name: 'Blog', href: '/blog' },
       // { name: 'Contact', href: 'mailto:hello@techmeowt.com' },
     ],
     social: [

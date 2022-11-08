@@ -29,7 +29,7 @@ export default function NavBar() {
     main: [
       { name: 'Home', href: '/' },
       { name: 'About', href: '/about' },
-      // { name: 'Our Work', href: '#' },
+      { name: 'Our Work', href: '/our-work' },
       { name: 'Portfolio', href: '/portfolio' },
       { name: 'Blog', href: '/blog' },
       // { name: 'Contact', href: '#' },
@@ -188,17 +188,17 @@ export default function NavBar() {
                   About
                 </a>
               </Link>
-              {/* <Link legacyBehavior href='#'>
+              <Link legacyBehavior href='/our-work'>
                 <a
                   className={
-                    router.pathname == '#'
+                    router.pathname == '/our-work'
                       ? 'border-pinkDefault block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
                       : 'border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
                   }
                 >
                   Our Work
                 </a>
-              </Link> */}
+              </Link>
               <Link legacyBehavior href='/portfolio'>
                 <a
                   className={
@@ -211,7 +211,13 @@ export default function NavBar() {
                 </a>
               </Link>
               <Link legacyBehavior href='/blog'>
-                <a className='border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
+                <a
+                  className={
+                    router.pathname == '/blog'
+                      ? 'border-pinkDefault block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
+                      : 'border-transparent hover:border-pinkLight block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
+                  }
+                >
                   Blog
                 </a>
               </Link>

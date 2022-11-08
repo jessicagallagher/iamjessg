@@ -10,6 +10,9 @@ import NavBar from './NavBar'
 import Portfolio from './Portfolio'
 import BlogHome from './BlogHome'
 import AddPost from './AddPost'
+import OurWork from './OurWork'
+import MockWebsiteHome from './MockWebsiteHome'
+import Button from './Button'
 
 export {
   Cats,
@@ -23,5 +26,8 @@ export {
   NavBar,
   Portfolio,
   BlogHome,
-  AddPost
+  AddPost,
+  OurWork,
+  MockWebsiteHome,
+  Button
 }
