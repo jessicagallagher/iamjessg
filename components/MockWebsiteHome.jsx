@@ -203,7 +203,7 @@ export default function MockWebsite() {
       </div>
 
       {/* newsletter signup */}
-      <div className='mx-auto px-10 mt-10 py-12 lg:flex lg:items-center lg:py-32 bg-indigo-500'>
+      <div className='mx-auto px-10 mt-10 py-12 lg:flex lg:items-center lg:py-28 bg-indigo-500'>
         <div className='lg:w-0 lg:flex-1 text-white'>
           <h1 className='text-3xl md:text-4xl font-bold tracking-tight'>
             Sign up for our newsletter
