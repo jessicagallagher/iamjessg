@@ -1,12 +1,12 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
-import img from '../public/favicon.png';
-import bklynBridge from '../public/images/mock-website-images/bklyn-bridge.jpeg';
-import bklynBridge2 from '../public/images/mock-website-images/bklyn-bridge-2.jpg';
-import skyline from '../public/images/mock-website-images/skyline.jpeg';
-import twinTowers from '../public/images/mock-website-images/twin-towers.jpg';
-import { Button, MockWebsiteNav, MockWebsiteFooter } from '../components'
+import img from '../../public/favicon.png';
+import bklynBridge from '../../public/images/mock-website-images/bklyn-bridge.jpeg';
+import bklynBridge2 from '../../public/images/mock-website-images/bklyn-bridge-2.jpg';
+import skyline from '../../public/images/mock-website-images/skyline.jpeg';
+import twinTowers from '../../public/images/mock-website-images/twin-towers.jpg';
+import { Button, MockWebsiteNav, MockWebsiteFooter } from '..'
 
 const whatWeDo = [
   {

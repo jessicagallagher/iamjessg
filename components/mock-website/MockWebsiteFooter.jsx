@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import img from '../public/favicon.png';
+import img from '../../public/favicon.png';
 
 const dropdown = [
   {
@@ -86,7 +86,7 @@ export default function MockWebsiteFooter() {
           </div>
           <div className='mt-12 grid grid-cols-2 gap-8 sm:col-span-2 sm:mt-6'>
             <div className='sm:grid sm:grid-cols-2 sm:gap-8'>
-              <a href='/our-work/website'>
+              <a href='/our-work/website/home'>
                 <h3 className='text-base font-medium text-white'>Home</h3>
               </a>
               <a href='/our-work/website/about' className='mt-12 sm:mt-0'>
@@ -94,9 +94,9 @@ export default function MockWebsiteFooter() {
               </a>
             </div>
             <div className='sm:grid sm:grid-cols-2 sm:gap-8'>
-              <div>
+              <a href='/our-work/website/our-work'>
                 <h3 className='text-base font-medium text-white'>Our Work</h3>
-              </div>
+              </a>
               <div>
                 <h3 className='text-base font-medium text-white'>
                   Get Involved

@@ -3,13 +3,13 @@ import { Disclosure, Menu, Transition, Popover } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
-import img from '../public/favicon.png';
-import { Button } from '../components'
+import img from '../../public/favicon.png';
+import { Button } from '..'
 
 const navigation = [
-  { name: 'Home', href: '/our-work/website', current: true },
-  { name: 'About', href: 'website/about', current: false },
-  { name: 'Our Work', href: '#', current: false },
+  { name: 'Home', href: '/our-work/website/home', current: true },
+  { name: 'About', href: '/our-work/website/about', current: false },
+  { name: 'Our Work', href: '/our-work/website/our-work', current: false },
 ];
 
 const dropdown = [
@@ -62,7 +62,7 @@ export default function MockWebsiteNav() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className='text-white hover:bg-indigo-500 hover:-translate-y-1 px-3 py-2 rounded-md text-lg font-medium'
+                        className='text-white hover:bg-indigo-500 hover:-translate-y-1 px-3 py-2 rounded-md text-base md:text-lg font-medium'
                       >
                         {item.name}
                       </a>
@@ -77,7 +77,7 @@ export default function MockWebsiteNav() {
                               open
                                 ? 'bg-indigo-400 text-white'
                                 : 'text-white hover:bg-indigo-500 hover:-translate-y-1',
-                              'px-3 py-2 rounded-md text-lg font-medium'
+                              'px-3 py-2 rounded-md text-base lg:text-lg font-medium'
                             )}
                           >
                             Get Involved
@@ -126,7 +126,7 @@ export default function MockWebsiteNav() {
                 <div>
                   <Button
                     buttonType={'button'}
-                    buttonClass={'bg-white'}
+                    buttonClass={'bg-white text-indigo-800 border border-indigo-500 border-2 hover:border-white hover:-translate-y-2 shadow shadow-md shadow-indigo-200'}
                     buttonText={'Donate'}
                   />
                 </div>

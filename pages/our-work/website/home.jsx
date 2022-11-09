@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { NavBar, HeadTag, Footer, MockWebsiteHome } from '../../components';
+import { NavBar, HeadTag, Footer, MockWebsiteHome } from '../../../components';
 
 export default function Home() {
   return (

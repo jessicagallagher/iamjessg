@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { MockWebsiteNav, MockWebsiteFooter } from '../components';
-import skyline2 from '../public/images/mock-website-images/skyline2.jpg';
+import { MockWebsiteNav, MockWebsiteFooter } from '..';
+import skyline2 from '../../public/images/mock-website-images/skyline2.jpg';
 
 const people = [
   {
@@ -59,6 +59,7 @@ export default function MockWebsiteAbout() {
       {/* nav */}
       <MockWebsiteNav />
 
+      {/* hero */}
       <div>
         <div className='mock-website-hero flex justify-center items-center md:relative'>
           <p className='md:absolute md:bottom-0 md:right-0 p-24 text-indigo-500 font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl'>
@@ -66,6 +67,8 @@ export default function MockWebsiteAbout() {
           </p>
         </div>
       </div>
+
+      {/* intro */}
       <div className='mx-auto max-w-7xl px-10 my-24 text-base md:text-lg font-bold'>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
@@ -123,6 +126,8 @@ export default function MockWebsiteAbout() {
           </div>
         </div>
       </div>
+
+      {/* footer */}
       <MockWebsiteFooter />
     </div>
   );
