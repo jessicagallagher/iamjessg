@@ -1,10 +1,11 @@
-import { MockWebsiteNav, MockWebsiteFooter } from '../../components';
+import { MockWebsiteNav, MockWebsiteFooter, DonationAmtButton } from '../../components';
 import {
   ChevronDownIcon,
   CheckCircleIcon,
   TrashIcon,
 } from '@heroicons/react/20/solid';
 import { RadioGroup } from '@headlessui/react';
+import { useState } from 'react'
 
 const paymentMethods = [
   { id: 'credit-card', title: 'Credit card' },
@@ -12,15 +13,29 @@ const paymentMethods = [
 ];
 
 export default function MockWebsiteDonate() {
+  const [donationAmt, setDonationAmt] = useState('0')
+
+  const handleChange = (e) => {
+    setDonationAmt(e.target.value)
+  }
+
+  const handleClick = () => {
+    setDonationAmt('0')
+  }
+
+  const handleSetAmt = (e) => {
+    setDonationAmt(e.target.value);
+  };
+
   return (
     <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20'>
       {/* nav */}
       <MockWebsiteNav />
 
       {/* cta heading */}
-      <div className='mx-auto max-w-7xl py-10 px-4 sm:py-16 sm:px-6 lg:flex lg:justify-between lg:px-8'>
+      <div className='mx-auto max-w-7xl py-10 px-4 sm:py-24 sm:px-6 lg:flex lg:justify-between lg:px-8 bg-gradient-to-b from-indigo-800 to-lightGrey'>
         <div className='max-w-xl'>
-          <h2 className='text-3xl lg:text-4xl font-bold tracking-tight text-indigo-500 sm:text-5xl lg:text-6xl'>
+          <h2 className=' text-white text-3xl lg:text-4xl font-bold sm:text-5xl lg:text-6xl'>
             Donate
           </h2>
           <p className='mt-5 text-lg lg:text-xl'>
@@ -31,14 +46,11 @@ export default function MockWebsiteDonate() {
 
         {/* donation input */}
         <div className='mt-10 w-full max-w-xs'>
-          <label
-            htmlFor='donationAmt'
-            className='block text-base font-bold text-indigo-800'
-          >
+          <label htmlFor='donationAmt' className='block text-base font-bold'>
             Donation Amount
           </label>
-          <div className='relative mt-1.5'>
-            <div className='relative mt-1 rounded-md shadow-sm'>
+          <div className='relative mt-1.5 flex items-center'>
+            <div className='relative mt-1 rounded-md shadow-sm w-full'>
               <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3'>
                 <span className='text-gray-500 sm:text-sm'>$</span>
               </div>
@@ -47,9 +59,10 @@ export default function MockWebsiteDonate() {
                 name='donationAmt'
                 id='donationAmt'
                 className='block w-full rounded-md border-gray-300 pl-7 pr-12 sm:text-sm'
-                placeholder='0.00'
+                placeholder='100'
                 aria-describedby='price-currency'
-                value={'100.00'}
+                value={donationAmt}
+                onChange={handleChange}
               />
               <div className='pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3'>
                 <span className='text-gray-500 sm:text-sm' id='price-currency'>
@@ -58,6 +71,23 @@ export default function MockWebsiteDonate() {
               </div>
             </div>
           </div>
+          <span className='isolate inline-flex rounded-md shadow-sm w-full mt-4'>
+            <DonationAmtButton
+              buttonType={'button'}
+              buttonValue={'100'}
+              handleSetAmt={handleSetAmt}
+            />
+            <DonationAmtButton
+              buttonType={'button'}
+              buttonValue={'200'}
+              handleSetAmt={handleSetAmt}
+            />
+            <DonationAmtButton
+              buttonType={'button'}
+              buttonValue={'300'}
+              handleSetAmt={handleSetAmt}
+            />
+          </span>
         </div>
       </div>
 
@@ -69,9 +99,7 @@ export default function MockWebsiteDonate() {
           <form className='lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16'>
             <div>
               <div>
-                <h2 className='text-lg font-medium'>
-                  Contact information
-                </h2>
+                <h2 className='text-lg font-medium'>Contact information</h2>
 
                 <div className='mt-4'>
                   <label
@@ -93,9 +121,7 @@ export default function MockWebsiteDonate() {
               </div>
 
               <div className='mt-10 border-t border-gray-200 pt-10'>
-                <h2 className='text-lg font-medium'>
-                  Billing address
-                </h2>
+                <h2 className='text-lg font-medium'>Billing address</h2>
 
                 <div className='mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4'>
                   <div>
@@ -187,10 +213,7 @@ export default function MockWebsiteDonate() {
                   </div>
 
                   <div>
-                    <label
-                      htmlFor='city'
-                      className='block text-sm font-medium'
-                    >
+                    <label htmlFor='city' className='block text-sm font-medium'>
                       City
                     </label>
                     <div className='mt-1'>
@@ -351,10 +374,7 @@ export default function MockWebsiteDonate() {
                   </div>
 
                   <div>
-                    <label
-                      htmlFor='cvc'
-                      className='block text-sm font-medium'
-                    >
+                    <label htmlFor='cvc' className='block text-sm font-medium'>
                       CVC
                     </label>
                     <div className='mt-1'>
@@ -373,10 +393,7 @@ export default function MockWebsiteDonate() {
 
             {/* Order summary */}
             <div className='mt-10 lg:mt-0'>
-              <h2 className='text-lg font-medium'>
-                Donation summary
-              </h2>
-
+              <h2 className='text-lg font-medium'>Donation summary</h2>
               <div className='mt-4 rounded-lg border border-gray-200 bg-white shadow-sm'>
                 <ul role='list' className='divide-y divide-gray-200'>
                   <div className='flex py-6 px-4 sm:px-6'>
@@ -384,10 +401,7 @@ export default function MockWebsiteDonate() {
                       <div className='flex'>
                         <div className='min-w-0 flex-1'>
                           <h4 className='text-sm'>
-                            <a
-                              href={''}
-                              className='font-bold'
-                            >
+                            <a href={''} className='font-bold'>
                               Total
                             </a>
                           </h4>
@@ -395,11 +409,12 @@ export default function MockWebsiteDonate() {
                       </div>
                       <div className='flex flex-1 items-end justify-between pt-2'>
                         <p className='mt-1 text-sm font-medium'>
-                          $100.00
+                          ${donationAmt}
                         </p>
                         <button
                           type='button'
                           className='-m-2.5 flex items-center justify-center bg-white p-2.5 text-gray-400 hover:text-gray-500'
+                          onClick={handleClick}
                         >
                           <span className='sr-only'>Remove</span>
                           <TrashIcon className='h-5 w-5' aria-hidden='true' />
