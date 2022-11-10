@@ -17,6 +17,7 @@ import MockWebsiteNav from './mock-website/MockWebsiteNav'
 import MockWebsiteFooter from './mock-website/MockWebsiteFooter'
 import MockWebsiteAbout from './mock-website/MockWebsiteAbout'
 import MockWebsiteOurWork from './mock-website/MockWebsiteOurWork'
+import MockWebsiteDonate from './mock-website/MockWebsiteDonate'
 
 export {
   Cats,
@@ -37,5 +38,6 @@ export {
   MockWebsiteNav,
   MockWebsiteFooter,
   MockWebsiteAbout,
-  MockWebsiteOurWork
+  MockWebsiteOurWork,
+  MockWebsiteDonate
 }
