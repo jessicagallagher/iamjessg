@@ -127,7 +127,9 @@ export default function MockWebsiteAbout() {
         </div>
       </div>
 
-      {/* footer */}
+      {/* 
+      
+      */}
       <MockWebsiteFooter />
     </div>
   );

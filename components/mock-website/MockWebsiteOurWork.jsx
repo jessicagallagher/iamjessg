@@ -113,7 +113,7 @@ export default function MockWebsiteOurWork() {
         {/* header */}
         <div className='relative mx-auto -mt-12 max-w-7xl px-4 pb-16 xl:px-0'>
           <div className='mx-auto max-w-2xl text-center lg:max-w-4xl'>
-            <h2 className='text-2xl sm:text-3xl font-bold tracking-tight text-indigo-500'>
+            <h2 className='text-3xl md:text-5xl font-bold tracking-tight text-indigo-500'>
               Our Work
             </h2>
             <p className='mt-10 lg:text-lg text-indigo-800 font-bold'>

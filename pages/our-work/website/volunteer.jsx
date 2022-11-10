@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import { NavBar, HeadTag, Footer, MockWebsiteDonate } from '../../../components';
+import { NavBar, HeadTag, Footer, MockWebsiteVolunteer } from '../../../components';
 
-export default function About() {
+export default function Volunteer() {
   return (
     <div>
       <Head>
@@ -11,7 +11,7 @@ export default function About() {
       </Head>
       <main>
         <NavBar />
-        <MockWebsiteDonate />
+        <MockWebsiteVolunteer />
       </main>
       <Footer />
     </div>
