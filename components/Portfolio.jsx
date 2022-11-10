@@ -23,15 +23,15 @@ export default function Portfolio() {
       pageUrl: '/portfolio',
       projectGitHubUrl: '#',
     },
-    {
-      projectName: 'Racecation (Work in progress)',
-      imageUrl: '/images/portfolio-images/racecation.png',
-      techUsed:
-        'Next.js, Tailwind CSS, Firebase Authentication, + Firebase Firestore',
-      projectUrl: '#',
-      pageUrl: '/portfolio',
-      projectGitHubUrl: 'https://github.com/jessicagallagher/racecation',
-    },
+    // {
+    //   projectName: 'Racecation (Work in progress)',
+    //   imageUrl: '/images/portfolio-images/racecation.png',
+    //   techUsed:
+    //     'Next.js, Tailwind CSS, Firebase Authentication, + Firebase Firestore',
+    //   projectUrl: '#',
+    //   pageUrl: '/portfolio',
+    //   projectGitHubUrl: 'https://github.com/jessicagallagher/racecation',
+    // },
     {
       projectName: 'Tetris',
       imageUrl: '/images/portfolio-images/tetris.gif',
