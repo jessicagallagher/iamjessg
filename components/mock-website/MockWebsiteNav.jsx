@@ -3,29 +3,9 @@ import { Disclosure, Menu, Transition, Popover } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
-import img from '../../public/favicon.png';
+import img from '../../public/images/mock-website-images/mock_logo.png';
 import { Button } from '..'
-
-const navigation = [
-  { name: 'Home', href: '/our-work/website/home', current: true },
-  { name: 'About', href: '/our-work/website/about', current: false },
-  { name: 'Our Work', href: '/our-work/website/our-work', current: false },
-];
-
-const dropdown = [
-  {
-    name: 'Donate',
-    href: '/our-work/website/donate',
-  },
-  {
-    name: 'Volunteer',
-    href: '/our-work/website/volunteer',
-  },
-  {
-    name: 'Become a Partner',
-    href: '#',
-  },
-];
+import { navigation, dropdown } from '../../utils/mock-website-data';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');

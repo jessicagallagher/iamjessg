@@ -1,20 +1,6 @@
 import Image from 'next/image';
-import img from '../../public/favicon.png';
-
-const dropdown = [
-  {
-    name: 'Donate',
-    href: '/our-work/website/donate',
-  },
-  {
-    name: 'Volunteer',
-    href: '/our-work/website/volunteer',
-  },
-  {
-    name: 'Become a Partner',
-    href: '#',
-  },
-];
+import img from '../../public/images/mock-website-images/mock_logo.png';
+import { dropdown } from '../../utils/mock-website-data';
 
 const footerNav = {
   social: [

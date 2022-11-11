@@ -1,61 +1,9 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
-import img from '../../public/favicon.png';
-import bklynBridge from '../../public/images/mock-website-images/bklyn-bridge.jpeg';
-import bklynBridge2 from '../../public/images/mock-website-images/bklyn-bridge-2.jpg';
-import skyline from '../../public/images/mock-website-images/skyline.jpeg';
-import twinTowers from '../../public/images/mock-website-images/twin-towers.jpg';
+import img from '../../public/images/mock-website-images/mock_logo_with_name.png'
 import { Button, MockWebsiteNav, MockWebsiteFooter } from '..'
-
-const whatWeDo = [
-  {
-    heading: 'Curabitur Congue',
-    description:
-      'Nunc non velit mi. Class aptent taciti sociosqu ad lito torquent per conubia nostra, per inceptos himenaeos.',
-  },
-  {
-    heading: 'Aliquam Erat',
-    description:
-      'Nulla consequat pharetra quam a sagittis velit consequat ac. Nulla quam purus, pulvinar ac hendreri eget, viverra ac nunc.',
-  },
-  {
-    heading: 'Nunc Ornare',
-    description:
-      'In hac habitasse platea dictumst. Sed eu efficitur tortor. Aenean a pulvinar lectus. Nunc non velit mi.',
-  },
-];
-
-const posts = [
-  {
-    title: 'Fusce risus',
-    date: 'Jan 1, 2022',
-    description:
-      'Aliquam fringilla eros nisi, vitae tempor nibh tempus non. Mauris non justo eleifend, laoreet sem luctus, varius sapien. Nam id leo mauris. Morbi vel arcu odio. Morbi quis lacus id neque lobortis congue nec nec nisi.',
-    href: '#',
-  },
-  {
-    title: 'Lorem ipsum',
-    date: 'Feb 7, 2022',
-    description:
-      'Proin magna lorem, rhoncus vitae orci ut, laoreet viverra sapien. Duis iaculis fermentum enim quis feugiat. Vivamus iaculis nibh sapien, ac vehicula lacus volutpat eget. Nunc nec feugiat nisl, eget condimentum libero. Ut efficitur mi a eros tincidunt facilisis.',
-    href: '#',
-  },
-  {
-    title: 'Nunc scelerisque',
-    date: 'Mar 10, 2022',
-    description:
-      'Curabitur quis tortor nec dolor malesuada porttitor at at eros. Nullam sapien purus, porttitor ut imperdiet vel, luctus ut nibh. Quisque felis mi, molestie luctus pulvinar sed, rutrum vitae nunc. Sed consequat tortor quam, pretium bibendum massa porttitor eget. Donec rhoncus eget risus eget ornare.',
-    href: '#',
-  },
-  {
-    title: 'Duis est',
-    date: 'Apr 3, 2022',
-    description:
-      'Sed elementum semper leo, et pretium est imperdiet a. Suspendisse potenti. Donec ut est vulputate, bibendum tortor sit amet, suscipit quam. Integer vel hendrerit enim. Suspendisse sit amet eleifend dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis nec risus odio.',
-    href: '#',
-  },
-];
+import { whatWeDo, posts } from '../../utils/mock-website-data';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -63,7 +11,7 @@ function classNames(...classes) {
 
 export default function MockWebsite() {
   return (
-    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20'>
+    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 bg-white'>
       {/* nav */}
       <MockWebsiteNav />
 
@@ -76,19 +24,44 @@ export default function MockWebsite() {
           showArrows={false}
         >
           <div>
-            <Image src={bklynBridge} height={625} className='object-cover' />
+            <Image
+              src={
+                'https://images.unsplash.com/photo-1520694478166-daaaaec95b69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGdyb3VwJTIwb2YlMjBwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+              }
+              width={1500}
+              height={500}
+              className='object-cover'
+            />
           </div>
           <div>
-            <Image src={twinTowers} height={1275} className='object-cover' />
+            <Image
+              src={
+                'https://images.unsplash.com/photo-1573496774426-fe3db3dd1731?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGdyb3VwJTIwb2YlMjBwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+              }
+              width={1500}
+              height={500}
+              className='object-cover'
+            />
           </div>
           <div>
-            <Image src={skyline} height={1700} className='object-cover' />
+            <Image
+              src={
+                'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGdyb3VwJTIwb2YlMjBwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+              }
+              width={1500}
+              height={500}
+              className='object-cover'
+            />
           </div>
         </Carousel>
       </div>
 
+      <div className='flex justify-center pb-10 border-b border-indigo-200 mx-10'>
+        <Image src={img} height={200} width={375} />
+      </div>
+
       {/* mission */}
-      <div className='mx-auto max-w-7xl px-10'>
+      <div className='mx-auto max-w-7xl px-10 pt-10'>
         <h1 className='text-center text-3xl md:text-4xl font-bold'>
           Our Mission
         </h1>

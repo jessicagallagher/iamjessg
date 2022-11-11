@@ -1,68 +1,17 @@
 import Image from 'next/image';
 import { MockWebsiteNav, MockWebsiteFooter } from '..';
-import skyline2 from '../../public/images/mock-website-images/skyline2.jpg';
-
-const people = [
-  {
-    name: 'Jane Doe',
-    role: 'Executive Director',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'John Doe',
-    role: 'Co-Founder',
-    imageUrl:
-      'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHNob3R8ZW58MHx8MHx8&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Jim Johnson',
-    role: 'Co-Founder',
-    imageUrl:
-      'https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&auto=ormat&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Amy Smith',
-    role: 'Communications and Public Relations',
-    imageUrl:
-      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Daniel Stevens',
-    role: 'Community Outreach',
-    imageUrl:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Crystal Morris',
-    role: 'Fundraising',
-    imageUrl:
-      'https://images.unsplash.com/photo-1573497161161-c3e73707e25c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Michelle Scott',
-    role: 'Volunteer Management',
-    imageUrl:
-      'https://images.unsplash.com/photo-1543949806-2c9935e6aa78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Josh Greene',
-    role: 'Administrative and Finance',
-    imageUrl:
-      'https://images.unsplash.com/photo-1620932934088-fbdb2920e484?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-];
+import { people } from '../../utils/mock-website-data';
 
 export default function MockWebsiteAbout() {
   return (
-    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20'>
+    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 bg-white'>
       {/* nav */}
       <MockWebsiteNav />
 
       {/* hero */}
       <div>
         <div className='mock-website-hero flex justify-center items-center md:relative'>
-          <p className='md:absolute md:bottom-0 md:right-0 p-24 text-indigo-500 font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl'>
+          <p className='md:absolute md:bottom-0 md:right-0 p-24 text-indigo-800 font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl'>
             Get to know us
           </p>
         </div>

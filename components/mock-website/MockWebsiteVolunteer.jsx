@@ -1,35 +1,10 @@
-import {
-  LifebuoyIcon,
-  NewspaperIcon,
-  PhoneIcon,
-} from '@heroicons/react/24/outline';
 import { MockWebsiteNav, MockWebsiteFooter } from '..';
 import Image from 'next/image';
-
-const opportunities = [
-  {
-    name: 'Duis posuere',
-    description:
-      'Curabitur dignissim metus non neque euismod pharetra et at mi. Maecenas rhoncus leo ut quam iaculis laoreet.',
-    icon: PhoneIcon,
-  },
-  {
-    name: 'Quisque interdum',
-    description:
-      'Suspendisse ut urna faucibus, laoreet quam in, dapibus erat. Aliquam sit amet eros nec urna auctor iaculis.',
-    icon: LifebuoyIcon,
-  },
-  {
-    name: 'Integer sem',
-    description:
-      'Quisque vel est id enim posuere lacinia. Pellentesque dignissim magna a nisl dictum consequat. Curabitur et massa vel lorem facilisis convallis. Morbi blandit urna quis felis aliquam volutpat.',
-    icon: NewspaperIcon
-  },
-];
+import { opportunities } from '../../utils/mock-website-data';
 
 export default function MockWebsiteVolunteer() {
   return (
-    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20'>
+    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 bg-white'>
       {/* nav */}
       <MockWebsiteNav />
 
@@ -84,7 +59,7 @@ export default function MockWebsiteVolunteer() {
               className='flex flex-col rounded-2xl bg-white shadow-xl'
             >
               <div className='relative flex-1 px-6 pt-16 pb-8 md:px-8'>
-                <div className='absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-indigo-500 p-5 shadow-lg'>
+                <div className='absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-indigo-800 p-5 shadow-lg'>
                   <opp.icon
                     className='h-6 w-6 text-white'
                     aria-hidden='true'

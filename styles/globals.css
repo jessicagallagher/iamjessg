@@ -75,7 +75,7 @@ hr {
 }
 
 .mock-website-hero {
-  background: url('../public/images/mock-website-images/skyline2.jpg');
+  background: url('../public/images/mock-website-images/hero.jpeg');
   height: 415px;
   object-fit: cover;
 }

@@ -6,11 +6,7 @@ import {
 } from '@heroicons/react/20/solid';
 import { RadioGroup } from '@headlessui/react';
 import { useState } from 'react'
-
-const paymentMethods = [
-  { id: 'credit-card', title: 'Credit card' },
-  { id: 'paypal', title: 'PayPal' },
-];
+import { paymentMethods } from '../../utils/mock-website-data';
 
 export default function MockWebsiteDonate() {
   const [donationAmt, setDonationAmt] = useState('0')
@@ -28,12 +24,12 @@ export default function MockWebsiteDonate() {
   };
 
   return (
-    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20'>
+    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 bg-white'>
       {/* nav */}
       <MockWebsiteNav />
 
       {/* cta heading */}
-      <div className='mx-auto max-w-7xl py-10 px-4 sm:py-24 sm:px-6 lg:flex lg:justify-between lg:px-8 bg-gradient-to-b from-indigo-800 to-lightGrey'>
+      <div className='mx-auto max-w-7xl py-10 px-4 sm:py-24 sm:px-6 lg:flex lg:justify-between lg:px-8 bg-gradient-to-b from-indigo-800 to-white'>
         <div className='max-w-xl'>
           <h2 className=' text-white text-3xl lg:text-4xl font-bold sm:text-5xl lg:text-6xl'>
             Donate
@@ -426,7 +422,7 @@ export default function MockWebsiteDonate() {
                 <div className='border-t border-gray-200 py-6 px-4 sm:px-6'>
                   <button
                     type='submit'
-                    className='w-full rounded-md border border-transparent bg-indigo-500 py-3 px-4 text-base font-bold text-white shadow-sm hover:bg-indigo-800'
+                    className='w-full rounded-md border border-transparent bg-indigo-800 py-3 px-4 text-base font-bold text-white shadow-sm hover:bg-indigo-500'
                   >
                     Donate
                   </button>
