@@ -19,8 +19,8 @@ export default function MockWebsiteOurWork() {
         </div>
 
         {/* header */}
-        <div className='relative mx-auto -mt-12 max-w-7xl px-4 pb-16 xl:px-0'>
-          <div className='mx-auto max-w-2xl text-center lg:max-w-4xl'>
+        <div className='relative mx-auto -mt-12 max-w-full px-4 pb-16 xl:px-0'>
+          <div className='mx-auto max-w-2xl text-center lg:max-w-4xl 2xl:max-w-full'>
             <h2 className='text-3xl md:text-5xl font-bold tracking-tight text-indigo-500'>
               Our Work
             </h2>
@@ -33,7 +33,7 @@ export default function MockWebsiteOurWork() {
           </div>
 
           {/* examples */}
-          <dl className='mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:px-8 xl:px-28'>
+          <dl className='mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:px-8 xl:px-28 2xl:px-10'>
             {examples.map((example) => (
               <div
                 key={example.name}
@@ -50,7 +50,7 @@ export default function MockWebsiteOurWork() {
       </div>
 
       {/* features header */}
-      <div className='mx-auto max-w-7xl px-2 lg:px-8 xl:px-28'>
+      <div className='mx-auto max-w-full px-2 lg:px-8 xl:px-28 2xl:px-10'>
         <div className='mx-auto max-w-2xl px-2 md:px-0 lg:max-w-none'>
           <div className='max-w-3xl'>
             <p className='text-2xl lg:text-3xl font-bold tracking-tight'>
@@ -66,7 +66,7 @@ export default function MockWebsiteOurWork() {
       </div>
 
       {/* features */}
-      <div className='space-y-10 sm:mt-10 px-2 mt-6 xl:px-28'>
+      <div className='space-y-10 sm:mt-10 px-2 mt-6 xl:px-28 2xl:px-10'>
         {features.map((feature) => (
           <div
             key={feature.name}
@@ -90,7 +90,7 @@ export default function MockWebsiteOurWork() {
       </div>
 
       {/* features grid header */}
-      <div className='mx-auto max-w-7xl px-2 mt-10 md:px-8 xl:px-28'>
+      <div className='mx-auto max-w-full px-2 mt-10 md:px-8 xl:px-28 2xl:px-10'>
         <div className='mx-auto md:mx-0 max-w-2xl lg:max-w-none'>
           <div className='max-w-3xl'>
             <p className='text-2xl font-bold tracking-tight lg:text-3xl'>
@@ -106,7 +106,7 @@ export default function MockWebsiteOurWork() {
       </div>
 
       {/* features grid */}
-      <div className='grid grid-cols-1 items-start gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8 px-2 py-10 md:px-8 xl:px-28'>
+      <div className='grid grid-cols-1 items-start gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8 px-2 py-10 md:px-8 xl:px-28 2xl:px-10'>
         {featuresGrid.map((feature) => (
           <div key={feature.name} className='flex flex-col-reverse'>
             <div className='mt-6'>

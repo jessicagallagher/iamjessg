@@ -22,35 +22,36 @@ export default function MockWebsite() {
           infiniteLoop={true}
           showStatus={false}
           showArrows={false}
+          showThumbs={false}
         >
           <div>
             <Image
               src={
-                'https://images.unsplash.com/photo-1520694478166-daaaaec95b69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGdyb3VwJTIwb2YlMjBwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+                'https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274__480.jpg'
               }
               width={1500}
               height={500}
-              className='object-cover'
+              className='object-cover h-96 2xl:h-[30rem]'
             />
           </div>
           <div>
             <Image
               src={
-                'https://images.unsplash.com/photo-1573496774426-fe3db3dd1731?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGdyb3VwJTIwb2YlMjBwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+                'https://cdn.pixabay.com/photo/2016/07/05/16/53/leaves-1498985__480.jpg'
               }
               width={1500}
               height={500}
-              className='object-cover'
+              className='object-cover h-96 2xl:h-[30rem]'
             />
           </div>
           <div>
             <Image
               src={
-                'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGdyb3VwJTIwb2YlMjBwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+                'https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113__480.jpg'
               }
               width={1500}
               height={500}
-              className='object-cover'
+              className='object-cover h-96 2xl:h-[30rem]'
             />
           </div>
         </Carousel>
@@ -61,7 +62,7 @@ export default function MockWebsite() {
       </div>
 
       {/* mission */}
-      <div className='mx-auto max-w-7xl px-10 pt-10'>
+      <div className='mx-auto max-w-full px-10 pt-10'>
         <h1 className='text-center text-3xl md:text-4xl font-bold'>
           Our Mission
         </h1>
@@ -78,11 +79,11 @@ export default function MockWebsite() {
       </div>
 
       {/* what we do */}
-      <div className='mx-auto max-w-7xl px-10 mt-10'>
+      <div className='mx-auto max-w-full px-10 mt-10'>
         <h1 className='text-center text-3xl md:text-4xl font-bold mb-6'>
           What We Do
         </h1>
-        <div className='mx-auto max-w-2xl space-y-12 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:space-y-0 lg:px-8'>
+        <div className='mx-auto max-w-2xl space-y-12 lg:grid lg:max-w-full lg:grid-cols-3 lg:gap-x-8 lg:space-y-0 lg:px-8'>
           {whatWeDo.map((item) => (
             <div
               key={item.heading}
@@ -105,7 +106,7 @@ export default function MockWebsite() {
           Latest News
         </h2>
       </div>
-      <div className='mt-6 grid gap-16 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12 mx-auto max-w-7xl px-10'>
+      <div className='mt-6 grid gap-16 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12 mx-auto max-w-full px-10'>
         {posts.map((post) => (
           <div key={post.title}>
             <p className='text-sm'>
@@ -131,7 +132,7 @@ export default function MockWebsite() {
 
       {/* impact */}
       <div className='pt-12 sm:pt-16'>
-        <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+        <div className='mx-auto max-w-full px-4 sm:px-6 lg:px-8'>
           <div className='mx-auto max-w-4xl text-center'>
             <h2 className='text-3xl md:text-4xl font-bold tracking-tight'>
               Your Impact
@@ -141,7 +142,7 @@ export default function MockWebsite() {
         <div className='mt-10 pb-12 sm:pb-16'>
           <div className='relative'>
             <div className='absolute inset-0 h-1/2' />
-            <div className='relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+            <div className='relative mx-auto max-w-full px-4 sm:px-6 lg:px-8'>
               <div className='mx-auto max-w-4xl'>
                 <dl className='rounded-lg bg-white shadow-lg lg:grid lg:grid-cols-3'>
                   <div className='flex flex-col border-b border-gray-100 p-6 text-center lg:border-0 lg:border-r'>
@@ -205,7 +206,7 @@ export default function MockWebsite() {
             <div className='mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0'>
               <button
                 type='submit'
-                className='flex w-full items-center justify-center rounded-md border border-transparent bg-white py-3 px-5 text-base font-medium hover:bg-indigo-800 hover:text-white'
+                className='flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-800 text-white py-3 px-5 text-base font-medium hover:bg-white hover:text-indigo-600'
               >
                 Sign up
               </button>

@@ -9,7 +9,7 @@ export default function MockWebsiteVolunteer() {
       <MockWebsiteNav />
 
       {/* hero */}
-      <div className='relative bg-indigo-800'>
+      <div className='relative bg-indigo-800 h-96'>
         <div className='absolute inset-0'>
           <img
             className='h-full w-full object-cover'
@@ -21,7 +21,7 @@ export default function MockWebsiteVolunteer() {
             aria-hidden='true'
           />
         </div>
-        <div className='relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8'>
+        <div className='relative mx-auto max-w-full py-24 px-4 sm:py-32 sm:px-6 lg:px-8'>
           <h1 className='text-4xl font-bold tracking-tight text-white sm:text-5xl'>
             Volunteer
           </h1>
@@ -36,7 +36,7 @@ export default function MockWebsiteVolunteer() {
       {/* volunteer opportunities */}
       <div className='relative pb-24'>
         <div>
-          <div className='relative mx-auto max-w-7xl py-10 px-4 sm:py-24 sm:px-6 lg:px-8'>
+          <div className='relative mx-auto max-w-full py-10 px-4 sm:py-24 sm:px-6 lg:px-8'>
             <h1 className='text-3xl font-bold tracking-tight md:text-4xl text-indigo-800'>
               Volunteer Oppportunities
             </h1>
@@ -49,7 +49,7 @@ export default function MockWebsiteVolunteer() {
         </div>
       </div>
       <section
-        className='relative z-10 mx-auto -mt-20 md:-mt-32 max-w-7xl px-4 pb-16 sm:px-6 lg:px-8'
+        className='relative z-10 mx-auto -mt-20 md:-mt-32 max-w-full px-4 pb-16 sm:px-6 lg:px-8'
         aria-labelledby='contact-heading'
       >
         <div className='grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8'>
@@ -65,28 +65,24 @@ export default function MockWebsiteVolunteer() {
                     aria-hidden='true'
                   />
                 </div>
-                <h3 className='text-xl font-medium'>
-                  {opp.name}
-                </h3>
-                <p className='mt-4 text-base'>
-                  {opp.description}
-                </p>
+                <h3 className='text-xl font-medium'>{opp.name}</h3>
+                <p className='mt-4 text-base'>{opp.description}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-{/* sign up to volunteer */}
+      {/* sign up to volunteer */}
       <div className='relative pt-10'>
         <div
           className='absolute inset-x-0 top-0 hidden h-1/2 lg:block'
           aria-hidden='true'
         />
-        <div className='mx-auto max-w-7xl bg-indigo-800 lg:bg-transparent lg:px-8'>
+        <div className='mx-auto max-w-full bg-indigo-800 lg:bg-transparent lg:px-8'>
           <div className='lg:grid lg:grid-cols-12'>
             {/* image */}
-            <div className='relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16'>
+            <div className='relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:pt-16 lg:pb-24'>
               <div
                 className='absolute inset-x-0 h-1/2 lg:hidden'
                 aria-hidden='true'
@@ -95,7 +91,7 @@ export default function MockWebsiteVolunteer() {
                 <div className='aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1'>
                   <img
                     className='rounded-3xl object-cover object-center shadow-2xl'
-                    src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z3JvdXB8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+                    src='https://cdn.pixabay.com/photo/2019/10/06/10/03/team-4529717_1280.jpg'
                     alt=''
                   />
                 </div>

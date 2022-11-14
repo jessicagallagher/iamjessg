@@ -11,14 +11,14 @@ export default function MockWebsiteAbout() {
       {/* hero */}
       <div>
         <div className='mock-website-hero flex justify-center items-center md:relative'>
-          <p className='md:absolute md:bottom-0 md:right-0 p-24 text-indigo-800 font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl'>
+          <p className='md:absolute md:bottom-0 md:right-0 p-24 text-white font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl'>
             Get to know us
           </p>
         </div>
       </div>
 
       {/* intro */}
-      <div className='mx-auto max-w-7xl px-10 my-24 text-base md:text-lg font-bold'>
+      <div className='mx-auto max-w-full px-10 my-24 text-base md:text-lg font-bold'>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
           libero placeat quae provident est ex quibusdam laboriosam praesentium?
@@ -38,7 +38,7 @@ export default function MockWebsiteAbout() {
 
       {/* leadership */}
       <div>
-        <div className='mx-auto max-w-7xl px-10 my-24'>
+        <div className='mx-auto max-w-full px-10 my-24'>
           <div className='grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8'>
             <div className='space-y-5 sm:space-y-4'>
               <h2 className='text-2xl lg:text-3xl font-bold tracking-tight'>

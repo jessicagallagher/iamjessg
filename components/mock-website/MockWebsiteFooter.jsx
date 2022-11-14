@@ -8,7 +8,7 @@ export default function MockWebsiteFooter() {
       <h2 id='footer-heading' className='sr-only'>
         Footer
       </h2>
-      <div className='mx-auto max-w-7xl p-4 sm:px-6'>
+      <div className='mx-auto max-w-full p-4 sm:px-6'>
         <div className='sm:grid sm:grid-cols-3 sm:gap-8'>
           <div className='space-y-4 sm:col-span-1'>
             <Image src={img} height={64} width={64} />

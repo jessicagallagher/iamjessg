@@ -12,17 +12,17 @@ export default function MockWebsitePartner() {
       <div>
         <div className='relative w-full' aria-hidden='true'>
           <img
-            src='https://images.unsplash.com/photo-1518135714426-c18f5ffb6f4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBhcnRuZXJzaGlwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
+            src='https://cdn.pixabay.com/photo/2018/04/24/14/07/purchase-3347053__480.jpg '
             alt=''
             className='w-full h-48 lg:h-96 object-cover'
           />
-          <h2 className='absolute top-0 left-0 pt-6 pl-2 lg:p-20 text-indigo-800 font-bold text-3xl sm:text-5xl'>
+          <h2 className='absolute bottom-0 right-0 pt-6 pl-2 lg:p-20 text-white font-bold text-3xl sm:text-5xl'>
             Partner With Us
           </h2>
         </div>
 
         {/* header */}
-        <div className='relative mx-auto max-w-7xl sm:px-4 pb-16'>
+        <div className='relative mx-auto max-w-full sm:px-4 pb-16'>
           <div className='w-full'>
             <p className='mt-10 lg:text-lg text-indigo-800 font-bold mx-8'>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
@@ -37,11 +37,11 @@ export default function MockWebsitePartner() {
             <div className='h-56 bg-indigo-500 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2'>
               <img
                 className='h-full w-full object-cover'
-                src='https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2ZmaWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
+                src='https://cdn.pixabay.com/photo/2017/08/05/19/56/donations-keeps-me-going-2585209__480.jpg'
                 alt='Support team'
               />
             </div>
-            <div className='relative mx-auto max-w-7xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16'>
+            <div className='relative mx-auto max-w-full px-4 py-8 sm:py-12 sm:px-6 lg:py-16'>
               <div className='mx-auto max-w-2xl lg:mr-0 lg:ml-auto lg:w-1/2 lg:max-w-none lg:pl-10'>
                 <div>
                   <div className='flex h-12 w-12 items-center justify-center rounded-md bg-indigo-800 text-white'>
@@ -110,13 +110,13 @@ export default function MockWebsitePartner() {
                       type='email'
                       name='email'
                       id='email'
-                      className='block w-full rounded-md border-gray-300 shadow-sm text-sm'
+                      className='block rounded-md border-gray-300 shadow-sm text-sm sm:w-[24rem] lg:w-[16rem]'
                       placeholder='you@example.com'
                     />
                   </div>
                   <a
                     href='#'
-                    className='ml-4 sm:ml-10 flex items-center justify-center rounded-md border border-transparent bg-indigo-500 px-5 py-3 text-sm sm:text-base font-medium text-white hover:bg-indigo-800'
+                    className='ml-4 sm:ml-10 2xl:ml-18 flex items-center justify-center rounded-md border border-transparent bg-indigo-500 px-5 py-3 text-sm sm:text-base font-medium text-white hover:bg-indigo-800'
                   >
                     Contact Us
                   </a>
@@ -186,7 +186,7 @@ export default function MockWebsitePartner() {
                 </div>
               </div>
             </div>
-            <div className='mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-x-8'>
+            <div className='mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-full lg:px-8 lg:grid lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-x-8'>
               <div className='relative pt-12 pb-64 md:pt-24 sm:pb-64 lg:col-start-1 lg:pb-24'>
                 <p className='md:mt-3 text-4xl sm:text-5xl font-bold tracking-tight text-white'>
                   Cause Marketing

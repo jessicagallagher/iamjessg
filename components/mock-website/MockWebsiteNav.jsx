@@ -16,7 +16,7 @@ export default function MockWebsiteNav() {
     <Disclosure as='nav' className='bg-indigo-800 p-2 shadow shadow-2xl z-50'>
       {({ open }) => (
         <>
-          <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
+          <div className='mx-auto max-w-full px-2 sm:px-6 lg:px-8 2xl:p-0 2xl:mx-0'>
             <div className='relative flex h-16 items-center justify-between'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
                 <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-indigo-500'>
@@ -28,12 +28,12 @@ export default function MockWebsiteNav() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className='hidden sm:flex flex-1 items-center justify-center lg:justify-start sm:items-center'>
+              <div className='hidden sm:flex flex-1 items-center justify-center lg:justify-start'>
                 <Image
                   src={img}
                   height={48}
                   width={48}
-                  className='block h-8 w-auto lg:hidden'
+                  className='block w-auto h-12'
                 />
 
                 <div className='hidden sm:ml-6 sm:block my-auto'>

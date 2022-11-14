@@ -29,8 +29,8 @@ export default function MockWebsiteDonate() {
       <MockWebsiteNav />
 
       {/* cta heading */}
-      <div className='mx-auto max-w-7xl py-10 px-4 sm:py-24 sm:px-6 lg:flex lg:justify-between lg:px-8 bg-gradient-to-b from-indigo-800 to-white'>
-        <div className='max-w-xl'>
+      <div className='mx-auto max-w-full py-10 px-4 sm:py-24 sm:px-6 lg:flex lg:justify-between lg:px-8 bg-gradient-to-b from-indigo-800 to-white'>
+        <div className='max-w-full'>
           <h2 className=' text-white text-3xl lg:text-4xl font-bold sm:text-5xl lg:text-6xl'>
             Donate
           </h2>
@@ -41,7 +41,7 @@ export default function MockWebsiteDonate() {
         </div>
 
         {/* donation input */}
-        <div className='mt-10 w-full max-w-xs'>
+        <div className='mt-10 w-full max-w-xs ml-10'>
           <label htmlFor='donationAmt' className='block text-base font-bold'>
             Donation Amount
           </label>
@@ -89,10 +89,10 @@ export default function MockWebsiteDonate() {
 
       {/* donation checkout */}
       <div>
-        <div className='lg:mx-auto max-w-2xl px-4 pb-24 sm:px-6 lg:max-w-7xl lg:px-8 lg:py-8'>
+        <div className='lg:mx-auto max-w-full px-4 pb-24 sm:px-6 lg:px-8 lg:py-8 2xl:px-10'>
           <h2 className='sr-only'>Checkout</h2>
 
-          <form className='lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16'>
+          <form className='lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16 2xl:gap-x-48'>
             <div>
               <div>
                 <h2 className='text-lg font-medium'>Contact information</h2>

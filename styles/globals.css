@@ -75,8 +75,8 @@ hr {
 }
 
 .mock-website-hero {
-  background: url('../public/images/mock-website-images/hero.jpeg');
-  height: 415px;
+  background: url('../public/images/mock-website-images/hero-hi-res.jpeg');
+  height: 24rem;
   object-fit: cover;
 }
 
