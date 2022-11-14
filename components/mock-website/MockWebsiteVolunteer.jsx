@@ -25,7 +25,7 @@ export default function MockWebsiteVolunteer() {
           <h1 className='text-4xl font-bold tracking-tight text-white sm:text-5xl'>
             Volunteer
           </h1>
-          <p className='mt-6 max-w-3xl text-xl text-indigo-100'>
+          <p className='mt-6 max-w-3xl text-xl text-white'>
             Mattis amet hendrerit dolor, quisque lorem pharetra. Pellentesque
             lacus nisi urna, arcu sociis eu. Orci vel lectus nisl eget eget ut
             consectetur. Sit justo viverra non adipisicing elit distinctio.
@@ -36,11 +36,11 @@ export default function MockWebsiteVolunteer() {
       {/* volunteer opportunities */}
       <div className='relative pb-24'>
         <div>
-          <div className='relative mx-auto max-w-7xl py-24 px-4 sm:py-24 sm:px-6 lg:px-8'>
-            <h1 className='text-4xl font-bold tracking-tight md:text-5xl text-indigo-800'>
+          <div className='relative mx-auto max-w-7xl py-10 px-4 sm:py-24 sm:px-6 lg:px-8'>
+            <h1 className='text-3xl font-bold tracking-tight md:text-4xl text-indigo-800'>
               Volunteer Oppportunities
             </h1>
-            <p className='mt-6 max-w-3xl text-xl'>
+            <p className='mt-6 max-w-3xl text-base md:text-xl'>
               Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate
               id malesuada non. Cras aliquet purus dui laoreet diam sed lacus,
               fames. Dui, amet, nec sit pulvinar.
@@ -49,7 +49,7 @@ export default function MockWebsiteVolunteer() {
         </div>
       </div>
       <section
-        className='relative z-10 mx-auto -mt-32 max-w-7xl px-4 pb-16 sm:px-6 lg:px-8'
+        className='relative z-10 mx-auto -mt-20 md:-mt-32 max-w-7xl px-4 pb-16 sm:px-6 lg:px-8'
         aria-labelledby='contact-heading'
       >
         <div className='grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8'>
@@ -59,9 +59,9 @@ export default function MockWebsiteVolunteer() {
               className='flex flex-col rounded-2xl bg-white shadow-xl'
             >
               <div className='relative flex-1 px-6 pt-16 pb-8 md:px-8'>
-                <div className='absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-indigo-800 p-5 shadow-lg'>
+                <div className='absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-indigo-800 p-3 md:p-5 shadow-lg'>
                   <opp.icon
-                    className='h-6 w-6 text-white'
+                    className='h-4 w-4 md:h-6 md:w-6 text-white'
                     aria-hidden='true'
                   />
                 </div>
@@ -78,7 +78,7 @@ export default function MockWebsiteVolunteer() {
       </section>
 
 {/* sign up to volunteer */}
-      <div className='relative py-16'>
+      <div className='relative pt-10'>
         <div
           className='absolute inset-x-0 top-0 hidden h-1/2 lg:block'
           aria-hidden='true'
@@ -91,7 +91,7 @@ export default function MockWebsiteVolunteer() {
                 className='absolute inset-x-0 h-1/2 lg:hidden'
                 aria-hidden='true'
               />
-              <div className='mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0'>
+              <div className='mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0 pt-10'>
                 <div className='aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1'>
                   <img
                     className='rounded-3xl object-cover object-center shadow-2xl'
@@ -103,7 +103,7 @@ export default function MockWebsiteVolunteer() {
             </div>
 
             {/* cta */}
-            <div className='relative bg-indigo-800 lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl'>
+            <div className='relative bg-indigo-800 lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl lg:mb-10'>
               <div
                 className='absolute inset-0 hidden overflow-hidden rounded-3xl lg:block'
                 aria-hidden='true'
@@ -175,14 +175,14 @@ export default function MockWebsiteVolunteer() {
                   />
                 </svg>
               </div>
-              <div className='relative mx-auto max-w-md space-y-6 py-12 px-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0'>
+              <div className='relative mx-auto max-w-md space-y-6 py-12 px-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:col-span-6 lg:col-start-4 lg:max-w-none xl:mr-40 2xl:p-0'>
                 <h2
-                  className='text-5xl font-bold tracking-tight text-white'
+                  className='text-3xl md:text-4xl font-bold tracking-tight text-white'
                   id='join-heading'
                 >
                   You can make a difference
                 </h2>
-                <p className='text-lg text-white'>
+                <p className='text-base md:text-lg text-white'>
                   Varius facilisi mauris sed sit. Non sed et duis dui leo,
                   vulputate id malesuada non. Cras aliquet purus dui laoreet
                   diam sed lacus, fames.

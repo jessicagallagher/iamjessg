@@ -20,6 +20,7 @@ import MockWebsiteOurWork from './mock-website/MockWebsiteOurWork'
 import MockWebsiteDonate from './mock-website/MockWebsiteDonate'
 import DonationAmtButton from './mock-website/DonationAmtButton'
 import MockWebsiteVolunteer from './mock-website/MockWebsiteVolunteer'
+import MockWebsitePartner from './mock-website/MockWebsitePartner'
 
 export {
   Cats,
@@ -43,5 +44,6 @@ export {
   MockWebsiteOurWork,
   MockWebsiteDonate,
   DonationAmtButton,
-  MockWebsiteVolunteer
+  MockWebsiteVolunteer,
+  MockWebsitePartner
 }

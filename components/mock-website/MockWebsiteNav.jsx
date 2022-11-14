@@ -28,7 +28,7 @@ export default function MockWebsiteNav() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
+              <div className='hidden sm:flex flex-1 items-center justify-center lg:justify-start sm:items-center'>
                 <Image
                   src={img}
                   height={48}
@@ -106,7 +106,7 @@ export default function MockWebsiteNav() {
                 <div>
                   <Button
                     buttonType={'button'}
-                    buttonClass={'bg-white text-indigo-800 border border-indigo-500 border-2 hover:border-white hover:-translate-y-2 shadow shadow-md shadow-indigo-200'}
+                    buttonClass={'bg-white text-indigo-800 border border-indigo-500 border-2 shadow shadow-md'}
                     buttonText={'Donate'}
                   />
                 </div>
