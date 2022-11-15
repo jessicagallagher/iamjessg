@@ -1,25 +1,6 @@
-export default function CurrentProjects() {
-  const projects = [
-    {
-      projectName: 'This website',
-      projectRepoUrl: 'https://github.com/jessicagallagher/iamjessg',
-      projectUrl: 'https://www.techmeowt.com',
-      projectFramework: 'Next.js',
-      projectCss: 'Tailwind CSS',
-      hasDb: false,
-      projectDb: '',
-    },
-    {
-      projectName: 'Racecation app',
-      projectRepoUrl: 'https://github.com/jessicagallagher/racecation',
-      projectUrl: '',
-      projectFramework: 'Next.js',
-      projectCss: 'Tailwind CSS',
-      hasDb: true,
-      projectDb: 'It also uses Firebase for authentication and for its database',
-    },
-  ];
+import { projects } from '../utils/data';
 
+export default function CurrentProjects() {
   const getDb = (hasDb, projectDb) => {
     if (hasDb) {
       let db = project.projectDb;
@@ -37,7 +18,7 @@ export default function CurrentProjects() {
       {projects.map((project) => (
         <li
           key={project.id}
-          className=' list-none list-outside even:text-greenDefault odd:text-pinkDefault hover:text-xl font-semibold'
+          className='list-outside list-disc mx-6 hover:text-pinkDefault text-base'
         >
           <a href={project.projectRepoUrl} target='blank'>
             {project.projectName} which uses {project.projectFramework} and{' '}

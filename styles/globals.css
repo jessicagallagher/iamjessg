@@ -80,6 +80,12 @@ hr {
   object-fit: cover;
 }
 
+.hero-about {
+  background: url('../public/images/hero-about.jpeg');
+  height: 24rem;
+  object-fit: cover;
+}
+
 /* media queries */
 @media (min-width: 640px) {
   hr {

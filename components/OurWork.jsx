@@ -4,7 +4,7 @@ import Image from 'next/image';
 const projects = [
   {
     projectName: 'Website',
-    imgUrl: '',
+    imgUrl: '/images/our-work-images/website.png',
     pageUrl: '/our-work/website/home',
     projectDescription:
       'Donec semper elit libero, ut convallis tortor finibus vel. Sed blandit mi in sollicitudin suscipit. Sed rutrum rutrum quam, sit amet consequat nisl placerat ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
