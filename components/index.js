@@ -7,7 +7,7 @@ import Footer from './Footer'
 import HeadTag from './HeadTag'
 import HomePage from './HomePage'
 import NavBar from './NavBar'
-import Portfolio from './Portfolio'
+import PortfolioJessicaGallagher from './PortfolioJessicaGallagher'
 import BlogHome from './BlogHome'
 import AddPost from './AddPost'
 import OurWork from './OurWork'
@@ -33,7 +33,7 @@ export {
   HeadTag,
   HomePage,
   NavBar,
-  Portfolio,
+  PortfolioJessicaGallagher,
   BlogHome,
   AddPost,
   OurWork,

@@ -4,12 +4,12 @@ import constructionImg from '../public/images/under-construction.png';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Portfolio() {
+export default function PortfolioJessicaGallagher() {
   const projects = [
     {
       projectName: 'Tech Meowt',
       imageUrl: '/images/portfolio-images/tech-meowt.png',
-      techUsed: 'Next.js + Tailwind CSS',
+      techUsed: 'Next.js, Tailwind CSS, Firebase',
       projectUrl: 'https://techmeowt.com',
       pageUrl: '/portfolio',
       projectGitHubUrl: 'https://github.com/jessicagallagher/iamjessg',
@@ -52,10 +52,10 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 lg:px-10 xl:px-48'>
+    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 lg:px-10 px-4'>
       <div className='space-y-12 p-2 lg:p-0'>
         <div className='space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none'>
-          <h2 className='text-2xl font-thin tracking-tight sm:text-4xl'>
+          <h2 className='text-2xl tracking-tight sm:text-3xl'>
             Current + Past Projects
           </h2>
         </div>
@@ -70,7 +70,7 @@ export default function Portfolio() {
                   <a target='_blank' rel='noopener'>
                     <div className='aspect-w-3 aspect-h-2'>
                       <img
-                        className='rounded-lg object-cover shadow-lg border border-pinkDefault hover:shadow-2xl hover:border-greenDefault'
+                        className='rounded-lg object-scale-down shadow-lg border border-pinkDefault hover:shadow-2xl hover:border-greenDefault'
                         src={project.imageUrl}
                         alt={`Screenshot of project: ${project.projectName}`}
                       />
@@ -86,7 +86,7 @@ export default function Portfolio() {
                         target='_blank'
                         rel='noopener'
                       >
-                        <h3 className='text-xl'>{project.projectName}</h3>
+                        <h3 className='text-lg md:text-xl'>{project.projectName}</h3>
                       </a>
                     </Link>
                     <p>Built with {project.techUsed}</p>

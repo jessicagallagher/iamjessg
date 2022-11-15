@@ -11,7 +11,7 @@ import { InlineWidget } from 'react-calendly'
 export default function HomePage() {
   return (
     <div className='max-w-full mx-auto px-4 sm:px-6 lg:px-8 mt-4'>
-      <div className='overflow-hidden border border-pinkLight rounded-lg mt-10 lg:mt-20 z-20 mb-6 shadow-pinkDefault grey-gradient'>
+      <div className='overflow-hidden border border-pinkLight rounded-lg mt-10 lg:mt-20 z-20 shadow-pinkDefault'>
         <div className='px-6 py-5'>
           <h1 className=' text-4xl sm:text-5xl mt-3 sm:mt-6'>
             Rethink your systems
@@ -48,14 +48,14 @@ export default function HomePage() {
                     </span>
                   </p>
                 </div>
-                <div className='overflow-scroll'>
+                <div className='overflow-visible'>
                   <InlineWidget
                     url='https://calendly.com/techmeowt'
                     styles={{
                       height: '500px',
-                      width: '500px',
+                      width: '75%',
                       margin: '3rem auto',
-                      border: '1px solid #ffb6ce',
+                      overflow: 'visible',
                     }}
                     pageSettings={{
                       hideEventTypeDetails: false,
@@ -67,18 +67,6 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-
-            {/* <div className='text-center text-md mb-2 sm:mb-4 lg:mb-6 mt-4 sm:mt-6'>
-              <button
-                type='button'
-                className='inline-flex items-center px-4 py-2  bg-transparent border-t-2 border-b-2 border-pinkDefault hover:border-greenDefault hover:tracking-extraWide'
-              >
-                <div className='mr-2 h-5 w-5'>
-                  <EnvelopeIcon />
-                </div>
-                <div>Say hi!</div>
-              </button>
-            </div> */}
           </div>
         </div>
       </div>
