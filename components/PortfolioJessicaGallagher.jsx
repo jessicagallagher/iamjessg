@@ -23,15 +23,14 @@ export default function PortfolioJessicaGallagher() {
       pageUrl: '/portfolio',
       projectGitHubUrl: '#',
     },
-    // {
-    //   projectName: 'Racecation (Work in progress)',
-    //   imageUrl: '/images/portfolio-images/racecation.png',
-    //   techUsed:
-    //     'Next.js, Tailwind CSS, Firebase Authentication, + Firebase Firestore',
-    //   projectUrl: '#',
-    //   pageUrl: '/portfolio',
-    //   projectGitHubUrl: 'https://github.com/jessicagallagher/racecation',
-    // },
+    {
+      projectName: 'Candy Crush Clone',
+      imageUrl: '/images/portfolio-images/candy-crush.gif',
+      techUsed: 'React',
+      projectUrl: 'https://jess-candy-crush.vercel.app/',
+      pageUrl: '/portfolio',
+      projectGitHubUrl: 'https://github.com/jessicagallagher/react-candy-crush',
+    },
     {
       projectName: 'Tetris',
       imageUrl: '/images/portfolio-images/tetris.gif',
