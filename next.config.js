@@ -5,7 +5,6 @@ module.exports = {
       'images.pexels.com',
       'cdn.pixabay.com',
       'via.placeholder.com',
-      'cdn.sanity.io',
     ],
   },
 };
