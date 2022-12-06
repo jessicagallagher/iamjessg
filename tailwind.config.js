@@ -22,10 +22,17 @@ module.exports = {
       screens: {
         xs: '375px',
       },
+      height: {
+        imgHeight: '300px',
+      },
+      width: {
+        imgWidth: '300px'
+      },
     },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/forms'),
+    require('@tailwindcss/typography')
   ],
 };
