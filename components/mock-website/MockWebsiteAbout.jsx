@@ -7,7 +7,6 @@ export default function MockWebsiteAbout() {
     <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 bg-white'>
       {/* nav */}
       <MockWebsiteNav />
-
       {/* hero */}
       <div className='relative w-full' aria-hidden='true'>
         <img
