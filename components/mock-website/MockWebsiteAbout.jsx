@@ -9,12 +9,15 @@ export default function MockWebsiteAbout() {
       <MockWebsiteNav />
 
       {/* hero */}
-      <div>
-        <div className='mock-website-hero flex justify-center items-center md:relative'>
-          <p className='md:absolute md:bottom-0 md:right-0 p-24 text-white font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl'>
-            Get to know us
-          </p>
-        </div>
+      <div className='relative w-full' aria-hidden='true'>
+        <img
+          src='/images/mock-website-images/hero-hi-res.jpeg'
+          alt=''
+          className='w-full h-48 lg:h-96 object-cover'
+        />
+        <h2 className='absolute bottom-0 right-0 pt-6 pl-2 lg:p-20 text-white font-bold text-3xl sm:text-5xl'>
+          Get To Know Us
+        </h2>
       </div>
 
       {/* intro */}

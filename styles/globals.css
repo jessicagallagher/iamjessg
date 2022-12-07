@@ -77,21 +77,9 @@ hr {
   object-fit: cover;
 }
 
-.hero-about {
-  background: url('../public/images/hero-about.jpeg');
-  height: 24rem;
-  object-fit: contain;
-}
-
 /* media queries */
 @media (min-width: 640px) {
   hr {
     height: 3px;
-  }
-}
-
-@media (min-width: 1355px) {
-  .hero-about {
-    background: url('../public/images/hero-about-lg.jpeg');
   }
 }
