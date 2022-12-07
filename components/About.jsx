@@ -1,11 +1,12 @@
+import img from '../public/images/hero-about.jpeg'
 import Link from 'next/link';
 
 export default function About() {
   return (
     <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 lg:px-10 px-4'>
-      <div className='w-full'>
-        <div className='w-full hero-about hidden sm:flex justify-center items-center md:relative'></div>
-      </div>
+        <div className='w-full hidden sm:flex justify-center items-center md:relative'>
+          <img src='/images/hero-about.jpeg' alt="" className='w-full h-48 lg:h-96 object-cover' />
+        </div>
       <div className='mx-auto max-w-full my-16'>
         <h1 className='text-5xl text-center font-bold'>About Us</h1>
         <br />
