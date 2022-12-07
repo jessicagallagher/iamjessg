@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.techmeowt.com",
+      "permanent": true
+    }
+  ]
+}
