@@ -71,10 +71,21 @@ hr {
   background: rgba(47, 137, 252, 0.4);
 }
 
-.mock-website-hero {
-  background: url('../public/images/mock-website-images/hero-hi-res.jpeg');
-  height: 24rem;
-  object-fit: cover;
+.check {
+  animation-duration: 3s;
+  animation-name: slideout;
+}
+
+@keyframes slideout {
+    from {
+        margin-right: 50%;
+        width: 50%;
+    }
+
+    to {
+        margin-right: 100%;
+        width: 0%;
+    }
 }
 
 /* media queries */

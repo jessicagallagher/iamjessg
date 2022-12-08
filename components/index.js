@@ -9,7 +9,6 @@ import HomePage from './HomePage'
 import NavBar from './NavBar'
 import PortfolioJessicaGallagher from './PortfolioJessicaGallagher'
 import BlogHome from './BlogHome'
-import AddPost from './AddPost'
 import OurWork from './OurWork'
 import MockWebsiteHome from './mock-website/MockWebsiteHome'
 import Button from './mock-website/Button'
@@ -22,6 +21,7 @@ import DonationAmtButton from './mock-website/DonationAmtButton'
 import MockWebsiteVolunteer from './mock-website/MockWebsiteVolunteer'
 import MockWebsitePartner from './mock-website/MockWebsitePartner'
 import JessicaGallagher from './JessicaGallagher'
+import ContactUs from './ContactUs'
 
 export {
   Cats,
@@ -35,7 +35,6 @@ export {
   NavBar,
   PortfolioJessicaGallagher,
   BlogHome,
-  AddPost,
   OurWork,
   MockWebsiteHome,
   Button,
@@ -47,5 +46,6 @@ export {
   DonationAmtButton,
   MockWebsiteVolunteer,
   MockWebsitePartner,
-  JessicaGallagher
+  JessicaGallagher,
+  ContactUs,
 }

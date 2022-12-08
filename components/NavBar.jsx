@@ -167,7 +167,7 @@ export default function NavBar() {
                   Our Work
                 </a>
               </Link>
-              <Link legacyBehavior href='/blog'>
+              {/* <Link legacyBehavior href='/blog'>
                 <a
                   className={
                     router.pathname == '/blog'
@@ -177,8 +177,8 @@ export default function NavBar() {
                 >
                   Blog
                 </a>
-              </Link>
-              <Link legacyBehavior href='mailto:hello@techmeowt.com'>
+              </Link> */}
+              <Link legacyBehavior href='/contact'>
                 <a
                   className={
                     router.pathname == '/contact'
