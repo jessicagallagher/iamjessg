@@ -51,7 +51,7 @@ export const mainNav = {
     { name: 'About', href: '/about' },
     { name: 'Our Work', href: '/our-work' },
     // { name: 'Blog', href: '/blog' },
-    // { name: 'Contact', href: '#' },
+    { name: 'Contact', href: '/contact' },
   ],
   social: [
     {
