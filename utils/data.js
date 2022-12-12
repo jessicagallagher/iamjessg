@@ -81,7 +81,7 @@ export const ourWork = [
     imgUrl: '/images/our-work-images/website.png',
     pageUrl: '/our-work/website/home',
     projectDescription:
-      'We can build a custom website for you from the ground up. We use the latest technologies to ensure lightning-fast page load times and a responsive, mobile-friendly website. We also offer ongoing, as needed maintenance. Looking to refresh your current website? Great! Send us your ideas.',
+      'We can build a custom website for you from the ground up. We use the latest technologies to ensure lightning-fast page load times and a responsive, mobile-friendly website. We also offer ongoing, as-needed maintenance. Looking to refresh your current website? Great! Send us your ideas.',
   },
   // {
   //   projectName: 'Blog',
