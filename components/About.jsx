@@ -54,7 +54,7 @@ export default function About() {
                   <a>
                     <img
                       className='mx-auto h-48 w-48 rounded-full shadow-2xl'
-                      src='/images/headshot-april.jpg'
+                      src='/images/headshot-december.jpg'
                       alt=''
                     />
                   </a>

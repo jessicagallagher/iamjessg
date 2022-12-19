@@ -15,8 +15,8 @@ export default function JessicaGallagher() {
           <div className='mx-auto lg:mx-10'>
             <img
               className='h-40 w-40 rounded-full ring-4 ring-greenDefault'
-              src='/images/profile-photo.jpg'
-              alt='girl holding cat'
+              src='/images/profile-photo-2.jpg'
+              alt='girl running'
               loading='lazy'
             />
           </div>
@@ -26,7 +26,7 @@ export default function JessicaGallagher() {
                 Jessica Gallagher, Founder, CEO + CTO
               </h1>
               <h2 className='text-2xl'>Brooklyn, NY</h2>
-              <Link legacyBehavior href='/portfolio'>
+              <Link legacyBehavior href='/about/portfolio/jessica-gallagher'>
                 <a>
                   <h3 className='text-pinkDefault mt-1 font-normal'>View Personal Portfolio</h3>
                 </a>
