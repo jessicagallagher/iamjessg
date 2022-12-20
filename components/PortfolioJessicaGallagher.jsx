@@ -48,6 +48,14 @@ export default function PortfolioJessicaGallagher() {
       pageUrl: '/portfolio',
       projectGitHubUrl: 'https://github.com/jessicagallagher/where_to_v2',
     },
+    {
+      projectName: 'Weather App',
+      imageUrl: '/images/portfolio-images/weather-app.png',
+      techUsed: 'React, OpenWeather API',
+      projectUrl: 'https://jess-react-weather-app.vercel.app/',
+      pageUrl: '/portfolio',
+      projectGitHubUrl: 'https://github.com/jessicagallagher/react-weather-app',
+    },
   ];
 
   return (

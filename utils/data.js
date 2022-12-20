@@ -21,12 +21,16 @@ export const projects = [
 
 export const running = [
   {
-    raceName: 'The Chicago Marathon',
-    raceHref: 'https://www.chicagomarathon.com/',
-  },
-  {
     raceName: 'NYC Half',
     raceHref: 'https://www.nyrr.org/races/unitedairlinesnychalf',
+  },
+  {
+    raceName: 'Brooklyn Half',
+    raceHref: 'https://www.nyrr.org/races/rbcbrooklynhalf',
+  },
+  {
+    raceName: 'The Chicago Marathon',
+    raceHref: 'https://www.chicagomarathon.com/',
   },
 ];
 
