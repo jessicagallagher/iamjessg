@@ -87,6 +87,13 @@ export const ourWork = [
     projectDescription:
       'We can build a custom website for you from the ground up. We use the latest technologies to ensure lightning-fast page load times and a responsive, mobile-friendly website. We also offer ongoing, as-needed maintenance. Looking to refresh your current website? Great! Send us your ideas.',
   },
+  {
+    projectName: 'Database and CRM Solutions',
+    imgUrl: '/images/our-work-images/website.png',
+    pageUrl: '/our-work/crm/complete-solution/home',
+    projectDescription:
+      'Are you looking for a better way to manage and streamline your customer or donor data? We can build out a bespoke CRM to fit your needs—from sending mass emails to tracking budgets, we\'ve got you covered. We can even integrate with services that you currently use so that you only have to remember one login and password.',
+  },
   // {
   //   projectName: 'Blog',
   //   imgUrl: '',
