@@ -50,12 +50,10 @@ export default function HomePage() {
                 </div>
                 <div className='overflow-visible'>
                   <InlineWidget
-                    url='https://calendly.com/techmeowt'
+                    url='https://calendly.com/techmeowt/'
                     styles={{
-                      height: '500px',
-                      width: '75%',
+                      width: '50%',
                       margin: '3rem auto',
-                      overflow: 'visible',
                     }}
                     pageSettings={{
                       hideEventTypeDetails: false,

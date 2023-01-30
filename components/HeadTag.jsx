@@ -7,7 +7,7 @@ export default function HeadTag() {
       />
       <meta
         name='keywords'
-        content='HTML, CSS, JavaScript, React, Next, Web Developer, Software Engineer, Tailwind, Brooklyn, Non Profit, Tech Meowt, Agency, Branding'
+        content='HTML, CSS, JavaScript, React, Next, Web Developer, Software Engineer, Software Developer, Tailwind, Brooklyn, Non Profit, Tech Meowt, Agency, Branding, CRM, Blog, Database'
       />
       <meta name='author' content='Jessica Gallagher' />
     </>

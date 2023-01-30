@@ -76,6 +76,11 @@ hr {
   animation-name: slideout;
 }
 
+.calendly-inline-widget {
+  height: 500px !important;
+  width: 100% !important;
+}
+
 @keyframes slideout {
     from {
         margin-right: 50%;
@@ -92,5 +97,17 @@ hr {
 @media (min-width: 640px) {
   hr {
     height: 3px;
+  }
+}
+
+@media (min-width: 768px) {
+  .calendly-inline-widget {
+    width: 75% !important;
+  }
+}
+
+@media (min-width: 1160px) {
+  .calendly-inline-widget {
+    width: 50% !important;
   }
 }
