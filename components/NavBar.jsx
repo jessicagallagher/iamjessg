@@ -104,8 +104,8 @@ export default function NavBar() {
                 ))}
 
                 {mainNav.social.map((item) => (
-                  <div className='mt-4'>
-                    <Link legacyBehavior href={item.href} key={item.name}>
+                  <div className='mt-4' key={item.href}>
+                    <Link legacyBehavior href={item.href}>
                       <a
                         target='_blank'
                         rel='noopener'
