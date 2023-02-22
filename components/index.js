@@ -22,6 +22,7 @@ import MockWebsiteVolunteer from './mock-website/MockWebsiteVolunteer'
 import MockWebsitePartner from './mock-website/MockWebsitePartner'
 import JessicaGallagher from './JessicaGallagher'
 import ContactUs from './ContactUs'
+import CrmHome from './demo-crm/complete-solution/CrmHome'
 
 export {
   Cats,
@@ -48,4 +49,5 @@ export {
   MockWebsitePartner,
   JessicaGallagher,
   ContactUs,
+  CrmHome,
 }

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Jessica Gallagher</title>
+        <title>Tech Meowt</title>
         <link rel="icon" href="/favicon.ico" />
         <HeadTag />
       </Head>
