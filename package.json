@@ -18,7 +18,6 @@
     "react": "^18.2.0",
     "react-calendly": "^4.1.0",
     "react-dom": "^18.2.0",
-    "react-gtm-module": "^2.0.11",
     "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
