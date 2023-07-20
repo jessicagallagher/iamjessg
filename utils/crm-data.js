@@ -9,7 +9,7 @@ import {
   CalendarDaysIcon,
   StarIcon,
   ChartPieIcon,
-  EnvelopeIcon
+  BanknotesIcon
 } from '@heroicons/react/20/solid'
 
 export const nav = [
@@ -23,12 +23,6 @@ export const nav = [
     name: 'Donors',
     href: '#',
     icon: UserGroupIcon,
-    current: false,
-  },
-  {
-    name: 'Donations',
-    href: '#',
-    icon: CurrencyDollarIcon,
     current: false,
   },
   {
@@ -46,13 +40,13 @@ export const nav = [
   {
     name: 'Financials',
     href: '#',
-    icon: ChartPieIcon,
+    icon: BanknotesIcon,
     current: false,
   },
   {
-    name: 'Newsletters',
+    name: 'Reports',
     href: '#',
-    icon: EnvelopeIcon,
+    icon: ChartPieIcon,
     current: false,
   }
 ];
@@ -89,7 +83,7 @@ export const committees = [
     bgColorClass: 'bg-indigo-500',
   },
   {
-    name: 'Events',
+    name: 'Event Planning',
     href: '#',
     bgColorClass: 'bg-indigo-500',
   },
