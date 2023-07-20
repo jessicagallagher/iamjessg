@@ -22,7 +22,9 @@ export default function Footer() {
           {mainNav.main.map((item) => (
             <div key={item.name} className='px-5 py-4'>
               <Link legacyBehavior href={item.href}>
-                <a className=' hover:text-white hover:font-semibold'>{item.name}</a>
+                <a className=' hover:text-white hover:font-semibold'>
+                  {item.name}
+                </a>
               </Link>
             </div>
           ))}
@@ -30,10 +32,7 @@ export default function Footer() {
         <div className='my-6 flex justify-center space-x-6'>
           {mainNav.social.map((item) => (
             <Link legacyBehavior key={item.name} href={item.href}>
-              <a
-                target='_blank'
-                rel='noopener'
-              >
+              <a target='_blank' rel='noopener'>
                 <span className='sr-only'>{item.name}</span>
                 <item.icon className='h-6 w-6' aria-hidden='true' />
               </a>
@@ -46,13 +45,33 @@ export default function Footer() {
           </span>
           <h3 className='text-sm sm:text-base'>
             <span className='text-2xl sm:text-lg'>&lt;</span>
-            Tech Meowt /<span className='text-2xl sm:text-lg'>&gt;</span> | Brooklyn, NY |{' '}
+            Tech Meowt /<span className='text-2xl sm:text-lg'>&gt;</span> |
+            Brooklyn, NY |{' '}
             <a href='mailto:hello@techmeowt.com'>hello@techmeowt.com</a>
           </h3>
         </div>
         <p className='text-center mt-2'>
           &copy; {date} Tech Meowt, LLC. All rights reserved.
         </p>
+        <div className='flex flex-row items-center justify-center text-center'>
+          <p className='text-center text-sm'>
+            <a
+              href='https://drive.google.com/file/d/161o-LRtuqdKlndjyUrYsHC0ffy_v3HjZ/view?usp=sharing'
+              target='_blank'
+              rel='noopener'
+            >
+              Terms of Service
+            </a>{' '}
+            |{' '}
+            <a
+              href='https://drive.google.com/file/d/1Oo3GUf9VDdsLP-tQ06eSc9KFgYVE1TBG/view?usp=sharing'
+              target='_blank'
+              rel='noopener'
+            >
+              Privacy Policy
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
