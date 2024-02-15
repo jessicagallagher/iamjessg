@@ -1,7 +1,7 @@
 export const projects = [
   {
     projectName: 'This website',
-    projectRepoUrl: 'https://github.com/jessicagallagher/iamjessg',
+    projectRepoUrl: 'https://github.com/jessicagallagher/iamjessg/tree/dev',
     projectUrl: 'https://www.techmeowt.com',
     projectFramework: 'Next.js',
     projectCss: 'Tailwind CSS',
@@ -9,43 +9,40 @@ export const projects = [
     projectDb: '',
   },
   {
-    projectName: 'Candy Crush Clone',
-    projectRepoUrl: 'https://github.com/jessicagallagher/react-candy-crush',
-    projectUrl: 'https://jess-candy-crush.vercel.app/',
-    projectFramework: 'React',
-    projectCss: 'Vanilla',
-    hasDb: false,
-    projectDb: '',
+    projectName: 'Database Management System',
+    projectRepoUrl: 'https://github.com/Tech-Meowt/red2blue-v1',
+    projectUrl: '',
+    projectFramework: 'React, MongoDB, Express, Node, Prisma ORM, Nodemailer, JWT Authentication',
+    projectCss: 'Bootstrap CSS and Reactstrap CSS',
+    hasDb: true,
+    projectDb: 'MongoDB, Prisma ORM',
   },
 ];
 
 export const running = [
   {
-    raceName: 'NYC Half',
-    raceHref: 'https://www.nyrr.org/races/unitedairlinesnychalf',
+    raceName: 'Marathon de Longueuil',
+    raceHref:
+      'https://www.coursesthematiques.com/marathon-de-longueuil-sunlife-en',
   },
   {
-    raceName: 'Brooklyn Half',
-    raceHref: 'https://www.nyrr.org/races/rbcbrooklynhalf',
-  },
-  {
-    raceName: 'The Chicago Marathon',
-    raceHref: 'https://www.chicagomarathon.com/',
+    raceName: 'Philadelphia Marathon',
+    raceHref: 'https://www.philadelphiamarathon.com/',
   },
 ];
 
 export const books = [
   {
-    bookName: 'The Effective Engineer',
+    bookName: 'What I Talk About When I Talk About Running: A Memoir',
     bookHref:
-      'https://www.amazon.com/Effective-Engineer-Engineering-Disproportionate-Meaningful/dp/0996128107/ref=sr_1_1?crid=2VDVNP5V07SMX&keywords=the+effective+engineer&qid=1662578648&sprefix=the+effecti%2Caps%2C77&sr=8-1',
-    bookAuthor: 'Edmond Lau',
+      'https://www.amazon.com/gp/product/0307389839/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1',
+    bookAuthor: 'Haruki Murakami',
   },
   {
-    bookName: 'Vanderbilt: The Rise and Fall of an American Dynasty',
+    bookName: 'Up to Speed: The Groundbreaking Science of Women Athlete',
     bookHref:
-      'https://www.amazon.com/Vanderbilt-Rise-Fall-American-Dynasty-ebook/dp/B08R3WD7WD/ref=sr_1_1?crid=M6YM4K0QBJ5K&keywords=vanderbilt+the+rise+and+fall+of+an+american+dynasty&qid=1662578731&sprefix=vanderbilt%2Caps%2C71&sr=8-1',
-    bookAuthor: 'Anderson Cooper + Katherine Howe',
+      'https://www.amazon.com/gp/product/0593332393/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1',
+    bookAuthor: 'Christine Yu',
   },
 ];
 

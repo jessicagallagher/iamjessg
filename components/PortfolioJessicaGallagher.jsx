@@ -9,26 +9,30 @@ export default function PortfolioJessicaGallagher() {
     {
       projectName: 'Tech Meowt',
       imageUrl: '/images/portfolio-images/tech-meowt.png',
-      techUsed: 'Next.js, Tailwind CSS, Firebase',
+      techUsed: 'Next.js, Tailwind CSS, Calendly, SendGrid',
       projectUrl: 'https://techmeowt.com',
-      pageUrl: '/portfolio',
-      projectGitHubUrl: 'https://github.com/jessicagallagher/iamjessg',
+      projectGitHubUrl: 'https://github.com/jessicagallagher/iamjessg/tree/dev',
+    },
+    {
+      projectName: 'Realtor.com Clone',
+      imageUrl: '/images/portfolio-images/realtor.png',
+      techUsed: 'React, Tailwind CSS, Firebase, Leaflet, Toastify + Swiper, OAuth',
+      projectUrl: 'https://realtor-clone-tan.vercel.app/',
+      projectGitHubUrl: 'https://github.com/jessicagallagher/realtor-clone',
     },
     {
       projectName: 'Database Management System *Demo Coming Soon!',
       imageUrl: '/images/portfolio-images/database-management-system.gif',
       techUsed:
-        'React, MongoDB, Express, Node, Prisma ORM, Bootstrap, + Reactstrap',
+        'React, MongoDB, Express, Node, Prisma ORM, Nodemailer, JWT Authentication, Bootstrap, + Reactstrap',
       projectUrl: '#',
-      pageUrl: '/portfolio',
-      projectGitHubUrl: '#',
+      projectGitHubUrl: 'https://github.com/Tech-Meowt/red2blue-v1',
     },
     {
       projectName: 'Candy Crush Clone',
       imageUrl: '/images/portfolio-images/candy-crush.gif',
       techUsed: 'React',
       projectUrl: 'https://jess-candy-crush.vercel.app/',
-      pageUrl: '/portfolio',
       projectGitHubUrl: 'https://github.com/jessicagallagher/react-candy-crush',
     },
     {
@@ -36,7 +40,6 @@ export default function PortfolioJessicaGallagher() {
       imageUrl: '/images/portfolio-images/tetris.gif',
       techUsed: 'React',
       projectUrl: 'https://jess-tetris.vercel.app/',
-      pageUrl: '/portfolio',
       projectGitHubUrl: 'https://github.com/jessicagallagher/tetris',
     },
     {
@@ -45,7 +48,6 @@ export default function PortfolioJessicaGallagher() {
       techUsed:
         'Next.js, Tailwind CSS, Firebase Authentication, + Firebase Firestore',
       projectUrl: 'https://where-to.vercel.app/',
-      pageUrl: '/portfolio',
       projectGitHubUrl: 'https://github.com/jessicagallagher/where_to_v2',
     },
     {
@@ -53,7 +55,6 @@ export default function PortfolioJessicaGallagher() {
       imageUrl: '/images/portfolio-images/weather-app.png',
       techUsed: 'React, OpenWeather API',
       projectUrl: 'https://jess-react-weather-app.vercel.app/',
-      pageUrl: '/portfolio',
       projectGitHubUrl: 'https://github.com/jessicagallagher/react-weather-app',
     },
   ];
@@ -73,8 +74,6 @@ export default function PortfolioJessicaGallagher() {
           {projects.map((project) => (
             <li key={project.projectName}>
               <div className='space-y-4'>
-                <Link legacyBehavior href={project.pageUrl}>
-                  <a target='_blank' rel='noopener'>
                     <div className='aspect-w-3 aspect-h-2'>
                       <img
                         className='rounded-lg object-scale-down shadow-lg border border-pinkDefault hover:shadow-2xl hover:border-greenDefault'
@@ -82,9 +81,6 @@ export default function PortfolioJessicaGallagher() {
                         alt={`Screenshot of project: ${project.projectName}`}
                       />
                     </div>
-                  </a>
-                </Link>
-
                 <div className='space-y-2'>
                   <div className='space-y-1 font-medium leading-6'>
                     <Link legacyBehavior href={project.projectUrl}>

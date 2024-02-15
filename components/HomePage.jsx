@@ -52,7 +52,6 @@ export default function HomePage() {
                   <InlineWidget
                     url='https://calendly.com/techmeowt/'
                     styles={{
-                      width: '50%',
                       margin: '3rem auto',
                     }}
                     pageSettings={{
