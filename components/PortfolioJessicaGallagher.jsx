@@ -14,13 +14,24 @@ export default function PortfolioJessicaGallagher() {
       projectInstructions: '',
     },
     {
+      projectName: 'Petsitting Application',
+      imageUrl: '/images/portfolio-images/petsitting.png',
+      techUsed:
+        'Next.js, Supabase, Prismic CMS, Supabase Authentication, Mapbox, Tailwind CSS, Supabase Database',
+      projectUrl: '#',
+      projectGitHubUrl: '#',
+      projectInstructions:
+        'This project is only accessible by the client. A demo of this web application is coming soon. Projects for clients have private GitHub repositories.',
+    },
+    {
       projectName: 'Realtor.com Clone',
       imageUrl: '/images/portfolio-images/realtor.png',
       techUsed:
         'React, Tailwind CSS, Firebase Firestore, Firebase Authentication, Leaflet, Toastify + Swiper, OAuth',
       projectUrl: 'https://realtor-clone-tan.vercel.app/',
       projectGitHubUrl: 'https://github.com/jessicagallagher/realtor-clone',
-      projectInstructions: 'This is a fully functioning web application that requires creating an account to post a real estate listing. The database will save your listings and your user account information, however, your user account information is private, encrypted, and will never be shared with any third parties.',
+      projectInstructions:
+        'This is a fully functioning web application that requires creating an account to post a real estate listing. The database will save your listings and your user account information, however, your user account information is private, encrypted, and will never be shared with any third parties.',
     },
     {
       projectName: 'Database Management System',
@@ -28,8 +39,9 @@ export default function PortfolioJessicaGallagher() {
       techUsed:
         'React, MongoDB, Express, Node, Prisma ORM, Nodemailer, JWT Authentication, Bootstrap, + Reactstrap',
       projectUrl: '#',
-      projectGitHubUrl: 'https://github.com/Tech-Meowt/red2blue-v1',
-      projectInstructions: 'This project is only accessible by the client. A demo of this web application is coming soon.',
+      projectGitHubUrl: '#',
+      projectInstructions:
+        'This project is only accessible by the client. A demo of this web application is coming soon. Projects for clients have private GitHub repositories.',
     },
     {
       projectName: 'Candy Crush Clone',
@@ -37,7 +49,8 @@ export default function PortfolioJessicaGallagher() {
       techUsed: 'React',
       projectUrl: 'https://jess-candy-crush.vercel.app/',
       projectGitHubUrl: 'https://github.com/jessicagallagher/react-candy-crush',
-      projectInstructions: 'This game is accessible on both web and mobile browsers. Use your mouse to move the candies if you\'re using the web version, and utilize the touch capabilities on your phone if using the mobile version.',
+      projectInstructions:
+        "This game is accessible on both web and mobile browsers. Use your mouse to move the candies if you're using the web version, and utilize the touch capabilities on your phone if using the mobile version.",
     },
     {
       projectName: 'Tetris',
@@ -45,7 +58,8 @@ export default function PortfolioJessicaGallagher() {
       techUsed: 'React',
       projectUrl: 'https://jess-tetris.vercel.app/',
       projectGitHubUrl: 'https://github.com/jessicagallagher/tetris',
-      projectInstructions: 'This game is accessible on web browsers only. Hold the down arrow key to quickly drop the tetromino, press the left and right arrow keys to position the teromino, and press the up arrow key to rotate the tetromino.',
+      projectInstructions:
+        'This game is accessible on web browsers only. Hold the down arrow key to quickly drop the tetromino, press the left and right arrow keys to position the teromino, and press the up arrow key to rotate the tetromino.',
     },
     {
       projectName: 'Where To?',
@@ -54,7 +68,8 @@ export default function PortfolioJessicaGallagher() {
         'Next.js, Tailwind CSS, Firebase Authentication, + Firebase Firestore',
       projectUrl: 'https://where-to.vercel.app/',
       projectGitHubUrl: 'https://github.com/jessicagallagher/where_to_v2',
-      projectInstructions: 'This is a fully functioning web application that requires users to create an account. Your account information is saved in a database and is private, encrypted, and will never be shared with any third parties.',
+      projectInstructions:
+        'This is a fully functioning web application that requires users to create an account. Your account information is saved in a database and is private, encrypted, and will never be shared with any third parties.',
     },
     {
       projectName: 'Weather App',
@@ -92,7 +107,7 @@ export default function PortfolioJessicaGallagher() {
                   <div className='space-y-1 font-medium leading-6'>
                     <Link legacyBehavior href={project.projectUrl}>
                       <a
-                        className='hover:text-greenDefault'
+                        className={`${project.projectUrl === '#' ? 'cursor-default' : 'cursor-pointer hover:text-greenDefault'}`}
                         target='_blank'
                         rel='noopener'
                       >
