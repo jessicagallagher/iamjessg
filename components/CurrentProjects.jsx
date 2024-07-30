@@ -20,9 +20,16 @@ export default function CurrentProjects() {
           key={project.id}
           className='list-outside list-disc mx-6 hover:text-pinkDefault text-base'
         >
-          <a href={project.projectRepoUrl} target='blank'>
+          <a
+            href={project.projectRepoUrl}
+            target='blank'
+            className={`${
+              project.projectRepoUrl ? 'cursor-pointer' : 'cursor-default'
+            }`}
+          >
             {project.projectName} which uses {project.projectFramework} and{' '}
-            {project.projectCss}. <p className='italic'>{project.projectDb}</p>
+            {project.projectCss}
+            {project.projectDb ? `, and ${project.projectDb}.` : '.'}
           </a>
         </li>
       ))}

@@ -9,40 +9,40 @@ export const projects = [
     projectDb: '',
   },
   {
-    projectName: 'Database Management System',
-    projectRepoUrl: 'https://github.com/Tech-Meowt/red2blue-v1',
+    projectName: 'A complex petsitting application',
+    projectRepoUrl: null,
     projectUrl: '',
-    projectFramework: 'React, MongoDB, Express, Node, Prisma ORM, Nodemailer, JWT Authentication',
-    projectCss: 'Bootstrap CSS and Reactstrap CSS',
+    projectFramework:
+      'Next.js, Supabase, Prismic CMS, Supabase Authentication, Mapbox',
+    projectCss: 'Tailwind CSS',
     hasDb: true,
-    projectDb: 'MongoDB, Prisma ORM',
+    projectDb: 'Supabase Database',
   },
 ];
 
 export const running = [
   {
-    raceName: 'Marathon de Longueuil',
-    raceHref:
-      'https://www.coursesthematiques.com/marathon-de-longueuil-sunlife-en',
-  },
-  {
     raceName: 'Philadelphia Marathon',
     raceHref: 'https://www.philadelphiamarathon.com/',
+  },
+  {
+    raceName: 'Brighton Marathon',
+    raceHref: 'https://www.brightonmarathonweekend.co.uk/',
   },
 ];
 
 export const books = [
   {
+    bookName: 'Il piccolo Principe',
+    bookHref:
+      'https://www.amazon.com/piccolo-Principe-Italian-Antoine-Saint-Exup%C3%A9ry/dp/1291718931/ref=sr_1_1?crid=AG2NBAA7AKPN&dib=eyJ2IjoiMSJ9.-ST7uM7Y-ml0drs5gcAYbQJpnGXyaSkkOgQZDakjovmmxUP8tM7IYn7_GuQ02cJCR54jowLyOTMUjl045w-KswY7siXj9BmoEF3dWjUnFnfMuFAOL4GRbB-YU-Uyb1YfTi0F3l069R5p0d7EoNCCXazPFyw73v8BSkuKcYsmhDqPfDKFSJC9JCYLWeIGMiosShLilORAgDTch0Gdv65udsxPESBDkgHOF_8T3lnINVk.7Dshcs6iwx9Q8XOJpTdi50oYLsbJlAj8iTvnMVC5S3c&dib_tag=se&keywords=il+piccolo+principe&qid=1722353047&sprefix=%2Caps%2C114&sr=8-1',
+    bookAuthor: 'Antoine de Saint-Exupéry, Translated by Ermes Lorena',
+  },
+  {
     bookName: 'What I Talk About When I Talk About Running: A Memoir',
     bookHref:
       'https://www.amazon.com/gp/product/0307389839/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1',
     bookAuthor: 'Haruki Murakami',
-  },
-  {
-    bookName: 'Up to Speed: The Groundbreaking Science of Women Athlete',
-    bookHref:
-      'https://www.amazon.com/gp/product/0593332393/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1',
-    bookAuthor: 'Christine Yu',
   },
 ];
 
