@@ -24,6 +24,16 @@ export default function PortfolioJessicaGallagher() {
         'This project is only accessible by the client. A demo of this web application is coming soon. Projects for clients have private GitHub repositories.',
     },
     {
+      projectName: 'Google Chrome Dinosaur Game Clone',
+      imageUrl: '/images/portfolio-images/dino-game.gif',
+      techUsed: 'Vanilla JavaScript',
+      projectUrl: 'https://chrome-dino-game-ten.vercel.app/',
+      projectGitHubUrl:
+        'https://github.com/jessicagallagher/chrome-dino-game/tree/main',
+      projectInstructions:
+        `This game is accessible on both web and mobile browsers. Use your spacebar to jump if you're using the web version, and tap to jump if using the mobile version.`,
+    },
+    {
       projectName: 'Realtor.com Clone',
       imageUrl: '/images/portfolio-images/realtor.png',
       techUsed:

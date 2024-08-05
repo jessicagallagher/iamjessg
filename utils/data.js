@@ -1,6 +1,6 @@
 export const projects = [
   {
-    projectName: 'This website',
+    projectName: `Tech Meowt's Website`,
     projectRepoUrl: 'https://github.com/jessicagallagher/iamjessg/tree/dev',
     projectUrl: 'https://www.techmeowt.com',
     projectFramework: 'Next.js',
