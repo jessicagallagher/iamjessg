@@ -15,7 +15,7 @@ function classNames(...classes) {
 const calc = (x, y, rect) => [
   -(y - rect.top - rect.height / 2) / 5,
   (x - rect.left - rect.width / 2) / 5,
-  1.4,
+  1.15,
 ];
 
 const trans = (x, y, s) =>

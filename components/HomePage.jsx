@@ -6,7 +6,7 @@ import {
   PhoneIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
-import { InlineWidget } from 'react-calendly'
+import { InlineWidget } from 'react-calendly';
 
 export default function HomePage() {
   return (
@@ -37,7 +37,6 @@ export default function HomePage() {
                 <h1 className='text-4xl font-bold tracking-tight sm:text-5xl font-thin'>
                   Let's talk about you
                 </h1>
-
                 <div className='max-w-full'>
                   <p className='mt-6 text-md sm:text-lg lg:text-xl'>
                     Got an idea for an app? Need a polished website stat?
@@ -48,7 +47,7 @@ export default function HomePage() {
                     </span>
                   </p>
                 </div>
-                <div className='overflow-visible'>
+                {/* <div className='overflow-visible'>
                   <InlineWidget
                     url='https://calendly.com/techmeowt/'
                     styles={{
@@ -61,6 +60,15 @@ export default function HomePage() {
                       textColor: '212121',
                     }}
                   />
+                </div> */}
+                <div className='mt-14 mx-auto'>
+                  <iframe
+                    src='https://calendar.google.com/calendar/appointments/schedules/AcZssZ2hvIDkyB5dcwiO0-DtvmATwANdIMr0fe-IwRTDVKe0_QQ-SfH-9kl_QFOk_ky_OtI-eWip1WMu?gv=true'
+                    width={'100%'}
+                    height={700}
+                    frameBorder='0'
+                    sandbox='allow-scripts allow-same-origin'
+                  ></iframe>
                 </div>
               </div>
             </div>

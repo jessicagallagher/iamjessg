@@ -76,10 +76,10 @@ hr {
   animation-name: slideout;
 }
 
-.calendly-inline-widget {
+/* .calendly-inline-widget {
   height: 650px !important;
   width: 100% !important;
-}
+} */
 
 @keyframes slideout {
     from {
