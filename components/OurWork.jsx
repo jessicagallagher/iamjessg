@@ -21,7 +21,7 @@ export default function OurWork() {
                 <img
                   className='h-48 w-full object-cover lg:object-fill border-b border-greenLight'
                   src={project.imgUrl}
-                  alt=''
+                  alt='project screenshot image'
                 />
               </div>
               <div className='flex flex-1 flex-col justify-between p-6'>

@@ -7,7 +7,7 @@ export default function Running() {
       <div className='font-normal py-2'>What I'm currently training for</div>
       {running.map((run) => (
         <li
-          key={run.id}
+          key={run.raceName}
           className='list-outside list-disc mx-6 hover:text-pinkDefault text-base'
         >
           <a href={run.raceHref}>{run.raceName}</a>

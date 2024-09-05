@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
         <div className='flex flex-row items-center justify-center my-6 text-center'>
           <span className='mr-2 hidden'>
-            <Image src={img} height={48} width={48} />
+            <Image src={img} height={48} width={48} alt='logo favicon' />
           </span>
           <h3 className='text-sm sm:text-base'>
             <span className='text-2xl sm:text-lg'>&lt;</span>

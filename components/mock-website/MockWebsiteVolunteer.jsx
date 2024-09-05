@@ -14,7 +14,7 @@ export default function MockWebsiteVolunteer() {
           <img
             className='h-full w-full object-cover'
             src='https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JvdXB8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
-            alt=''
+            alt='generic business image'
           />
           <div
             className='absolute inset-0 bg-indigo-500 mix-blend-multiply'
@@ -92,7 +92,7 @@ export default function MockWebsiteVolunteer() {
                   <img
                     className='rounded-3xl object-cover object-center shadow-2xl'
                     src='https://cdn.pixabay.com/photo/2019/10/06/10/03/team-4529717_1280.jpg'
-                    alt=''
+                    alt='generic business team photo'
                   />
                 </div>
               </div>

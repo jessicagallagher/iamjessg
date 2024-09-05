@@ -18,7 +18,7 @@ export default function Cats() {
         </Link>
       </div>
       <div className='mx-auto mt-2'>
-        <Image src={img} width={250} height={250} className='rounded-full shadow-2xl'/>
+        <Image src={img} width={250} height={250} alt='two cats laying next to each other' className='rounded-full shadow-2xl'/>
       </div>
     </dt>
   );

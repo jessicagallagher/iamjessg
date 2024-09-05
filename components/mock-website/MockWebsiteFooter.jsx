@@ -11,7 +11,7 @@ export default function MockWebsiteFooter() {
       <div className='mx-auto max-w-full p-4 sm:px-6'>
         <div className='sm:grid sm:grid-cols-3 sm:gap-8'>
           <div className='space-y-4 sm:col-span-1'>
-            <Image src={img} height={64} width={64} />
+            <Image src={img} height={64} width={64} alt='mock website mock logo image'/>
             <p className='text-base text-white'>
               123 Your Street
               <br />

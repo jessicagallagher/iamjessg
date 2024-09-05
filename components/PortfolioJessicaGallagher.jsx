@@ -141,6 +141,7 @@ export default function PortfolioJessicaGallagher() {
                               width={25}
                               height={25}
                               aria-hidden='true'
+                              alt='github logo'
                             />
                           </a>
                         </Link>
@@ -160,6 +161,7 @@ export default function PortfolioJessicaGallagher() {
                               width={30}
                               height={30}
                               aria-hidden='true'
+                              alt='project screenshot'
                             />
                           </a>
                         </Link>

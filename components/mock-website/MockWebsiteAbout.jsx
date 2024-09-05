@@ -12,7 +12,7 @@ export default function MockWebsiteAbout() {
       <div className='relative w-full' aria-hidden='true'>
         <img
           src='/images/mock-website-images/hero-hi-res.jpeg'
-          alt=''
+          alt='mock website generic hero'
           className='w-full h-48 lg:h-96 object-cover'
         />
         <h2 className='absolute bottom-0 right-0 pt-6 pl-2 lg:p-20 text-white font-bold text-3xl sm:text-5xl'>
@@ -64,7 +64,7 @@ export default function MockWebsiteAbout() {
                       <img
                         className='h-16 w-16 rounded-full lg:h-20 lg:w-20'
                         src={person.imageUrl}
-                        alt=''
+                        alt='mock website stock photo of person'
                       />
                       <div className='space-y-1 font-medium leading-6'>
                         <h3 className='text-lg'>{person.name}</h3>

@@ -31,6 +31,7 @@ export default function MockWebsite() {
               }
               width={1500}
               height={500}
+              alt='mock website generic business image'
               className='object-cover h-96 2xl:h-[30rem]'
             />
           </div>
@@ -41,6 +42,7 @@ export default function MockWebsite() {
               }
               width={1500}
               height={500}
+              alt='mock website generic business image'
               className='object-cover h-96 2xl:h-[30rem]'
             />
           </div>
@@ -51,6 +53,7 @@ export default function MockWebsite() {
               }
               width={1500}
               height={500}
+              alt='mock website generic business image'
               className='object-cover h-96 2xl:h-[30rem]'
             />
           </div>
@@ -58,7 +61,12 @@ export default function MockWebsite() {
       </div>
 
       <div className='flex justify-center pb-10 border-b border-indigo-200 mx-10'>
-        <Image src={img} height={200} width={375} />
+        <Image
+          src={img}
+          height={200}
+          width={375}
+          alt='mock website generic business logo with generic business name'
+        />
       </div>
 
       {/* mission */}

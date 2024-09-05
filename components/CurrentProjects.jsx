@@ -17,7 +17,7 @@ export default function CurrentProjects() {
       <div className='font-normal py-2'>What I'm working on for fun</div>
       {projects.map((project) => (
         <li
-          key={project.id}
+          key={project.projectName}
           className='list-outside list-disc mx-6 hover:text-pinkDefault text-base'
         >
           <a

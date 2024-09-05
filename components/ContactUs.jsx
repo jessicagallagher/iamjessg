@@ -37,7 +37,7 @@ export default function ContactUs() {
       <div className='w-full' aria-hidden='true'>
         <img
           src='https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-          alt=''
+          alt='generic skyline image'
           className='w-full h-48 lg:h-96 object-cover'
         />
       </div>

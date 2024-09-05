@@ -72,7 +72,7 @@ export default function NavBar() {
                     <Link legacyBehavior href='/'>
                       <a className='flex flex-row items-center justify-center mt-2'>
                         <span className='mr-2'>
-                          <Image src={img} height={48} width={48} />
+                          <Image src={img} height={48} width={48} alt='logo favicon'/>
                         </span>
                         <h1 className='font-thin text-xl sm:text-2xl xl:text-4xl font-bold'>
                           &lt;Tech Meowt /&gt;

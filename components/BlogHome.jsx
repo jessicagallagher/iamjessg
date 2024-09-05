@@ -39,6 +39,7 @@ export default function BlogHome() {
             }
             width='300'
             height='300'
+            alt='generic work image'
             className='rounded-xl shadow-2xl'
           />
         </div>

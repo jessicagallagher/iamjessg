@@ -33,6 +33,7 @@ export default function MockWebsiteNav() {
                   src={img}
                   height={48}
                   width={48}
+                  alt='mock website mock business logo'
                   className='block w-auto h-12'
                 />
 
@@ -106,7 +107,9 @@ export default function MockWebsiteNav() {
                 <div>
                   <Button
                     buttonType={'button'}
-                    buttonClass={'bg-white text-indigo-800 border border-indigo-500 border-2 shadow shadow-md'}
+                    buttonClass={
+                      'bg-white text-indigo-800 border border-indigo-500 border-2 shadow shadow-md'
+                    }
                     buttonText={'Donate'}
                   />
                 </div>

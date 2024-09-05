@@ -12,7 +12,7 @@ export default function MockWebsiteOurWork() {
         <div className='relative w-full' aria-hidden='true'>
           <img
             src='https://images.unsplash.com/photo-1576158114131-f211996e9137?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGhlcm8lMjBpbWFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
-            alt=''
+            alt='mock website generic business image'
             className='w-full h-48 lg:h-96 object-cover'
           />
           <div className='absolute inset-0 bg-gradient-to-t from-white' />

@@ -7,7 +7,7 @@ export default function Reading() {
       <div className='font-normal py-2'>What I'm currently reading</div>
       {books.map((book) => (
         <li
-          key={book.id}
+          key={book.bookName}
           className='list-outside list-disc mx-6 hover:text-pinkDefault text-base'
         >
           <a href={book.bookHref} target='blank' className='italic'>

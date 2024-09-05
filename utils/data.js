@@ -39,10 +39,10 @@ export const books = [
     bookAuthor: 'Antoine de Saint-Exupéry, Translated by Ermes Lorena',
   },
   {
-    bookName: 'What I Talk About When I Talk About Running: A Memoir',
+    bookName: 'Frank Kafka Collected Stories',
     bookHref:
-      'https://www.amazon.com/gp/product/0307389839/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1',
-    bookAuthor: 'Haruki Murakami',
+      'https://www.amazon.com/Collected-Stories-Everymans-Library-Franz/dp/0679423036/ref=sr_1_3?crid=PK4GSV3M7BKZ&dib=eyJ2IjoiMSJ9.CGsvmcYThIKrpqHUzxH_rMjQLX-xE0O72YBdxvXgUpLJmDa212BY-FW3VZPcmqJxNV2Mpx7yxiYB4TqyRseHcxMzbsOM_KhvIz1u3b9XIK-0l68qfOSLQh-dbQT0eHW4JP7MXO_2_C4ieE_rpF4Ih7I8vEJG4JwnHUGSc5WJ0iELXWeplvhG5mDQq1UpP4V5jkhAbogQd-xKzlafj4nPss_ltdCG_7iIQEM4gjEDiM4.Xx6MhQAV9_IAwXmU3oSdYtAx3DUeaFnB4JOtawhgRLo&dib_tag=se&keywords=kafka+collected+works&qid=1725551222&sprefix=kafka+collec%2Caps%2C90&sr=8-3&ccs_id=c6ca9dad-b37f-4257-8c75-c61efc904405',
+    bookAuthor: 'Franz Kafka, Translated by Willa Muir + Edwin Muir',
   },
 ];
 

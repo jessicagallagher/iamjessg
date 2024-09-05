@@ -23,7 +23,7 @@ export default function JessicaGallagher() {
           <div className='font-bold mt-4 flex flex-col mx-auto lg:m-0'>
             <div className='text-center lg:text-left '>
               <h1 className='text-3xl lg:mt-6'>
-                Jessica Gallagher, Founder, CEO + CTO
+                Jessica Gallagher, Chief Technology Officer
               </h1>
               <h2 className='text-2xl'>Brooklyn, NY</h2>
               <Link legacyBehavior href='/about/portfolio/jessica-gallagher'>

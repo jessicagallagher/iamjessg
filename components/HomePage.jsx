@@ -44,7 +44,7 @@ export default function HomePage() {
                     Missing a CRM? How about a database? Not sure what you need?
                     Drop us a line to schedule a consultation.{' '}
                     <span className='text-xl sm:text-2xl filter brightness-110'>
-                      👩🏼‍💻
+                      👩🏻‍💻
                     </span>
                   </p>
                 </div>

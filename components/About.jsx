@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 lg:px-10 px-4'>
         <div className='w-full hidden sm:flex justify-center items-center md:relative'>
-          <img src='/images/hero-about.jpeg' alt="" className='w-full h-48 lg:h-96 object-cover' />
+          <img src='/images/hero-about.jpeg' alt="hero" className='w-full h-48 lg:h-96 object-cover' />
         </div>
       <div className='mx-auto max-w-full my-16'>
         <h1 className='text-5xl text-center font-bold'>About Us</h1>
@@ -54,8 +54,8 @@ export default function About() {
                   <a>
                     <img
                       className='mx-auto h-48 w-48 rounded-full shadow-2xl'
-                      src='/images/headshot-august.jpeg'
-                      alt=''
+                      src='/images/headshot_lasers_september.jpg'
+                      alt='headshot'
                     />
                   </a>
                 </Link>
@@ -67,7 +67,7 @@ export default function About() {
                         <h3>Jessica Gallagher</h3>
                       </a>
                     </Link>
-                    <p className='font-semibold'>Founder, CEO + CTO</p>
+                    <p className='font-semibold'>Chief Technology Officer</p>
                     <Link legacyBehavior href='/about/portfolio/jessica-gallagher'>
                       <a className='hover:text-greenDefault hover:font-bold'>
                         <h3>Personal Portfolio</h3>
