@@ -6,7 +6,6 @@ import {
   PhoneIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
-import { InlineWidget } from 'react-calendly';
 
 export default function HomePage() {
   return (
@@ -47,20 +46,6 @@ export default function HomePage() {
                     </span>
                   </p>
                 </div>
-                {/* <div className='overflow-visible'>
-                  <InlineWidget
-                    url='https://calendly.com/techmeowt/'
-                    styles={{
-                      margin: '3rem auto',
-                    }}
-                    pageSettings={{
-                      hideEventTypeDetails: false,
-                      hideLandingPageDetails: false,
-                      primaryColor: '1cd3a2',
-                      textColor: '212121',
-                    }}
-                  />
-                </div> */}
                 <div className='mt-14 mx-auto'>
                   <iframe
                     src='https://calendar.google.com/calendar/appointments/schedules/AcZssZ2hvIDkyB5dcwiO0-DtvmATwANdIMr0fe-IwRTDVKe0_QQ-SfH-9kl_QFOk_ky_OtI-eWip1WMu?gv=true'

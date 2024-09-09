@@ -8,7 +8,7 @@ export default function PortfolioJessicaGallagher() {
     {
       projectName: 'Tech Meowt',
       imageUrl: '/images/portfolio-images/tech-meowt.png',
-      techUsed: 'Next.js, Tailwind CSS, Calendly, SendGrid',
+      techUsed: 'Next.js, Tailwind CSS, Google Calendar, SendGrid',
       projectUrl: 'https://techmeowt.com',
       projectGitHubUrl: 'https://github.com/jessicagallagher/iamjessg/tree/dev',
       projectInstructions: '',
