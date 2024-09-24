@@ -15,13 +15,13 @@ export default function JessicaGallagher() {
           <div className='mx-auto lg:mx-10'>
             <img
               className='h-40 w-40 rounded-full ring-4 ring-greenDefault'
-              src='/images/profile-photo-2.jpg'
+              src='/images/headshot_august.jpeg'
               alt='girl running'
               loading='lazy'
             />
           </div>
           <div className='font-bold mt-4 flex flex-col mx-auto lg:m-0'>
-            <div className='text-center lg:text-left '>
+            <div className='text-center lg:text-left mt-4 '>
               <h1 className='text-3xl lg:mt-6'>
                 Jessica Gallagher, Chief Technology Officer
               </h1>
@@ -47,10 +47,9 @@ export default function JessicaGallagher() {
                 intuitive experiences. I enjoy creating applications that solve
                 real-world problems and day-to-day challenges. I like single
                 quotes and semi-colons—even when they play hide-and-seek. I have
-                an extensive background working with non-profits in different
+                an extensive background working with small companies and non-profits in various
                 capacities—including serving as a Board President. I understand
-                the technological challenges that non-profits face, including
-                the biggest one... tight budgets!
+                the technological challenges that come with tight budgets!
               </p>
             </div>
             <h1 className='text-2xl font-bold'>Interests + Hobbies</h1>

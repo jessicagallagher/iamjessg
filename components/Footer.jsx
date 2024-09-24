@@ -20,7 +20,7 @@ export default function Footer() {
           aria-label='Footer'
         >
           {mainNav.main.map((item) => (
-            <div key={item.name} className='px-5 py-4'>
+            <div key={item.name} className='px-5 py-2'>
               <Link legacyBehavior href={item.href}>
                 <a className=' hover:text-white hover:font-semibold'>
                   {item.name}
@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
           ))}
         </nav>
-        <div className='my-6 flex justify-center space-x-6'>
+        {/* <div className='my-6 flex justify-center space-x-6'>
           {mainNav.social.map((item) => (
             <Link legacyBehavior key={item.name} href={item.href}>
               <a target='_blank' rel='noopener'>
@@ -38,8 +38,8 @@ export default function Footer() {
               </a>
             </Link>
           ))}
-        </div>
-        <div className='flex flex-row items-center justify-center my-6 text-center'>
+        </div> */}
+        <div className='flex flex-row items-center justify-center text-center'>
           <span className='mr-2 hidden'>
             <Image src={img} height={48} width={48} alt='logo favicon' />
           </span>
@@ -50,7 +50,7 @@ export default function Footer() {
             <a href='mailto:hello@techmeowt.com'>hello@techmeowt.com</a>
           </h3>
         </div>
-        <p className='text-center mt-2'>
+        <p className='text-center  text-sm'>
           &copy; {date} Tech Meowt, LLC. All rights reserved.
         </p>
         <div className='flex flex-row items-center justify-center text-center'>

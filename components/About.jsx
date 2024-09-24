@@ -4,21 +4,24 @@ import Link from 'next/link';
 export default function About() {
   return (
     <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 lg:px-10 px-4'>
-        <div className='w-full hidden sm:flex justify-center items-center md:relative'>
-          <img src='/images/hero-about.jpeg' alt="hero" className='w-full h-48 lg:h-96 object-cover' />
-        </div>
+      <div className='w-full hidden sm:flex justify-center items-center md:relative'>
+        <img
+          src='/images/hero-about.jpeg'
+          alt='hero'
+          className='w-full h-48 lg:h-96 object-cover'
+        />
+      </div>
       <div className='mx-auto max-w-full my-16'>
         <h1 className='text-5xl text-center font-bold'>About Us</h1>
         <br />
         <p className='text-base md:text-lg'>
-          Tech Meowt works with small to mid-size organizations to assess and
-          build their technological needs. We get it—budgets are tight, but you
-          need better technology. Our goal is to help you succeed by
-          streamlining your processes and organizing your data—whether that's
-          done by building a new website from the ground up, refreshing and/or
-          rebranding your current website, creating a custom CRM to fit your
-          organization's exact needs, or bringing your ideas to life with a web
-          or mobile app.
+          Tech Meowt works with small organizations to assess and build their
+          technological needs. We get it—budgets are tight, but you need better
+          technology. Our goal is to help you succeed by streamlining your
+          processes and organizing your data—whether that's done by building a
+          new website from the ground up, refreshing and/or rebranding your
+          current website, creating a custom CRM to fit your organization's
+          exact needs, or bringing your ideas to life with a web or mobile app.
         </p>
         <br />
         <p className='text-base md:text-lg'>
@@ -68,7 +71,10 @@ export default function About() {
                       </a>
                     </Link>
                     <p className='font-semibold'>Chief Technology Officer</p>
-                    <Link legacyBehavior href='/about/portfolio/jessica-gallagher'>
+                    <Link
+                      legacyBehavior
+                      href='/about/portfolio/jessica-gallagher'
+                    >
                       <a className='hover:text-greenDefault hover:font-bold'>
                         <h3>Personal Portfolio</h3>
                       </a>
