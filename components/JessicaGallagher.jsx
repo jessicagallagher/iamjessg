@@ -15,8 +15,8 @@ export default function JessicaGallagher() {
           <div className='mx-auto lg:mx-10'>
             <img
               className='h-40 w-40 rounded-full ring-4 ring-greenDefault'
-              src='/images/headshot_august.jpeg'
-              alt='girl running'
+              src='/images/headshot_feb_2025.jpeg'
+              alt='headshot'
               loading='lazy'
             />
           </div>
