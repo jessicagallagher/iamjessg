@@ -9,11 +9,11 @@ export const projects = [
     projectDb: '',
   },
   {
-    projectName: 'A complex petsitting application',
+    projectName: 'A tracking application for the popular videogame Stardew Valley',
     projectRepoUrl: null,
     projectUrl: '',
     projectFramework:
-      'Next.js, Prismic CMS, Supabase Authentication + Database, Mapbox,',
+      'Next.js, Supabase,',
     projectCss: 'Tailwind CSS',
     hasDb: true,
     projectDb: '',
@@ -22,27 +22,31 @@ export const projects = [
 
 export const running = [
   {
-    raceName: 'Philadelphia Marathon',
-    raceHref: 'https://www.philadelphiamarathon.com/',
-  },
-  {
     raceName: 'Brighton Marathon',
     raceHref: 'https://www.brightonmarathonweekend.co.uk/',
+  },
+  {
+    raceName: 'Toronto Waterfront Marathon',
+    raceHref: 'https://www.torontowaterfrontmarathon.com/',
+  },
+  {
+    raceName: 'New York City Marathon',
+    raceHref: 'https://www.nyrr.org/tcsnycmarathon',
   },
 ];
 
 export const books = [
   {
-    bookName: 'Il piccolo Principe',
+    bookName: 'Crime and Punishment',
     bookHref:
       'https://www.amazon.com/piccolo-Principe-Italian-Antoine-Saint-Exup%C3%A9ry/dp/1291718931/ref=sr_1_1?crid=AG2NBAA7AKPN&dib=eyJ2IjoiMSJ9.-ST7uM7Y-ml0drs5gcAYbQJpnGXyaSkkOgQZDakjovmmxUP8tM7IYn7_GuQ02cJCR54jowLyOTMUjl045w-KswY7siXj9BmoEF3dWjUnFnfMuFAOL4GRbB-YU-Uyb1YfTi0F3l069R5p0d7EoNCCXazPFyw73v8BSkuKcYsmhDqPfDKFSJC9JCYLWeIGMiosShLilORAgDTch0Gdv65udsxPESBDkgHOF_8T3lnINVk.7Dshcs6iwx9Q8XOJpTdi50oYLsbJlAj8iTvnMVC5S3c&dib_tag=se&keywords=il+piccolo+principe&qid=1722353047&sprefix=%2Caps%2C114&sr=8-1',
-    bookAuthor: 'Antoine de Saint-Exupéry, Translated by Ermes Lorena',
+    bookAuthor:
+      'Fyodor Dostoyevsky, Translated by Richard Pevear + Larissa Volokhonsky',
   },
   {
-    bookName: 'Franz Kafka Collected Stories',
-    bookHref:
-      'https://www.amazon.com/Collected-Stories-Everymans-Library-Franz/dp/0679423036/ref=sr_1_3?crid=PK4GSV3M7BKZ&dib=eyJ2IjoiMSJ9.CGsvmcYThIKrpqHUzxH_rMjQLX-xE0O72YBdxvXgUpLJmDa212BY-FW3VZPcmqJxNV2Mpx7yxiYB4TqyRseHcxMzbsOM_KhvIz1u3b9XIK-0l68qfOSLQh-dbQT0eHW4JP7MXO_2_C4ieE_rpF4Ih7I8vEJG4JwnHUGSc5WJ0iELXWeplvhG5mDQq1UpP4V5jkhAbogQd-xKzlafj4nPss_ltdCG_7iIQEM4gjEDiM4.Xx6MhQAV9_IAwXmU3oSdYtAx3DUeaFnB4JOtawhgRLo&dib_tag=se&keywords=kafka+collected+works&qid=1725551222&sprefix=kafka+collec%2Caps%2C90&sr=8-3&ccs_id=c6ca9dad-b37f-4257-8c75-c61efc904405',
-    bookAuthor: 'Franz Kafka, Translated by Willa Muir + Edwin Muir',
+    bookName: 'The You You Are',
+    bookHref: 'https://books.apple.com/us/book/the-you-you-are/id6738364141',
+    bookAuthor: 'Dr. Ricken Lazlo Hale, PhD',
   },
 ];
 

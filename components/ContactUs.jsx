@@ -157,7 +157,7 @@ export default function ContactUs() {
                   <div>
                     <button
                       type='submit'
-                      className='inline-flex justify-center rounded-md border border-pinkDefault py-3 px-6 text-base font-semibold shadow-xl hover:-translate-y-2 hover:translate-x-2 rounded-3xl'
+                      className='inline-flex justify-center rounded-md border border-pinkDefault py-3 px-6 text-base font-semibold shadow-xl hover:bg-pinkDefault hover:text-white rounded-3xl'
                     >
                       Submit
                     </button>

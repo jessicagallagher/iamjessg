@@ -1,4 +1,4 @@
-import img from '../public/favicon.png';
+import img from '../public/favicon.jpg';
 import Link from 'next/link';
 import router, { useRouter } from 'next/router';
 import Image from 'next/image';

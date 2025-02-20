@@ -24,10 +24,9 @@ export default function HomePage() {
               knowledge and budget constraints—should have access to
               user-friendly, engaging, and intuitive web applications and
               experiences that they need to solve real-world problems and
-              day-to-day challenges. Our services include
-              building secure databases, CRMs, and bespoke web applications. We
-              also provide website design, development, onboarding, and
-              maintenance.
+              day-to-day challenges. Our services include building secure
+              databases, CRMs, and bespoke web applications. We also provide
+              website design, development, onboarding, and maintenance.
             </p>
             <hr className='my-3 sm:my-6 lg:my-8 mx-auto' />
             <div className='overflow-hidden'>
@@ -39,20 +38,28 @@ export default function HomePage() {
                   <p className='mt-6 text-md sm:text-lg lg:text-xl'>
                     Got an idea for an app? Need a polished website stat?
                     Missing a CRM? How about a database? Not sure what you need?
-                    Drop us a line to schedule a consultation.{' '}
+                    Schedule a consultation.{' '}
                     <span className='text-xl sm:text-2xl filter brightness-110'>
-                      👩🏻‍💻
+                    👇
                     </span>
                   </p>
                 </div>
                 <div className='mt-14 mx-auto'>
                   <iframe
+                    src='https://techmeowt.setmore.com/book?step=time-slot&products=9dc0acb0-81d6-420a-a734-67c92d929e15&type=service&staff=289c8676-a628-4947-b785-34c30ecbaf9c&staffSelected=true'
+                    scrolling='yes'
+                    width={'100%'}
+                    height={'525px'}
+                    frameBorder='0'
+                    className='rounded-lg border border-greenDefault'
+                  ></iframe>
+                  {/* <iframe
                     src='https://calendar.google.com/calendar/appointments/schedules/AcZssZ2hvIDkyB5dcwiO0-DtvmATwANdIMr0fe-IwRTDVKe0_QQ-SfH-9kl_QFOk_ky_OtI-eWip1WMu?gv=true'
                     width={'100%'}
                     height={700}
                     frameBorder='0'
                     sandbox='allow-scripts allow-same-origin'
-                  ></iframe>
+                  ></iframe> */}
                 </div>
               </div>
             </div>

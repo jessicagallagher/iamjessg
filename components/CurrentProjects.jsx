@@ -29,7 +29,7 @@ export default function CurrentProjects() {
           >
             {project.projectName} which uses {project.projectFramework} and{' '}
             {project.projectCss}
-            {project.projectDb ? `, and ${project.projectDb}.` : '.'}
+            {project.projectDb ? `, and ${project.projectDb}.` : ''}
           </a>
         </li>
       ))}

@@ -8,7 +8,7 @@ export default function Cats() {
     <dt className='font-semibold'>
       My Two Cats
       <div className='flex flex-row items-center'>
-        <div className='font-normal py-2'>Meet Wiz Khatlifa + Max Just Max</div>
+        <div className='font-normal py-2'>Max Just Max + Wiz Khatlifa</div>
         <Link legacyBehavior href='https://www.instagram.com/wizandmaxbk'>
           <a className='h-6 w-6 ml-2 hover:greenDefault' target='_blank' rel='noopener'>
             <svg fill='#f05c85' viewBox='0 0 24 24'>
