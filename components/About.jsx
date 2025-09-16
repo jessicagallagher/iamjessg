@@ -73,9 +73,9 @@ export default function About() {
                     <p className='font-semibold'>Chief Technology Officer</p>
                     <Link
                       legacyBehavior
-                      href='/about/portfolio/jessica-gallagher'
+                      href='https://www.jessicagallagher.com'
                     >
-                      <a className='hover:text-greenDefault hover:font-bold'>
+                      <a target='_blank' rel='noopener' className='hover:text-greenDefault hover:font-bold'>
                         <h3>Personal Portfolio</h3>
                       </a>
                     </Link>

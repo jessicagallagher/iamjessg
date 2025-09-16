@@ -26,8 +26,8 @@ export default function JessicaGallagher() {
                 Jessica Gallagher, Chief Technology Officer
               </h1>
               <h2 className='text-2xl'>Brooklyn, NY</h2>
-              <Link legacyBehavior href='/about/portfolio/jessica-gallagher'>
-                <a>
+              <Link legacyBehavior href='https://www.jessicagallagher.com'>
+                <a target='_blank' rel='noopener'>
                   <h3 className='text-pinkDefault mt-1 font-normal'>View Personal Portfolio</h3>
                 </a>
               </Link>

@@ -22,31 +22,27 @@ export const projects = [
 
 export const running = [
   {
-    raceName: 'Brighton Marathon',
-    raceHref: 'https://www.brightonmarathonweekend.co.uk/',
-  },
-  {
     raceName: 'Toronto Waterfront Marathon',
     raceHref: 'https://www.torontowaterfrontmarathon.com/',
   },
   {
-    raceName: 'New York City Marathon',
-    raceHref: 'https://www.nyrr.org/tcsnycmarathon',
+    raceName: `Grandma's Marathon`,
+    raceHref: 'https://grandmasmarathon.com/',
   },
 ];
 
 export const books = [
   {
-    bookName: 'Crime and Punishment',
+    bookName: 'A Philosophy of Software Design',
     bookHref:
-      'https://www.amazon.com/piccolo-Principe-Italian-Antoine-Saint-Exup%C3%A9ry/dp/1291718931/ref=sr_1_1?crid=AG2NBAA7AKPN&dib=eyJ2IjoiMSJ9.-ST7uM7Y-ml0drs5gcAYbQJpnGXyaSkkOgQZDakjovmmxUP8tM7IYn7_GuQ02cJCR54jowLyOTMUjl045w-KswY7siXj9BmoEF3dWjUnFnfMuFAOL4GRbB-YU-Uyb1YfTi0F3l069R5p0d7EoNCCXazPFyw73v8BSkuKcYsmhDqPfDKFSJC9JCYLWeIGMiosShLilORAgDTch0Gdv65udsxPESBDkgHOF_8T3lnINVk.7Dshcs6iwx9Q8XOJpTdi50oYLsbJlAj8iTvnMVC5S3c&dib_tag=se&keywords=il+piccolo+principe&qid=1722353047&sprefix=%2Caps%2C114&sr=8-1',
-    bookAuthor:
-      'Fyodor Dostoyevsky, Translated by Richard Pevear + Larissa Volokhonsky',
+      'https://www.amazon.com/Philosophy-Software-Design-2nd/dp/173210221X/ref=sr_1_1?crid=289BZ69F77XKZ&dib=eyJ2IjoiMSJ9.thuonFC3GnLB3dGZfHxZosqdfUQXlSdb6tCpAeBE0kqzv-AT3ltocUX2szt0Zc-r_u9sSjfleB9ZI-irNxyH7T2KksZ6yc6wKdyoX1_tjeko4fB4y_x58o_1rB1zbl_4IhYrbh40hS793buHll1E2OwFs2ryHBpsc8lrdIVOIeC-YRoY5G49kXxFbMxiYdeQNmfK-P67AHH87VnncME2X12CAx6X9UqYrn5XNbcuwzE.j10P6MgoA-c8zSJ4RtbMkYypuccpoqxSWj0UW2RblBk&dib_tag=se&keywords=the+philosophy+of+software+design&qid=1758038321&sprefix=the+philosphy+of+softw%2Caps%2C100&sr=8-1',
+    bookAuthor: 'John Ousterhout',
   },
   {
-    bookName: 'The You You Are',
-    bookHref: 'https://books.apple.com/us/book/the-you-you-are/id6738364141',
-    bookAuthor: 'Dr. Ricken Lazlo Hale, PhD',
+    bookName: 'Norwegian Wood',
+    bookHref:
+      'https://www.amazon.com/s?k=norweigan+wood&crid=2PNB7GQJ0OMKD&sprefix=norweigan+wood%2Caps%2C118&ref=nb_sb_noss_2',
+    bookAuthor: 'Haruki Murakami',
   },
 ];
 
