@@ -5,7 +5,7 @@ import { useRouter } from 'next/compat/router';
 export default function HeadTag({ title }) {
   const [currentUrl, setCurrentUrl] = useState(null)
   const router = useRouter() 
-  const baseUrl = 'https://www.techmeowt.com/'
+  const baseUrl = 'https://www.techmeowt.com'
   // const currentUrl = `${baseUrl}${router.asPath}`
 
   useEffect(() => {
