@@ -1,10 +1,18 @@
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/compat/router';
 
-export default function HeadTag({title}) {
+export default function HeadTag({ title }) {
+  const [currentUrl, setCurrentUrl] = useState(null)
   const router = useRouter() 
-  const baseUrl = 'https://www.techmeowt.com'
-  const currentUrl = `${baseUrl}${router.asPath}`
+  const baseUrl = 'https://www.techmeowt.com/'
+  // const currentUrl = `${baseUrl}${router.asPath}`
+
+  useEffect(() => {
+    if (router.isReady) {
+      setCurrentUrl(`${baseUrl}${router.asPath}`);
+    }
+  }, [router.isReady, router.asPath])
 
   return (
     <Head>
