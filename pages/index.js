@@ -1,24 +1,19 @@
-import Head from 'next/head'
 import { useEffect } from 'react';
-import { HeadTag, NavBar, HomePage, Footer } from '../components'
+import { HeadTag, NavBar, HomePage, Footer } from '../components';
 
 export default function Home() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-  }, [])
-  
+  }, []);
+
   return (
     <div>
-      <Head>
-        <title>Tech Meowt</title>
-        <link rel="icon" href="/favicon.ico" />
-        <HeadTag />
-      </Head>
+      <HeadTag title={'Tech Meowt'} />
       <main>
         <NavBar />
         <HomePage />
       </main>
-        <Footer />
+      <Footer />
     </div>
-  )
+  );
 }

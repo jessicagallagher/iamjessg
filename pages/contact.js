@@ -1,14 +1,9 @@
-import Head from 'next/head'
-import { ContactUs, NavBar, HeadTag, Footer } from '../components'
+import { ContactUs, NavBar, Footer, HeadTag } from '../components'
 
 export default function Contact() {
   return (
     <div>
-      <Head>
-        <title>Contact Us</title>
-        <link rel='icon' href='/favicon.ico' />
-        <HeadTag />
-      </Head>
+      <HeadTag title={'Contact'}/>
       <main>
         <NavBar />
         <ContactUs />

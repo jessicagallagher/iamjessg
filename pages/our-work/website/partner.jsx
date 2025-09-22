@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import {
   NavBar,
   HeadTag,
@@ -9,11 +8,7 @@ import {
 export default function OurWork() {
   return (
     <div>
-      <Head>
-        <title>Website</title>
-        <link rel='icon' href='/favicon.ico' />
-        <HeadTag />
-      </Head>
+      <HeadTag title={'Your Company Name'} />
       <main>
         <NavBar />
         <MockWebsitePartner />
