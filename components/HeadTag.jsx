@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/compat/router';
 
 export default function HeadTag({title}) {
   const router = useRouter() 
