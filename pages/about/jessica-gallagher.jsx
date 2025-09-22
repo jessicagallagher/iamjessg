@@ -1,14 +1,9 @@
-import Head from 'next/head';
 import { NavBar, HeadTag, JessicaGallagher, Footer } from '../../components';
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Jessica Gallagher</title>
-        <link rel='icon' href='/favicon.ico' />
-        <HeadTag />
-      </Head>
+        <HeadTag title={'Jessica Gallagher'}/>
       <main>
         <NavBar />
         <JessicaGallagher />
