@@ -7,7 +7,6 @@ import Footer from './Footer'
 import HeadTag from './HeadTag'
 import HomePage from './HomePage'
 import NavBar from './NavBar'
-import PortfolioJessicaGallagher from './PortfolioJessicaGallagher'
 import BlogHome from './BlogHome'
 import OurWork from './OurWork'
 import MockWebsiteHome from './mock-website/MockWebsiteHome'
@@ -33,7 +32,6 @@ export {
   HeadTag,
   HomePage,
   NavBar,
-  PortfolioJessicaGallagher,
   BlogHome,
   OurWork,
   MockWebsiteHome,
