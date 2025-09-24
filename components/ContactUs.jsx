@@ -7,30 +7,56 @@ export default function ContactUs() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('sending');
 
     setClicked(true);
+    setStatus('');
 
-    await fetch('/api/mail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email: email,
-        fullName: fullName,
-        phone: phone,
-        message: message,
-      }),
-    });
-    setEmail('');
-    setFullName('');
-    setPhone('');
-    setMessage('');
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: process.env.TO_EMAIL,
+          subject: process.env.EMAIL_SUBJECT,
+          from: process.env.FROM_EMAIL,
+          replyTo: email,
+          html: `
+          <h2><strong>New Contact Form Submission</strong></h2>
+          <p><strong>Name:</strong> ${fullName}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Phone:</strong> ${phone}</p>
+          <p><strong>Message:</strong> ${message}</p>
+          `,
+          text: `Name: ${fullName}\nEmail: ${email}\nMessage: ${message}`
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus('Email sent!');
+        setEmail('');
+        setFullName('');
+        setPhone('');
+        setMessage('');
+      } else {
+        setStatus('Failed to send email. Please try again.');
+      } 
+    } catch (error) {
+      console.error(`Error: ${error}`);
+      setStatus('An error occurred. Please try again.');
+    } finally {
+      setClicked(false);
+    }
   };
+
+  
 
   return (
     <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 bg-white'>
@@ -165,7 +191,7 @@ export default function ContactUs() {
                 )}
                 {clicked && (
                   <div>
-                    <button className='cursor-not-allowed inline-flex justify-between rounded-md border border-pinkDefault py-3 px-6 text-base font-semibold shadow-xl rounded-3xl'>
+                    <button disabled className='cursor-not-allowed inline-flex justify-between rounded-md border border-pinkDefault py-3 px-6 text-base font-semibold shadow-xl rounded-3xl'>
                       Thanks <span className='ml-1'>✔️</span>
                     </button>
                   </div>
