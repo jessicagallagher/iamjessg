@@ -15,7 +15,7 @@ export default async function handler(req, res) {
       subject: process.env.EMAIL_SUBJECT,
       html: html,
       text: text,
-      from: process.env.FROM_EMAIL,
+      from: `Tech Meowt <${process.env.FROM_EMAIL}>`,
       replyTo: replyTo,
     });
 

@@ -48,7 +48,6 @@ export default function ContactUs() {
       console.error(`Error: ${error}`);
       setStatus('An error occurred. Please try again.');
     } finally {
-      setClicked(false);
       setEmail('');
       setFullName('');
       setPhone('');
