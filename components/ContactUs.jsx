@@ -56,7 +56,19 @@ export default function ContactUs() {
     }
   };
 
-  
+  const phoneNumberAutoFormat = (phoneNumber) => {
+    const number = phoneNumber.trim().replace(/[^0-9]/g, '');
+    if (number.length < 4) return number;
+    if (number.length < 7) return number.replace(/(\d{3})(\d{1})/, '($1) $2');
+    if (number.length < 11)
+      return number.replace(/(\d{3})(\d{3})(\d{1})/, '($1) $2-$3');
+    return number.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+  };
+
+  const handleChange = (e) => {
+    const targetValue = phoneNumberAutoFormat(e.target.value);
+    setPhone(targetValue);
+  };
 
   return (
     <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 bg-white'>
@@ -157,9 +169,7 @@ export default function ContactUs() {
                     className='block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm'
                     placeholder='Phone (optional)'
                     value={phone}
-                    onChange={(e) => {
-                      setPhone(e.target.value);
-                    }}
+                    onChange={handleChange}
                   />
                 </div>
                 <div>
