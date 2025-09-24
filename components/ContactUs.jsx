@@ -41,10 +41,6 @@ export default function ContactUs() {
 
       if (result.success) {
         setStatus('Email sent!');
-        setEmail('');
-        setFullName('');
-        setPhone('');
-        setMessage('');
       } else {
         setStatus('Failed to send email. Please try again.');
       } 
@@ -53,6 +49,10 @@ export default function ContactUs() {
       setStatus('An error occurred. Please try again.');
     } finally {
       setClicked(false);
+      setEmail('');
+      setFullName('');
+      setPhone('');
+      setMessage('');
     }
   };
 
