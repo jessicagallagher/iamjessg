@@ -1,19 +1,29 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function ContactUs() {
+  const recaptchaRef = useRef();
   const [clicked, setClicked] = useState(false);
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
+  const [recaptchaStatus, setRecaptchaStatus] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     setClicked(true);
     setStatus('');
+
+    const token = recaptchaRef.current.getValue();
+
+    if (!token) {
+      setRecaptchaStatus('Please complete the reCAPTCHA');
+      return;
+    }
 
     try {
       const response = await fetch('/api/send-email', {
@@ -33,7 +43,8 @@ export default function ContactUs() {
           <p><strong>Phone:</strong> ${phone}</p>
           <p><strong>Message:</strong> ${message}</p>
           `,
-          text: `Name: ${fullName}\nEmail: ${email}\nMessage: ${message}`
+          text: `Name: ${fullName}\nEmail: ${email}\nMessage: ${message}`,
+          recaptchaToken: token,
         }),
       });
 
@@ -41,12 +52,16 @@ export default function ContactUs() {
 
       if (result.success) {
         setStatus('Email sent!');
+        setRecaptchaStatus('reCAPTCHA submitted')
+        recaptchaRef.current.reset();
       } else {
         setStatus('Failed to send email. Please try again.');
+        setRecaptchaStatus(result.message || 'Error submitted reCAPTCHA')
       } 
     } catch (error) {
       console.error(`Error: ${error}`);
       setStatus('An error occurred. Please try again.');
+      setRecaptchaStatus('An error occurred. Please try again');
     } finally {
       setEmail('');
       setFullName('');
@@ -188,6 +203,10 @@ export default function ContactUs() {
                     value={message}
                   />
                 </div>
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                />
                 {!clicked && (
                   <div>
                     <button
@@ -200,7 +219,10 @@ export default function ContactUs() {
                 )}
                 {clicked && (
                   <div>
-                    <button disabled className='cursor-not-allowed inline-flex justify-between rounded-md border border-pinkDefault py-3 px-6 text-base font-semibold shadow-xl rounded-3xl'>
+                    <button
+                      disabled
+                      className='cursor-not-allowed inline-flex justify-between rounded-md border border-pinkDefault py-3 px-6 text-base font-semibold shadow-xl rounded-3xl'
+                    >
                       Thanks <span className='ml-1'>✔️</span>
                     </button>
                   </div>
