@@ -236,6 +236,7 @@ toast.error(`Error sending email. Please try again.`)
                   </div>
                 )}
               </form>
+              <ToastContainer position='bottom-center' theme='colored' />
             </div>
           </div>
         </div>
