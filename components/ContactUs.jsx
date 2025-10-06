@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactUs() {
   const recaptchaRef = useRef();
@@ -15,13 +17,13 @@ export default function ContactUs() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    setClicked(true);
     setStatus('');
 
     const token = recaptchaRef.current.getValue();
 
     if (!token) {
       setRecaptchaStatus('Please complete the reCAPTCHA');
+      toast.error('Please complete the reCAPTCHA');
       return;
     }
 
@@ -51,12 +53,18 @@ export default function ContactUs() {
       const result = await response.json();
 
       if (result.success) {
+        setClicked(true);
         setStatus('Email sent!');
+        toast.success('Email sent!')
         setRecaptchaStatus('reCAPTCHA submitted')
+        toast.success('reCAPTCHA submitted')
         recaptchaRef.current.reset();
       } else {
         setStatus('Failed to send email. Please try again.');
-        setRecaptchaStatus(result.message || 'Error submitted reCAPTCHA')
+toast.error(`Error sending email. Please try again.`)
+        setRecaptchaStatus(result.message || 'Error submitting reCAPTCHA')
+        toast.error(`Error submitting reCAPTCHA. Please try again.`)
+        setClicked(false)
       } 
     } catch (error) {
       console.error(`Error: ${error}`);
