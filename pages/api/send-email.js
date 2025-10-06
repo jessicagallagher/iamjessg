@@ -8,7 +8,22 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { to, subject, html, text, from, replyTo } = req.body;
+    const { to, subject, html, text, from, replyTo, recaptchaToken } = req.body;
+
+    const verifyResponse = await fetch(
+      `https://www.google.com/recaptcha/api/siteverify`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${recaptchaToken}`,
+      }
+    );
+
+    const verifyData = await verifyResponse.json();
+
+    if (!verifyData.success) {
+      return res.status(400).json({ message: 'reCAPTCHA verification failed' });
+    }
 
     const data = await resend.emails.send({
       to: process.env.TO_EMAIL,
@@ -20,8 +35,9 @@ export default async function handler(req, res) {
     });
 
     return res.status(200).json({ success: true, data });
+    console.log(`Form + reCAPTCHA success`)
   } catch (error) {
-    console.error(`Error sending email ${error}`);
+    console.error(`Error: ${error}`);
     return res.status(500).json({ success: false, error: error.message });
   }
 };
