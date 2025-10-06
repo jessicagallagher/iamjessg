@@ -35,9 +35,9 @@ export default async function handler(req, res) {
     });
 
     return res.status(200).json({ success: true, data });
-    console.log(`Form + reCAPTCHA success`)
+    console.log(`Form + reCAPTCHA success`);
   } catch (error) {
     console.error(`Error: ${error}`);
     return res.status(500).json({ success: false, error: error.message });
   }
-};
+}

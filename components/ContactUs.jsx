@@ -55,17 +55,16 @@ export default function ContactUs() {
       if (result.success) {
         setClicked(true);
         setStatus('Email sent!');
-        toast.success('Email sent!')
-        setRecaptchaStatus('reCAPTCHA submitted')
-        toast.success('reCAPTCHA submitted')
+        toast.success('Email sent!');
+        setRecaptchaStatus('reCAPTCHA submitted');
         recaptchaRef.current.reset();
       } else {
         setStatus('Failed to send email. Please try again.');
-toast.error(`Error sending email. Please try again.`)
-        setRecaptchaStatus(result.message || 'Error submitting reCAPTCHA')
-        toast.error(`Error submitting reCAPTCHA. Please try again.`)
-        setClicked(false)
-      } 
+        toast.error(`Error sending email. Please try again.`);
+        setRecaptchaStatus(result.message || 'Error submitting reCAPTCHA');
+        toast.error(`Error submitting reCAPTCHA. Please try again.`);
+        setClicked(false);
+      }
     } catch (error) {
       console.error(`Error: ${error}`);
       setStatus('An error occurred. Please try again.');
