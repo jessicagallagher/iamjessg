@@ -12,6 +12,7 @@
     "@heroicons/react": "^2.0.10",
     "@next/third-parties": "^14.2.13",
     "@react-spring/web": "^9.5.2",
+    "@vercel/speed-insights": "^1.2.0",
     "dotenv": "^16.0.3",
     "eslint-config-next": "^13.1.6",
     "next": "^13.1.6",
