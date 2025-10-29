@@ -1,16 +1,10 @@
-import {
-  NavBar,
-  HeadTag,
-  Footer,
-  MockWebsitePartner,
-} from '../../../components';
+import { HeadTag, Footer, MockWebsitePartner } from '../../../components';
 
 export default function OurWork() {
   return (
     <div>
-      <HeadTag title={'Your Company Name'} />
+      <HeadTag title={'Example Website'} />
       <main>
-        <NavBar />
         <MockWebsitePartner />
       </main>
       <Footer />

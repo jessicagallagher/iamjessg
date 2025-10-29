@@ -3,7 +3,7 @@ import { examples, features, featuresGrid } from '../../utils/mock-website-data.
 
 export default function MockWebsiteOurWork() {
   return (
-    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 bg-white'>
+    <div className='max-w-full mx-auto bg-white'>
       {/* nav */}
       <MockWebsiteNav />
 
