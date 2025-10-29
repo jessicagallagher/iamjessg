@@ -22,12 +22,12 @@ export const projects = [
 
 export const running = [
   {
-    raceName: 'Toronto Waterfront Marathon',
-    raceHref: 'https://www.torontowaterfrontmarathon.com/',
+    raceName: 'Hudson Valley Marathon',
+    raceHref: 'https://hudsonvalleymarathon.com/',
   },
   {
-    raceName: `Grandma's Marathon`,
-    raceHref: 'https://grandmasmarathon.com/',
+    raceName: `Amsterdam Marathon`,
+    raceHref: 'https://www.tcsamsterdammarathon.eu/',
   },
 ];
 
