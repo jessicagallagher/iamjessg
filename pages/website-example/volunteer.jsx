@@ -1,9 +1,9 @@
-import { HeadTag, Footer, MockWebsiteVolunteer } from '../../../components';
+import { HeadTag, Footer, MockWebsiteVolunteer } from '../../components';
 
 export default function Volunteer() {
   return (
     <div>
-      <HeadTag title={'Website Example'} />
+      <HeadTag title={'Volunteer'} />
       <main>
         <MockWebsiteVolunteer />
       </main>

@@ -54,23 +54,23 @@ export const posts = [
 ];
 
 export const navigation = [
-  { name: 'Home', href: '/our-work/website/home', current: true },
-  { name: 'About', href: '/our-work/website/about', current: false },
-  { name: 'Our Work', href: '/our-work/website/our-work', current: false },
+  { name: 'Home', href: '/website-example/', current: true },
+  { name: 'About', href: '/website-example/about', current: false },
+  { name: 'Our Work', href: '/website-example/our-work', current: false },
 ];
 
 export const dropdown = [
   {
     name: 'Donate',
-    href: '/our-work/website/donate',
+    href: '/website-example/donate',
   },
   {
     name: 'Volunteer',
-    href: '/our-work/website/volunteer',
+    href: '/website-example/volunteer',
   },
   {
     name: 'Become a Partner',
-    href: '/our-work/website/partner',
+    href: '/website-example/partner',
   },
 ];
 

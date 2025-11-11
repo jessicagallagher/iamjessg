@@ -1,9 +1,9 @@
-import { HeadTag, Footer, MockWebsitePartner } from '../../../components';
+import { HeadTag, Footer, MockWebsitePartner } from '../../components';
 
 export default function OurWork() {
   return (
     <div>
-      <HeadTag title={'Example Website'} />
+      <HeadTag title={'Become a Partner'} />
       <main>
         <MockWebsitePartner />
       </main>

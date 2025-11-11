@@ -3,6 +3,7 @@ import { Disclosure, Menu, Transition, Popover } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
+import Link from 'next/link'
 import img from '../../public/images/mock-website-images/mock_logo.png';
 import { Button } from '..'
 import { navigation, dropdown } from '../../utils/mock-website-data';
@@ -105,13 +106,15 @@ export default function MockWebsiteNav() {
               </div>
               <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
                 <div>
-                  <Button
-                    buttonType={'button'}
-                    buttonClass={
-                      'bg-white text-indigo-800 border border-indigo-500 border-2 shadow shadow-md'
-                    }
-                    buttonText={'Donate'}
-                  />
+                  <Link href='/website-example/donate'>
+                    <Button
+                      buttonType={'button'}
+                      buttonClass={
+                        'bg-white text-indigo-800 border border-indigo-500 border-2 shadow shadow-md'
+                      }
+                      buttonText={'Donate'}
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
