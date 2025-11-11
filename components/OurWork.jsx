@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ourWork } from '../utils/data';
+import { ourWorkWebsites } from '../utils/data';
 
 export default function OurWork() {
   return (
@@ -63,7 +63,7 @@ export default function OurWork() {
           your ideas.
         </p>
         <div className='grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
-          {ourWork.map((project) => (
+          {ourWorkWebsites.map((project) => (
             <div key={project.projectName}>
               <a
                 href={project.pageUrl}
@@ -76,7 +76,7 @@ export default function OurWork() {
                   alt='project screenshot image'
                 />
               </a>
-
+              <p className='font-bold text-base text-pinkDefault md:text-lg pt-8'>{project.projectName}</p>
               <p className='text-base md:text-lg'>
                 {project.projectDescription}
               </p>

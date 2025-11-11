@@ -76,13 +76,20 @@ export const mainNav = {
   // ],
 };
 
-export const ourWork = [
+export const ourWorkWebsites = [
   {
     projectName: 'Nonprofit Website Example',
     imgUrl: '/images/our-work-images/mock-website.png',
     pageUrl: '/website-example',
     projectDescription:
       'An example website for a nonprofit organization built with Next.js and Tailwind CSS',
+  },
+  {
+    projectName: 'Southpaw Martial Arts',
+    imgUrl: '/images/our-work-images/spmafc.png',
+    pageUrl: 'https://www.southpawmartialarts.com',
+    projectDescription:
+      'A website built and maintained for Southpaw Martial Arts using Next.js, Tailwind CSS, and Resend',
   },
   // {
   //   projectName: 'Database and CRM Solutions',
