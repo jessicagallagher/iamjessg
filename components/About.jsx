@@ -8,7 +8,7 @@ export default function About() {
         <img
           src='/images/hero-about.jpeg'
           alt='hero'
-          className='w-full h-48 lg:h-96 object-cover'
+          className='w-full h-48 lg:h-96 object-cover rounded-lg'
         />
       </div>
       <div className='mx-auto max-w-full my-16'>
@@ -57,7 +57,7 @@ export default function About() {
                   <a>
                     <img
                       className='mx-auto h-48 w-48 rounded-full shadow-2xl'
-                      src='/images/headshot_feb_2025.jpeg'
+                      src='/images/headshot_july_2025.jpg'
                       alt='headshot'
                     />
                   </a>

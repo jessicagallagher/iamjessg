@@ -4,8 +4,8 @@ import { ourWork } from '../utils/data';
 
 export default function OurWork() {
   return (
-    <div className='max-w-full mx-auto px-4 sm:px-6 lg:px-8'>
-      <div className='relative mx-auto max-w-7xl mt-10 lg:mt-20'>
+    <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 lg:px-10 px-4'>
+      {/* <div className='relative mx-auto max-w-7xl mt-10 lg:mt-20'>
         <div className='text-center'>
           <h2 className='text-3xl font-bold tracking-tight sm:text-4xl'>
             Our Work
@@ -38,6 +38,31 @@ export default function OurWork() {
                   </Link>
                 </div>
               </div>
+            </div>
+          ))}
+        </div>
+      </div> */}
+
+      <div className='w-full hidden sm:flex justify-center items-center md:relative'>
+        <img
+          src='/images/hero-our-work.jpg'
+          alt='hero'
+          className='w-full h-48 lg:h-96 object-cover rounded-lg'
+        />
+      </div>
+      <div className='mx-auto max-w-full my-16'>
+        <h1 className='text-5xl text-center font-bold'>Our Work</h1>
+        <h2 className='text-2xl font-semibold tracking-tight sm:text-3xl my-16'>
+          Website Design, Development, and Refresh
+        </h2>
+        <div className='grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
+          {ourWork.map((project) => (
+            <div key={project.projectName}>
+              <img
+                className='aspect-3/2 w-full rounded-lg object-cover'
+                src={project.imgUrl}
+                alt='project screenshot image'
+              />
             </div>
           ))}
         </div>
