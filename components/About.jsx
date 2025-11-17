@@ -15,12 +15,12 @@ export default function About() {
         <h1 className='text-5xl text-center font-bold'>About Us</h1>
         <br />
         <p className='text-base md:text-lg'>
-          Tech Meowt works with small organizations to assess and build their
+          Tech Meowt works with small businesses, startups, and nonprofits to assess and build their
           technological needs. We get it—budgets are tight, but you need better
           technology. Our goal is to help you succeed by streamlining your
           processes and organizing your data—whether that's done by building a
           new website from the ground up, refreshing and/or rebranding your
-          current website, creating a custom CRM to fit your organization's
+          current website, creating a custom CRM or database to fit your organization's
           exact needs, or bringing your ideas to life with a web or mobile app.
         </p>
         <br />
