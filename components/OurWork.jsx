@@ -1,48 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ourWorkWebsites } from '../utils/data';
+import { ourWorkWebsites, ourWorkCrmsDbs, ourWorkWebApps } from '../utils/data';
 
 export default function OurWork() {
   return (
     <div className='max-w-full mx-auto mt-4 sm:mt-10 lg:mt-20 lg:px-10 px-4'>
-      {/* <div className='relative mx-auto max-w-7xl mt-10 lg:mt-20'>
-        <div className='text-center'>
-          <h2 className='text-3xl font-bold tracking-tight sm:text-4xl'>
-            Our Work
-          </h2>
-        </div>
-        <div className='mx-auto mt-12 grid max-w-full gap-5 lg:max-w-none lg:grid-cols-3'>
-          {ourWork.map((project) => (
-            <div
-              key={project.projectName}
-              className='flex flex-col overflow-hidden rounded-lg shadow-lg'
-            >
-              <div className='flex-shrink-0'>
-                <img
-                  className='h-48 w-full object-cover lg:object-fill border-b border-greenLight'
-                  src={project.imgUrl}
-                  alt='project screenshot image'
-                />
-              </div>
-              <div className='flex flex-1 flex-col justify-between p-6'>
-                <div className='flex-1'>
-                  <Link href={project.pageUrl} legacyBehavior>
-                    <a href={project.pageUrl} target='blank' rel='noopener noreferrer' className='mt-2 block'>
-                      <p className='text-xl font-semibold'>
-                        {project.projectName}
-                      </p>
-                      <p className='mt-3 text-base'>
-                        {project.projectDescription}
-                      </p>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div> */}
-
       <div className='w-full hidden sm:flex justify-center items-center md:relative'>
         <img
           src='/images/hero-our-work.jpg'
@@ -55,7 +17,7 @@ export default function OurWork() {
         <h2 className='text-2xl font-semibold tracking-tight sm:text-3xl mt-16'>
           Website Design, Development, and Refresh
         </h2>
-        <p className='my-8 text-base md:text-lg'>
+        <p className='my-8 text-base md:text-lg text-justify'>
           We can build a custom website for you from the ground up. We use the
           latest technologies to build a responsive, mobile-friendly website
           with lightning-fast page load times. We also offer ongoing, as-needed
@@ -71,12 +33,68 @@ export default function OurWork() {
                 rel='noopener noreferrer'
               >
                 <img
-                  className='aspect-3/2 w-full rounded-lg object-cover'
+                  className='aspect-3/2 w-full rounded-lg object-cover shadow drop-shadow-2xl'
                   src={project.imgUrl}
-                  alt='project screenshot image'
+                  alt={`${project.projectName} thumbnail image`}
                 />
               </a>
-              <p className='font-bold text-base text-pinkDefault md:text-lg pt-8'>{project.projectName}</p>
+              <p className='font-bold text-base text-pinkDefault md:text-lg pt-8'>
+                {project.projectName}
+              </p>
+              <p className='text-base md:text-lg'>
+                {project.projectDescription}
+              </p>
+            </div>
+          ))}
+        </div>
+        <hr className='mt-16 mx-auto' />
+        <h2 className='text-2xl font-semibold tracking-tight sm:text-3xl mt-16'>
+          CRM and Database Solutions
+        </h2>
+        <p className='my-8 text-base md:text-lg text-justify'>
+          Are you looking for a better way to manage and streamline your
+          customer or donor data? We can build out a bespoke CRM to fit your
+          needs—from sending mass emails to tracking budgets, we've got you
+          covered. We can even integrate with services that you currently use so
+          that you only have to remember one login and password.
+        </p>
+        <div className='grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
+          {ourWorkCrmsDbs.map((project) => (
+            <div key={project.projectName}>
+              <img
+                className='aspect-3/2 w-full rounded-lg object-cover shadow drop-shadow-2xl'
+                src={project.imgUrl}
+                alt={`${project.projectName} thumbnail image`}
+              />
+              <p className='font-bold text-base text-pinkDefault md:text-lg pt-8'>
+                {project.projectName}
+              </p>
+              <p className='text-base md:text-lg'>
+                {project.projectDescription}
+              </p>
+            </div>
+          ))}
+        </div>
+        <hr className='mt-16 mx-auto' />
+        <h2 className='text-2xl font-semibold tracking-tight sm:text-3xl mt-16'>
+          Bespoke Web Applications
+        </h2>
+        <p className='my-8 text-base md:text-lg text-justify'>
+          Do you have an idea for a web application? We can bring your idea to
+          life building a unique, mobile-first web application with features such as admin
+          panels, dashboards, appointment scheduling, and payment systems. Need more? We can also integrate a CRM and database for you to keep up with all of your clients and data.
+        </p>
+        <div className='grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
+          {ourWorkWebApps.map((project) => (
+            <div key={project.projectName}>
+              <img
+                className='aspect-3/2 w-full rounded-lg object-cover shadow drop-shadow-2xl'
+                src={project.imgUrl}
+                alt={`${project.projectName} thumbnail image`}
+              />
+              <p className='font-bold text-base text-pinkDefault md:text-lg pt-8'>
+                {project.projectName}
+              </p>
               <p className='text-base md:text-lg'>
                 {project.projectDescription}
               </p>

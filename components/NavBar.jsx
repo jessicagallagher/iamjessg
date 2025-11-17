@@ -102,8 +102,7 @@ export default function NavBar() {
                     </Link>
                   </div>
                 ))}
-
-                {/* {mainNav.social.map((item) => (
+                {mainNav.social.map((item) => (
                   <div className='mt-4' key={item.href}>
                     <Link legacyBehavior href={item.href}>
                       <a
@@ -116,7 +115,7 @@ export default function NavBar() {
                       </a>
                     </Link>
                   </div>
-                ))} */}
+                ))}
               </div>
               <div className='-mr-2 flex items-center md:hidden'>
                 {/* Mobile menu button */}

@@ -24,7 +24,7 @@ export default function HomePage() {
               knowledge and budget constraints—should have access to
               user-friendly, engaging, and intuitive web applications and
               experiences that they need to solve real-world problems and
-              day-to-day challenges. Our services include building secure
+              day-to-day challenges. Working with small businesses. startups, and nonprofits, our services include building secure
               databases, CRMs, and bespoke web applications. We also provide
               website design, development, onboarding, and maintenance.
             </p>
