@@ -77,7 +77,7 @@ export const ourWorkWebsites = [
   {
     projectName: 'Southpaw Martial Arts',
     imgUrl: '/images/our-work-images/spmafc.png',
-    pageUrl: 'https://www.southpawmafc.vercel.app',
+    pageUrl: 'https://southpawmafc.vercel.app',
     projectDescription:
       'A website built and maintained for Southpaw Martial Arts using Next.js, Tailwind CSS, and Resend',
   },
