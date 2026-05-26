@@ -9,11 +9,11 @@ export const projects = [
     projectDb: '',
   },
   {
-    projectName: 'A tracking application for the popular videogame Stardew Valley',
+    projectName: 'A networking database that integrates with LinkedIn',
     projectRepoUrl: null,
     projectUrl: '',
     projectFramework:
-      'Next.js, Supabase,',
+      'Next.js, NextAuth.js, MongoDB,',
     projectCss: 'Tailwind CSS',
     hasDb: true,
     projectDb: '',
@@ -22,27 +22,28 @@ export const projects = [
 
 export const running = [
   {
-    raceName: 'Hudson Valley Marathon',
-    raceHref: 'https://hudsonvalleymarathon.com/',
-  },
-  {
     raceName: `Amsterdam Marathon`,
     raceHref: 'https://www.tcsamsterdammarathon.eu/',
+  },
+  {
+    raceName: 'Prospect Park 50k',
+    raceHref: 'https://pptc.org/50-miler',
   },
 ];
 
 export const books = [
   {
-    bookName: 'A Philosophy of Software Design',
+    bookName:
+      'Algospeak: How Social Media Is Transforming the Future of Language',
     bookHref:
-      'https://www.amazon.com/Philosophy-Software-Design-2nd/dp/173210221X/ref=sr_1_1?crid=289BZ69F77XKZ&dib=eyJ2IjoiMSJ9.thuonFC3GnLB3dGZfHxZosqdfUQXlSdb6tCpAeBE0kqzv-AT3ltocUX2szt0Zc-r_u9sSjfleB9ZI-irNxyH7T2KksZ6yc6wKdyoX1_tjeko4fB4y_x58o_1rB1zbl_4IhYrbh40hS793buHll1E2OwFs2ryHBpsc8lrdIVOIeC-YRoY5G49kXxFbMxiYdeQNmfK-P67AHH87VnncME2X12CAx6X9UqYrn5XNbcuwzE.j10P6MgoA-c8zSJ4RtbMkYypuccpoqxSWj0UW2RblBk&dib_tag=se&keywords=the+philosophy+of+software+design&qid=1758038321&sprefix=the+philosphy+of+softw%2Caps%2C100&sr=8-1',
-    bookAuthor: 'John Ousterhout',
+      'https://www.amazon.com/dp/0593804074?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1',
+    bookAuthor: 'Adam Aleksic',
   },
   {
-    bookName: 'Norwegian Wood',
+    bookName: `Even the Good Girls Will Cry: A '90s Rock Memoir`,
     bookHref:
-      'https://www.amazon.com/s?k=norweigan+wood&crid=2PNB7GQJ0OMKD&sprefix=norweigan+wood%2Caps%2C118&ref=nb_sb_noss_2',
-    bookAuthor: 'Haruki Murakami',
+      'https://www.amazon.com/dp/0306833751?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1',
+    bookAuthor: 'Melissa Auf der Maur',
   },
 ];
 
