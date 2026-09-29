@@ -69,18 +69,42 @@ export const mainNav = {
 
 export const ourWorkWebsites = [
   {
-    projectName: 'Nonprofit Website Example',
+    projectName: 'Nonprofit Website',
     imgUrl: '/images/our-work-images/mock-website.png',
     pageUrl: '/website-example',
     projectDescription:
       'An example website for a nonprofit organization built with Next.js and Tailwind CSS',
   },
   {
-    projectName: 'Southpaw Martial Arts',
+    projectName: 'Business Website',
     imgUrl: '/images/our-work-images/spmafc.png',
     pageUrl: 'https://southpawmafc.vercel.app',
     projectDescription:
       'A website built and maintained for Southpaw Martial Arts using Next.js, Tailwind CSS, and Resend',
+  },
+];
+
+export const ourWorkPortfolios = [
+  {
+    projectName: 'Creative Professional Portfolio',
+    imgUrl: '/images/our-work-images/actor-1.png',
+    pageUrl: 'https://actor-portfolio-1-example.vercel.app/',
+    projectDescription:
+      'An example website for a creative professional built with Next.js and Tailwind CSS',
+  },
+  {
+    projectName: 'Creative Professional Portfolio',
+    imgUrl: '/images/our-work-images/actor-2.png',
+    pageUrl: 'https://actor-portfolio-2-example.vercel.app/',
+    projectDescription:
+      'An example website for a creative professional built with Next.js and Tailwind CSS',
+  },
+  {
+    projectName: 'Creative Professional Portfolio',
+    imgUrl: '/images/our-work-images/actor-3.png',
+    pageUrl: 'https://actor-portfolio-3-example.vercel.app/',
+    projectDescription:
+      'An example website for a creative professional built with Next.js, Tailwind CSS, and Embla Carousel',
   },
 ];
 
@@ -95,7 +119,7 @@ export const ourWorkCrmsDbs = [
 
 export const ourWorkWebApps = [
   {
-    projectName: 'Custom Petsitting Application',
+    projectName: 'Custom Web Application',
     imgUrl: '/images/our-work-images/petsitting.png',
     projectDescription:
       'A custom built and maintained web application for a private client using Next.js, Tailwind CSS, Supabase, Prismic CMS, and Mapbox',

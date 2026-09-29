@@ -1,8 +1,55 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { XMarkIcon } from '@heroicons/react/20/solid'
-import { ourWorkWebsites, ourWorkCrmsDbs, ourWorkWebApps } from '../utils/data';
+import { XMarkIcon } from '@heroicons/react/20/solid';
+import {
+  ourWorkWebsites,
+  ourWorkCrmsDbs,
+  ourWorkWebApps,
+  ourWorkPortfolios,
+} from '../utils/data';
+
+function ProjectCard({ project, onImageClick, showLink }) {
+  const title = (
+    <p className='font-bold text-base text-pinkDefault md:text-lg pt-8'>
+      {project.projectName}
+    </p>
+  );
+
+  return (
+    <div>
+      <img
+        className='aspect-[16/9] w-full rounded-lg object-fill shadow drop-shadow-2xl cursor-pointer'
+        src={project.imgUrl}
+        alt={`${project.projectName} thumbnail image`}
+        onClick={() => onImageClick(project)}
+      />
+      {showLink ? (
+        <a href={project.pageUrl} target='_blank' rel='noopener noreferrer'>
+          {title}
+        </a>
+      ) : (
+        title
+      )}
+      <p className='text-base md:text-lg'>{project.projectDescription}</p>
+    </div>
+  );
+}
+
+function ProjectGrid({ projects, onImageClick, showLink = false }) {
+  return (
+    <div className='grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
+      {projects.map((project) => (
+        <ProjectCard
+          key={project.imgUrl}
+          project={project}
+          onImageClick={onImageClick}
+          showLink={showLink}
+        />
+      ))}
+    </div>
+  );
+}
 
 export default function OurWork() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,36 +95,39 @@ export default function OurWork() {
           Website Design, Development, and Refresh
         </h2>
         <p className='my-8 text-base md:text-lg text-justify'>
-          We can build a custom website for you from the ground up. We use the
-          latest technologies to build a responsive, mobile-friendly website
-          with lightning-fast page load times. We also offer ongoing, as-needed
-          maintenance. Looking to refresh your current website? Great! Send us
-          your ideas.
+          We can build a custom, SEO-optimized website for you from the ground
+          up. We use the latest technologies to build a responsive,
+          mobile-friendly website with lightning-fast page load times. We also
+          offer ongoing, as-needed maintenance, and can either make periodic
+          updates for you or give you control to make edits on your own. Looking
+          to refresh your current website? Great! Send us your ideas.
         </p>
-        <div className='grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
-          {ourWorkWebsites.map((project) => (
-            <div key={project.projectName}>
-              <img
-                className='aspect-3/2 w-full rounded-lg object-cover shadow drop-shadow-2xl cursor-pointer'
-                src={project.imgUrl}
-                alt={`${project.projectName} thumbnail image`}
-                onClick={() => openModal(project)}
-              />
-              <a
-                href={project.pageUrl}
-                target='blank'
-                rel='noopener noreferrer'
-              >
-                <p className='font-bold text-base text-pinkDefault md:text-lg pt-8'>
-                  {project.projectName}
-                </p>
-              </a>
-              <p className='text-base md:text-lg'>
-                {project.projectDescription}
-              </p>
-            </div>
-          ))}
-        </div>
+        <ProjectGrid
+          projects={ourWorkWebsites}
+          onImageClick={openModal}
+          showLink
+        />
+        <hr className='mt-16 mx-auto' />
+        <h2
+          className='text-2xl font-semibold tracking-tight sm:text-3xl mt-16'
+          id='portfolios'
+        >
+          Portfolio Websites for Creative Professionals
+        </h2>
+        <p className='my-8 text-base md:text-lg text-justify'>
+          Are you an actor, artist, designer, photographer or other creative
+          professional looking to show off your work? Break free from the annual
+          fees and contracts of other website builders, and let us create a
+          custom, unique portfolio that's SEO-optimized to appear in search
+          results and drive visitors to your site. We are happy to maintain your
+          site or give you total control of updates. Showcase all your hard work
+          with a professional portfolio.
+        </p>
+        <ProjectGrid
+          projects={ourWorkPortfolios}
+          onImageClick={openModal}
+          showLink
+        />
         <hr className='mt-16 mx-auto' />
         <h2
           className='text-2xl font-semibold tracking-tight sm:text-3xl mt-16'
@@ -92,24 +142,7 @@ export default function OurWork() {
           covered. We can even integrate with services that you currently use so
           that you only have to remember one login and password.
         </p>
-        <div className='grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
-          {ourWorkCrmsDbs.map((project) => (
-            <div key={project.projectName}>
-              <img
-                className='aspect-3/2 w-full rounded-lg object-cover shadow drop-shadow-2xl cursor-pointer'
-                src={project.imgUrl}
-                alt={`${project.projectName} thumbnail image`}
-                onClick={() => openModal(project)}
-              />
-              <p className='font-bold text-base text-pinkDefault md:text-lg pt-8'>
-                {project.projectName}
-              </p>
-              <p className='text-base md:text-lg'>
-                {project.projectDescription}
-              </p>
-            </div>
-          ))}
-        </div>
+        <ProjectGrid projects={ourWorkCrmsDbs} onImageClick={openModal} />
         <hr className='mt-16 mx-auto' />
         <h2
           className='text-2xl font-semibold tracking-tight sm:text-3xl mt-16'
@@ -124,24 +157,7 @@ export default function OurWork() {
           systems. Need more? We can also integrate a CRM and database for you
           to keep up with all of your clients and data.
         </p>
-        <div className='grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8'>
-          {ourWorkWebApps.map((project) => (
-            <div key={project.projectName}>
-              <img
-                className='aspect-3/2 w-full rounded-lg object-cover shadow drop-shadow-2xl cursor-pointer'
-                src={project.imgUrl}
-                alt={`${project.projectName} thumbnail image`}
-                onClick={() => openModal(project)}
-              />
-              <p className='font-bold text-base text-pinkDefault md:text-lg pt-8'>
-                {project.projectName}
-              </p>
-              <p className='text-base md:text-lg'>
-                {project.projectDescription}
-              </p>
-            </div>
-          ))}
-        </div>
+        <ProjectGrid projects={ourWorkWebApps} onImageClick={openModal} />
         {/* modal */}
         {isOpen && (
           <div
