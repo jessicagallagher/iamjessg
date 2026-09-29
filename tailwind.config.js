@@ -13,9 +13,6 @@ module.exports = {
         softBlack: '#212121',
         lightGrey: '#eeeeee',
       },
-      fontFamily: {
-        raleway: ['Raleway', 'sans-serif'],
-      },
       letterSpacing: {
         extraWide: '0.75rem',
       },
