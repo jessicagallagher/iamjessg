@@ -15,7 +15,7 @@ export default function About() {
         <h1 className='text-5xl text-center font-bold'>About Us</h1>
         <br />
         <p className='text-base md:text-lg'>
-          Tech Meowt works with small businesses, startups, and nonprofits to assess and build their
+          Tech Meowt works with individuals, small businesses, startups, and nonprofits to assess and build their
           technological needs. We get it—budgets are tight, but you need better
           technology. Our goal is to help you succeed by streamlining your
           processes and organizing your data—whether that's done by building a
@@ -30,7 +30,7 @@ export default function About() {
           <span className='font-bold'>actually want</span> to work around your
           budget and allow you to choose from hourly billing or a flat fee. We
           also offer à la carte pricing for extra revisions, adding a new
-          feature, and ongoing maintenance. Every contract includes onboarding
+          feature, and ongoing maintenance. Every contract includes onboarding for 
           you and your team so that you can hit the ground running.
         </p>
         <br />
@@ -53,23 +53,14 @@ export default function About() {
           <ul role='list' className='mx-auto flex justify-center items-center'>
             <li>
               <div className='space-y-4'>
-                <Link legacyBehavior href='/about/jessica-gallagher'>
-                  <a>
                     <img
                       className='mx-auto h-48 w-48 rounded-full shadow-2xl'
                       src='/images/headshot_july_2025.jpg'
                       alt='headshot'
                     />
-                  </a>
-                </Link>
-
                 <div className='space-y-2'>
                   <div className='text-lg font-medium'>
-                    <Link legacyBehavior href='/about/jessica-gallagher'>
-                      <a className='hover:text-greenDefault hover:font-bold'>
                         <h3>Jessica Gallagher</h3>
-                      </a>
-                    </Link>
                     <p className='font-semibold'>Chief Technology Officer</p>
                     <Link
                       legacyBehavior

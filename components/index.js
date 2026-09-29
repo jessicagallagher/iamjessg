@@ -1,7 +1,3 @@
-import Cats from './Cats'
-import Running from './Running'
-import Reading from './Reading'
-import CurrentProjects from './CurrentProjects'
 import About from './About'
 import Footer from './Footer'
 import HeadTag from './HeadTag'
@@ -19,14 +15,9 @@ import MockWebsiteDonate from './mock-website/MockWebsiteDonate'
 import DonationAmtButton from './mock-website/DonationAmtButton'
 import MockWebsiteVolunteer from './mock-website/MockWebsiteVolunteer'
 import MockWebsitePartner from './mock-website/MockWebsitePartner'
-import JessicaGallagher from './JessicaGallagher'
 import ContactUs from './ContactUs'
 
 export {
-  Cats,
-  Running,
-  Reading,
-  CurrentProjects,
   About,
   Footer,
   HeadTag,
@@ -44,6 +35,5 @@ export {
   DonationAmtButton,
   MockWebsiteVolunteer,
   MockWebsitePartner,
-  JessicaGallagher,
   ContactUs,
 }
