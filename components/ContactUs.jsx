@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { track } from '@vercel/analytics/react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -128,7 +129,12 @@ export default function ContactUs() {
                       className='h-6 w-6 flex-shrink-0'
                       aria-hidden='true'
                     />
-                    <a href='mailto:hello@techmeowt.com'>
+                    <a
+                      href='mailto:hello@techmeowt.com'
+                      onClick={() => {
+                        track('email mailto from contact page clicked');
+                      }}
+                    >
                       <span className='ml-3'>hello@techmeowt.com</span>
                     </a>
                   </dd>
@@ -227,6 +233,9 @@ export default function ContactUs() {
                 {clicked && (
                   <div>
                     <button
+                      onClick={() => {
+                        track('contact form submitted');
+                      }}
                       disabled
                       className='cursor-not-allowed inline-flex justify-between rounded-md border border-pinkDefault py-3 px-6 text-base font-semibold shadow-xl rounded-3xl'
                     >

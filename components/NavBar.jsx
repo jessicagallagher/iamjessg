@@ -2,6 +2,7 @@ import img from '../public/favicon.jpg';
 import Link from 'next/link';
 import router, { useRouter } from 'next/router';
 import Image from 'next/image';
+import { track } from '@vercel/analytics/react';
 import { Fragment, useRef, useState } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { useSpring, animated } from '@react-spring/web';
@@ -70,9 +71,19 @@ export default function NavBar() {
                     }}
                   >
                     <Link legacyBehavior href='/'>
-                      <a className='flex flex-row items-center justify-center mt-2'>
+                      <a
+                        className='flex flex-row items-center justify-center mt-2'
+                        onClick={() => {
+                          track('home logo link clicked');
+                        }}
+                      >
                         <span className='mr-2'>
-                          <Image src={img} height={48} width={48} alt='logo favicon'/>
+                          <Image
+                            src={img}
+                            height={48}
+                            width={48}
+                            alt='logo favicon'
+                          />
                         </span>
                         <h1 className='font-thin text-xl sm:text-2xl xl:text-4xl font-bold'>
                           &lt;Tech Meowt /&gt;
@@ -82,7 +93,6 @@ export default function NavBar() {
                   </animated.div>
                 </div>
               </div>
-
               <div className='hidden md:ml-6 md:flex md:space-x-3 lg:space-x-6 xl:space-x-8'>
                 {mainNav.main.map((item) => (
                   <div
@@ -96,6 +106,9 @@ export default function NavBar() {
                             ? activeClass
                             : inactiveClass
                         }
+                        onClick={() => {
+                          track(`${item.name} main nav link clicked`);
+                        }}
                       >
                         {item.name}
                       </a>
@@ -109,6 +122,9 @@ export default function NavBar() {
                         target='_blank'
                         rel='noopener'
                         className='inline-flex items-center pt-1 text-base'
+                        onClick={() => {
+                          track('linkedin main nav link clicked');
+                        }}
                       >
                         <span className='sr-only'>{item.name}</span>
                         <item.icon className='h-6 w-6' aria-hidden='true' />
@@ -140,6 +156,9 @@ export default function NavBar() {
                       ? mobileActiveClass
                       : mobileInactiveClass
                   }
+                  onClick={() => {
+                    track('home mobile nav link clicked');
+                  }}
                 >
                   Home
                 </a>
@@ -151,6 +170,9 @@ export default function NavBar() {
                       ? mobileActiveClass
                       : mobileInactiveClass
                   }
+                  onClick={() => {
+                    track('about mobile nav link clicked');
+                  }}
                 >
                   About
                 </a>
@@ -162,21 +184,13 @@ export default function NavBar() {
                       ? mobileActiveClass
                       : mobileInactiveClass
                   }
+                  onClick={() => {
+                    track('our work mobile nav link clicked');
+                  }}
                 >
                   Our Work
                 </a>
               </Link>
-              {/* <Link legacyBehavior href='/blog'>
-                <a
-                  className={
-                    router.pathname == '/blog'
-                      ? mobileActiveClass
-                      : mobileInactiveClass
-                  }
-                >
-                  Blog
-                </a>
-              </Link> */}
               <Link legacyBehavior href='/contact'>
                 <a
                   className={
@@ -184,6 +198,9 @@ export default function NavBar() {
                       ? mobileActiveClass
                       : mobileInactiveClass
                   }
+                  onClick={() => {
+                    track('contact mobile nav link clicked');
+                  }}
                 >
                   Contact
                 </a>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { XMarkIcon } from '@heroicons/react/20/solid';
+import { track } from '@vercel/analytics/react';
 import {
   ourWorkWebsites,
   ourWorkCrmsDbs,
@@ -22,10 +23,20 @@ function ProjectCard({ project, onImageClick, showLink }) {
         className='aspect-[16/9] w-full rounded-lg object-fill shadow drop-shadow-2xl cursor-pointer'
         src={project.imgUrl}
         alt={`${project.projectName} thumbnail image`}
-        onClick={() => onImageClick(project)}
+        onClick={() => {
+          onImageClick(project);
+          track(`${project.projectName} thumbnail image clicked`);
+        }}
       />
       {showLink ? (
-        <a href={project.pageUrl} target='_blank' rel='noopener noreferrer'>
+        <a
+          href={project.pageUrl}
+          target='_blank'
+          rel='noopener noreferrer'
+          onClick={() => {
+            track(`${project.projectName} clicked`);
+          }}
+        >
           {title}
         </a>
       ) : (

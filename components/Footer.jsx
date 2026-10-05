@@ -2,6 +2,7 @@ import img from '../public/favicon.png';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { track } from '@vercel/analytics/react';
 import { mainNav } from '../utils/data';
 
 export default function Footer() {
@@ -22,23 +23,18 @@ export default function Footer() {
           {mainNav.main.map((item) => (
             <div key={item.name} className='px-5 py-2'>
               <Link legacyBehavior href={item.href}>
-                <a className=' hover:text-white hover:font-semibold'>
+                <a
+                  className=' hover:text-white hover:font-semibold'
+                  onClick={() => {
+                    track(`${item.name} footer nav link clicked`);
+                  }}
+                >
                   {item.name}
                 </a>
               </Link>
             </div>
           ))}
         </nav>
-        {/* <div className='my-6 flex justify-center space-x-6'>
-          {mainNav.social.map((item) => (
-            <Link legacyBehavior key={item.name} href={item.href}>
-              <a target='_blank' rel='noopener'>
-                <span className='sr-only'>{item.name}</span>
-                <item.icon className='h-6 w-6' aria-hidden='true' />
-              </a>
-            </Link>
-          ))}
-        </div> */}
         <div className='flex flex-row items-center justify-center text-center'>
           <span className='mr-2 hidden'>
             <Image src={img} height={48} width={48} alt='logo favicon' />
@@ -47,7 +43,14 @@ export default function Footer() {
             <span className='text-2xl sm:text-lg'>&lt;</span>
             Tech Meowt /<span className='text-2xl sm:text-lg'>&gt;</span> |
             Brooklyn, NY |{' '}
-            <a href='mailto:hello@techmeowt.com'>hello@techmeowt.com</a>
+            <a
+              href='mailto:hello@techmeowt.com'
+              onClick={() => {
+                track('footer email mailto clicked');
+              }}
+            >
+              hello@techmeowt.com
+            </a>
           </h3>
         </div>
         <p className='text-center  text-sm'>
@@ -55,7 +58,8 @@ export default function Footer() {
         </p>
         <div className='flex flex-row items-center justify-center text-center'>
           <p className='text-center text-sm'>
-            <a href='https://drive.google.com/file/d/161o-LRtuqdKlndjyUrYsHC0ffy_v3HjZ/view?usp=sharing'
+            <a
+              href='https://drive.google.com/file/d/161o-LRtuqdKlndjyUrYsHC0ffy_v3HjZ/view?usp=sharing'
               target='_blank'
               rel='noopener'
             >
